@@ -6,4 +6,8 @@ What is M8?
 M8 is a CMS designed to handle end to end flexable solutions for custom code deployment with the option of a WYSIWYG development system.
 
 M8 Requirements:
-
+*Web server that can run PHP
+**Please note that the current release only works with apache (Overrides on) because of the dependencies with .htaccess files. If you wish to help me translate the .htaccess files to the equivalant server software of your choice please contact me
+*Database software with a dedicated account and database for M8
+**Please note that you can have multiple installs of M8 running on the same database with the use of table prefixes
+**Please note that M8 currently requires MySQL. If you would like to help me in translating MySQL queries into another database language please contact me
