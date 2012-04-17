@@ -22,7 +22,20 @@ class database
         echo "Database Host: ".$this->dbhost."<br />";
         echo "Database Prefix: ".$this->prefix."<br />";
     }
+
+    public function test() {
+    	$link = mysql_connect($this->dbhost, $this->dbuser, $this->dbpassword);
+		if (!$link) {
+	    	die('Could not connect: ' . mysql_error());
+		}
+		echo 'Connected successfully';
+		mysql_close($link);
+    }
 }
+
+#$database = new database();
+
+#$database->test();
 
 #echo "Classes Initialized <br />";
 ?>
