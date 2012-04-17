@@ -1,1 +1,50 @@
 /* CSS Document */
+
+@font-face {
+	font-family: Roboto;
+	src: url('fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+	font-family: Roboto-Italic;
+	src: url('fonts/Roboto-Italic.ttf');
+}
+
+@font-face {
+	font-family: Bebas;
+	src: url('fonts/BebasNeue.otf');
+}
+
+@font-face {
+	font-family: Coalition;
+	src: url('fonts/Coalition_v2.ttf');
+}
+
+@font-face {
+	font-family: Techno;
+	src: url('fonts/TechnoHideo.ttf');
+}
+
+@font-face {
+	font-family: Roboto-Thin;
+	src: url('fonts/Roboto-Thin.ttf');
+}
+
+body {
+	font-family: Roboto;
+	background: #33B5E5;
+}
+
+#content {
+	display: none;
+}
+
+#splash {
+	font-family: Roboto-Italic;
+	font-size: 1000%;
+	color: 
+	white;
+	position: fixed;
+	right: 25px;
+	bottom: 38px;
+}
