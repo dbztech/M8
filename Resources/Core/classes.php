@@ -4,5 +4,5 @@ foreach (glob("Classes/*.php") as $filename)
 {
     include $filename;
 }
-echo "Classes Initialized <br />";
+#echo "Classes Initialized <br />";
 ?>

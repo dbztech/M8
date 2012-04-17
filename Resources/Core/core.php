@@ -3,5 +3,5 @@
 include('classes.php');
 include('patch.php');
 include('settings.php');
-echo "Core Initialized <br />";
+#echo "Core Initialized <br />";
 ?>

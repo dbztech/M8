@@ -8,5 +8,5 @@ foreach (glob("Plugins/*.php") as $filename)
 {
     include $filename;
 }
-echo "Personalized Settings Initialized <br />";
+#echo "Personalized Settings Initialized <br />";
 ?>
