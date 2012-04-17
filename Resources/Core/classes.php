@@ -33,9 +33,8 @@ class database
     }
 }
 
-#$database = new database();
 
-#$database->test();
+$database = new database();
 
 #echo "Classes Initialized <br />";
 ?>
