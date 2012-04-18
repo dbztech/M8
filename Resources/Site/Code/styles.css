@@ -39,12 +39,19 @@ body {
 	display: none;
 }
 
-#splash {
+#splashtext {
 	font-family: Roboto-Italic;
 	font-size: 1000%;
-	color: 
-	white;
+	color: white;
 	position: fixed;
 	right: 25px;
-	bottom: 38px;
+	bottom: -130px;
+}
+
+#splashcontinue {
+	position: fixed;
+	right: 0px;
+	width: 220px;
+	top: 25%;
+	display: none;
 }
