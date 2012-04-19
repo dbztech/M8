@@ -160,6 +160,11 @@ class page
 			return false;
 		}
 	}
+
+	public function gettitle($location) {
+		$database = new database();
+		$result = $database->returndata('SELECT * FROM `pages` WHERE `location` = '.$location);
+	}
 }
 
 #echo "Classes Initialized <br />";
