@@ -1,5 +1,9 @@
 /* CSS Document */
 
+/*&&&&&&&&&*/
+/*&&Fonts&&*/
+/*&&&&&&&&&*/
+
 @font-face {
 	font-family: Roboto;
 	src: url('fonts/Roboto-Regular.ttf');
@@ -30,6 +34,24 @@
 	src: url('fonts/Roboto-Thin.ttf');
 }
 
+/*&&&&&&&&&&*/
+/*Animations*/
+/*&&&&&&&&&&*/
+
+@-webkit-keyframes unveil {
+	from{right: 0%;}
+	to{right: 100%;}
+}
+
+.unveil {
+	-webkit-animation: unveil 1s;
+}
+
+
+/*&&&&&&&&&&&&*/
+/*Decalrations*/
+/*&&&&&&&&&&&&*/
+
 body {
 	font-family: Roboto;
 	background: #33B5E5;
@@ -54,4 +76,8 @@ body {
 	width: 220px;
 	top: 25%;
 	display: none;
+}
+
+#splashtext:hover {
+	color: blue;
 }
