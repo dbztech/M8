@@ -1,6 +1,7 @@
-<?php include('header.php'); ?>
-<?php include('leftnav.php'); ?>
-<div id="splash"><img src="Resources/Site/Files/Continue.png" alt="Continue" id="splashcontinue" onClick="unveil();" /><p id="splashtext">#M8</p></div>
+<?php 
+include('header.php');
+include('leftnav.php');
+?>
 <div id="content">
 <p>Hello World</p>
 </div>
