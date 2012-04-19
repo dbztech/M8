@@ -78,6 +78,6 @@ body {
 	display: none;
 }
 
-#splashtext:hover {
-	color: blue;
+#leftnav {
+	display: none;
 }
