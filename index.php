@@ -2,5 +2,11 @@
 echo "<!doctype html><!-- Powered by M8 -->";
 include('Resources/Core/core.php');
 include('Resources/Site/settings.php');
-include('Resources/Site/Code/index.php');
+if (isset($_GET['redirect'])) {
+	echo $page->verifypage('Test');
+	//print_r($database->returndata('SELECT * FROM `pages`'));
+	include('Resources/Site/Code/'.$_GET['redirect'].'.php');
+} else {
+	include('Resources/Site/Code/index.php');
+}
 ?>

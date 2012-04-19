@@ -4,6 +4,10 @@ include('classes.php');
 include('patch.php');
 include('settings.php');
 
+#Initialize core classes
+$database = new database();
+$page = new page();
+
 #Debug window
 if ($debug) {
 	echo '<div id="debug">Database Info: <br /> ';

@@ -65,10 +65,60 @@ class database
 		// This is done automatically at the end of the script
 		mysql_free_result($result);
     }
+
+    public function writedata($query) {
+    	$link = mysql_connect($this->dbhost, $this->dbuser, $this->dbpassword);
+
+		// make foo the current db
+		$db_selected = mysql_select_db($this->database, $link);
+		if (!$db_selected) {
+		    die ('Can\'t use foo : ' . mysql_error());
+		}
+
+		// Perform Query
+		$result = mysql_query($query);
+
+		// Check result
+		// This shows the actual query sent to MySQL, and the error. Useful for debugging.
+		if (!$result) {
+		    $message  = 'Invalid query: ' . mysql_error() . "\n";
+		    $message .= 'Whole query: ' . $query;
+		    return($message);
+		    die($message);
+		} else {
+			return("Query Successful");
+		}
+
+		// Free the resources associated with the result set
+		// This is done automatically at the end of the script
+		mysql_free_result($result);
+    }
 }
 
+class page
+{
+	//property declaration
+	//Not here yet
 
-$database = new database();
+	//method declaration
+	public function verifypage($pagename) {
+		//Check if page exists
+		$database = new database();
+		$result = $database->returndata('SELECT * FROM `pages` WHERE `name` = "'.$pagename.'"');
+		if (file_exists('Resources/Site/Code/'.$pagename.'.php')) {
+			//Check database for page
+			if (isset($result['id'])) {
+				//Do nothing
+				return true;
+			} else {
+				//INSERT INTO `m8db`.`pages` (`name`, `title`, `description`, `location`, `id`) VALUES ('demo', 'This is a Demo', 'Hazzah', '/Demp.php', '4')
+				return false;
+			}
+		} else {
+			return false;
+		}
+	}
+}
 
 #echo "Classes Initialized <br />";
 ?>
