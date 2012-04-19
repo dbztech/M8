@@ -7,7 +7,7 @@
 <?php
 if ($splash) {
 	echo '<body onLoad="load();">';
-	echo '<div id="splash"><img src="Resources/Site/Files/Continue.png" alt="Continue" id="splashcontinue" onClick="unveil();" /><p id="splashtext">#M8</p></div>';
+	include('splash.php');
 } else {
 	echo '<body onLoad="showContent();">';
 }
