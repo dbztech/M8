@@ -140,6 +140,7 @@ class page
 {
 	//property declaration
 	//Not here yet
+	public $location = "index.php";
 
 	//method declaration
 	public function verifypage($pagename) {
@@ -161,9 +162,10 @@ class page
 		}
 	}
 
-	public function gettitle($location) {
+	public function gettitle() {
 		$database = new database();
-		$result = $database->returndata('SELECT * FROM `pages` WHERE `location` = '.$location);
+		$result = $database->returndata('SELECT * FROM `pages` WHERE `location` = "'.$this->location.'"');
+		return $result['title'];
 	}
 }
 
