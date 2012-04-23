@@ -167,6 +167,12 @@ class page
 		$result = $database->returndata('SELECT * FROM `pages` WHERE `location` = "'.$this->location.'"');
 		return $result['title'];
 	}
+
+	public function getdesc() {
+		$database = new database();
+		$result = $database->returndata('SELECT * FROM `pages` WHERE `location` = "'.$this->location.'"');
+		return $result['description'];
+	}
 }
 
 #echo "Classes Initialized <br />";
