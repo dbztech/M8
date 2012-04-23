@@ -1,8 +1,7 @@
-<?php 
-include('header.php');
-include('leftnav.php');
-?>
 <div id="content">
+
+<div id="contentblock">
 <p>Hello World</p>
 </div>
-<?php include('footer.php'); ?>
+
+</div>

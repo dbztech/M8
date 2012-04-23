@@ -3,4 +3,5 @@
 #echo "Settings Initialized <br />";
 $debug = false;
 $splash = false;
+$leftnav = true;
 ?>
