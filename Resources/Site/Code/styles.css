@@ -60,6 +60,7 @@ body {
 #content {
 	display: none;
 	float: right;
+	width: 75%;
 }
 
 #splashtext {
@@ -81,7 +82,7 @@ body {
 
 #leftnav {
 	display: none;
-	width: 300px;
+	width: 25%;
 	height: 100%;
 	position: fixed;
 	background: black;
@@ -108,4 +109,12 @@ body {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	margin: auto;
 	border-radius: 100px;
+}
+
+#contentblock {
+	width: 200px;
+	height: 200px;
+	background-color: black;
+	color: white;
+	margin: auto;
 }

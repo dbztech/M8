@@ -66,6 +66,47 @@ class database
 		mysql_free_result($result);
     }
 
+    public function greatestid($query, $incriment) {
+    	$link = mysql_connect($this->dbhost, $this->dbuser, $this->dbpassword);
+
+		// make foo the current db
+		$db_selected = mysql_select_db($this->database, $link);
+		if (!$db_selected) {
+		    die ('Can\'t use foo : ' . mysql_error());
+		}
+
+		// Perform Query
+		$result = mysql_query($query);
+
+		// Check result
+		// This shows the actual query sent to MySQL, and the error. Useful for debugging.
+		if (!$result) {
+		    $message  = 'Invalid query: ' . mysql_error() . "\n";
+		    $message .= 'Whole query: ' . $query;
+		    return($message);
+		    die($message);
+		}
+
+		// Use result
+		// Attempting to print $result won't allow access to information in the resource
+		// One of the mysql result functions must be used
+		// See also mysql_result(), mysql_fetch_array(), mysql_fetch_row(), etc.
+		$id = 0;
+		while ($row = mysql_fetch_assoc($result)) {
+		    if ($row['id'] > $id) {
+		    	$id = $row['id'];
+		    }
+		}
+
+		$id = $id+$incriment;
+
+		return $id;
+
+		// Free the resources associated with the result set
+		// This is done automatically at the end of the script
+		mysql_free_result($result);
+    }
+
     public function writedata($query) {
     	$link = mysql_connect($this->dbhost, $this->dbuser, $this->dbpassword);
 
@@ -99,6 +140,7 @@ class page
 {
 	//property declaration
 	//Not here yet
+	public $location = "index.php";
 
 	//method declaration
 	public function verifypage($pagename) {
@@ -112,11 +154,24 @@ class page
 				return true;
 			} else {
 				//INSERT INTO `m8db`.`pages` (`name`, `title`, `description`, `location`, `id`) VALUES ('demo', 'This is a Demo', 'Hazzah', '/Demp.php', '4')
-				return false;
+				$result = $database->writedata("INSERT INTO `m8db`.`pages` (`name`, `title`, `description`, `location`, `id`) VALUES ('".$pagename."', '".$pagename."', 'No description currently', '/Resources/Site/Code/".$pagename.".php', '".$database->greatestid('SELECT * FROM `pages` WHERE 1',1)."')");
+				return $result;
 			}
 		} else {
 			return false;
 		}
+	}
+
+	public function gettitle() {
+		$database = new database();
+		$result = $database->returndata('SELECT * FROM `pages` WHERE `location` = "'.$this->location.'"');
+		return $result['title'];
+	}
+
+	public function getdesc() {
+		$database = new database();
+		$result = $database->returndata('SELECT * FROM `pages` WHERE `location` = "'.$this->location.'"');
+		return $result['description'];
 	}
 }
 
