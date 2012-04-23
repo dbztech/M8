@@ -109,3 +109,10 @@ body {
 	margin: auto;
 	border-radius: 100px;
 }
+
+#contentblock {
+	width: 200px;
+	height: 200px;
+	background-color: black;
+	color: white;
+}
