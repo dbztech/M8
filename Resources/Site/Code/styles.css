@@ -60,6 +60,7 @@ body {
 #content {
 	display: none;
 	float: right;
+	width: 75%;
 }
 
 #splashtext {
@@ -81,7 +82,7 @@ body {
 
 #leftnav {
 	display: none;
-	width: 300px;
+	width: 25%;
 	height: 100%;
 	position: fixed;
 	background: black;
@@ -115,4 +116,5 @@ body {
 	height: 200px;
 	background-color: black;
 	color: white;
+	margin: auto;
 }
