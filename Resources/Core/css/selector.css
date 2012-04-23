@@ -1,0 +1,22 @@
+/* Selector CSS */
+
+.selector {
+	background: black;
+	height: 50px;
+	color: #99CC00;
+}
+
+.selector p {
+	border-bottom: 5px solid;
+	float: left;
+	padding: 13px;
+	margin: 0px;
+}
+
+.selector p:hover {
+	color: #FF4444;
+}
+
+.selector p:focus {
+	color: #FF4444;
+}

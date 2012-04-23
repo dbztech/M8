@@ -63,23 +63,6 @@ body {
 	width: 75%;
 }
 
-#splashtext {
-	font-family: Roboto-Italic;
-	font-size: 1000%;
-	color: white;
-	position: fixed;
-	right: 25px;
-	bottom: -130px;
-}
-
-#splashcontinue {
-	position: fixed;
-	right: 0px;
-	width: 220px;
-	top: 25%;
-	display: none;
-}
-
 #leftnav {
 	display: none;
 	width: 25%;
@@ -112,7 +95,8 @@ body {
 }
 
 #contentblock {
-	width: 200px;
+	width: 85%;
+	text-align: center;
 	height: 200px;
 	background-color: black;
 	color: white;
