@@ -1,0 +1,13 @@
+/* CSS Document */
+
+.rightcontext {
+	color: white;
+	background: url('..//Images/rightcontext.svg');
+	width: 325px;
+	height: 75px;
+	float: right;
+	margin-right: -16px;
+	margin-top: -40px;
+	font-family: Roboto-Italic;
+	font-size: 255%;
+}
