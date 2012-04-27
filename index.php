@@ -12,14 +12,17 @@ if (isset($_GET['redirect'])) {
 		include('Resources/Core/index.php');
 		include('Resources/Core/footer.php');
 	} else {
-		echo $page->verifypage($_GET['redirect']);
-		$page->location = '/Resources/Site/Code/'.$_GET['redirect'].'.php';
-		include('Resources/Core/header.php');
-		if ($leftnav) {
-			include('Resources/Core/leftnav.php');
+		if ($page->verifypage($_GET['redirect'])) {
+			$page->location = '/Resources/Site/Code/'.$_GET['redirect'].'.php';
+			#include('Resources/Core/header.php');
+			#if ($leftnav) {
+			#	include('Resources/Core/leftnav.php');
+			#}
+			include('Resources/Site/Code/'.$_GET['redirect'].'.php');
+			#include('Resources/Core/footer.php');
+		} else {
+			echo "404";
 		}
-		include('Resources/Site/Code/'.$_GET['redirect'].'.php');
-		include('Resources/Core/footer.php');
 	}
 } else {
 	if (file_exists('Resources/Site/Code/index.php')) {
