@@ -28,7 +28,8 @@ class database
 		if (!$link) {
 	    	die('Could not connect: ' . mysql_error());
 		}
-		echo 'Connected successfully';
+		//echo 'Connected successfully';
+		return(true);
 		mysql_close($link);
     }
 

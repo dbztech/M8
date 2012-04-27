@@ -10,7 +10,17 @@
 <br />
 <br />
 <br />
-<p>Hello World</p>
+<h1>M8 Status:</h1>
+<h3>Database:</h3>
+<?php
+if ($database->test()) {
+	echo "Database Online";
+}
+?>
+<h3>PHP:</h3>
+<?php
+phpinfo();
+?>
 </div>
 
 </div>
