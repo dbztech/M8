@@ -22,7 +22,11 @@ if (isset($_GET['redirect'])) {
 		include('Resources/Core/footer.php');
 	}
 } else {
-	$page->location = '/Resources/Site/Code/index.php';
-	include('/Resources/Site/Code/index.php');
+	if (file_exists('Resources/Site/Code/index.php')) {
+		$page->location = '/Resources/Site/Code/index.php';
+		include('Resources/Site/Code/index.php');
+	} else {
+		echo "404";
+	}
 }
 ?>
