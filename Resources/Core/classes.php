@@ -180,19 +180,29 @@ class variable
 	//property declaration
 	//Not here yet
 
-	public function gettext($id) {
+	#0 = Number
+	#1 = Text
+	#2 = Location
+	#4 = Zone
+
+	public function getvariable($name) {
+		$database = new database();
+		
+	}
+
+	public function getnumber($name) {
 		$database = new database();
 	}
 
-	public function getnumber($id) {
+	public function gettext($name) {
 		$database = new database();
 	}
 
-	public function getlocation($id) {
+	public function getlocation($name) {
 		$database = new database();
 	}
 
-	public function getzone($id) {
+	public function getzone($name) {
 		$database = new database();
 	}
 }
