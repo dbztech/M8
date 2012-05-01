@@ -140,7 +140,6 @@ class database
 class page
 {
 	//property declaration
-	//Not here yet
 	public $location = "index.php";
 
 	//method declaration
@@ -173,6 +172,28 @@ class page
 		$database = new database();
 		$result = $database->returndata('SELECT * FROM `pages` WHERE `location` = "'.$this->location.'"');
 		return $result['description'];
+	}
+}
+
+class variable
+{
+	//property declaration
+	//Not here yet
+
+	public function gettext($id) {
+		$database = new database();
+	}
+
+	public function getnumber($id) {
+		$database = new database();
+	}
+
+	public function getlocation($id) {
+		$database = new database();
+	}
+
+	public function getzone($id) {
+		$database = new database();
 	}
 }
 
