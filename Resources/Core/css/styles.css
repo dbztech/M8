@@ -57,6 +57,13 @@ body {
 	background: #33B5E5;
 }
 
+::selection {
+	background: #99CC00; /* Safari */
+}
+::-moz-selection {
+	background: #99CC00; /* Firefox */
+}
+
 #content {
 	display: none;
 	float: right;

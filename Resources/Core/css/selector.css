@@ -3,7 +3,7 @@
 .selector {
 	background: black;
 	height: 50px;
-	color: #99CC00;
+	color: #33B5E5;
 }
 
 .selector p {
@@ -14,9 +14,13 @@
 }
 
 .selector p:hover {
-	color: #FF4444;
+	color: #99CC00;
 }
 
 .selector p:focus {
-	color: #FF4444;
+	color: #99CC00;
+}
+
+.selected {
+	color: white;
 }
