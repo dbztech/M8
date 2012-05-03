@@ -177,9 +177,6 @@ class page
 
 class variable
 {
-	//property declaration
-	//Not here yet
-
 	#0 = Number
 	#1 = Text
 	#2 = Location
@@ -232,6 +229,25 @@ class variable
 		$database = new database();
 		$output = $database->returndata('SELECT * FROM `variables` WHERE `id` = "'.$id.'"');
 		return $output['zone'];
+	}
+}
+
+class file
+{
+	public function getfilecontent($location) {
+		if ($this->verifyfile($location)) {
+			echo file_get_contents($location);
+		}
+	}
+
+	public function verifyfile($location) {
+		if (file_exists($location)) {
+			#echo $location." Exists";
+			return true;
+		} else {
+			#echo $location." Does Not Exists";
+			return false;
+		}
 	}
 }
 

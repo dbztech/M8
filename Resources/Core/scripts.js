@@ -34,6 +34,7 @@ function ajax(type, query) {
 	xmlhttp.onreadystatechange=function() {
 	  if (xmlhttp.readyState==4 && xmlhttp.status==200) {
 	  	console.log("Query successful");
+	  	console.log(xmlhttp.responseText);
 	    return(true);
 	  } else {
 	  	console.log("Query failed");

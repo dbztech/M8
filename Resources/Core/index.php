@@ -1,6 +1,6 @@
 <div id="content">
 
-<div id="contentblock">
+<div class="contentblock" id="Overview">
 <div class="selector">
 <p>Info</p>
 <p>Status</p>
@@ -18,9 +18,7 @@ if ($database->test()) {
 }
 ?>
 <h3>PHP:</h3>
-<?php
-phpinfo();
-?>
+<iframe src="Resources/Core/test.php" style="width: 95%; border: 0px; border-radius: 5px; height: 600px;"></iframe>
 </div>
 
 </div>

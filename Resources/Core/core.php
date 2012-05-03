@@ -7,6 +7,8 @@ include('settings.php');
 #Initialize core classes
 $database = new database();
 $page = new page();
+$variable = new variable();
+$file = new file();
 
 #Debug window
 if ($debug) {

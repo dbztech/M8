@@ -77,6 +77,10 @@ body {
 	filter:alpha(opacity=8);
 }
 
+.leftnavitem {
+	color: white;
+}
+
 #logo {
 	font-size: 105px;
 	margin: 10px;
@@ -94,7 +98,7 @@ body {
 	border-radius: 100px;
 }
 
-#contentblock {
+.contentblock {
 	width: 85%;
 	text-align: center;
 	background-color: black;
