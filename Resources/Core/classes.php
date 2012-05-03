@@ -187,23 +187,51 @@ class variable
 
 	public function getvariable($name) {
 		$database = new database();
-		
+		$result = $database->returndata('SELECT * FROM `variables` WHERE `name` = "'.$name.'"');
+		if (isset($result)) {
+			if ($result['type'] == 0 && isset($result['num'])) {
+				#echo "Number";
+				return $this->getnumber($result['id']);
+			}
+			if ($result['type'] == 1 && isset($result['text'])) {
+				#echo "Text";
+				return $this->gettext($result['id']);
+			}
+			if ($result['type'] == 2 && isset($result['location'])) {
+				#echo "Location";
+				return $this->getlocation($result['id']);
+			}
+			if ($result['type'] == 3 && isset($result['zone'])) {
+				#echo "Zone";
+				return $this->getzone($result['id']);
+			}
+		} else {
+			return "Variable Does Not Exist";
+		}
 	}
 
-	public function getnumber($name) {
+	public function getnumber($id) {
 		$database = new database();
+		$output = $database->returndata('SELECT * FROM `variables` WHERE `id` = "'.$id.'"');
+		return $output['num'];
 	}
 
-	public function gettext($name) {
+	public function gettext($id) {
 		$database = new database();
+		$output = $database->returndata('SELECT * FROM `variables` WHERE `id` = "'.$id.'"');
+		return $output['text'];
 	}
 
-	public function getlocation($name) {
+	public function getlocation($id) {
 		$database = new database();
+		$output = $database->returndata('SELECT * FROM `variables` WHERE `id` = "'.$id.'"');
+		return $output['location'];
 	}
 
-	public function getzone($name) {
+	public function getzone($id) {
 		$database = new database();
+		$output = $database->returndata('SELECT * FROM `variables` WHERE `id` = "'.$id.'"');
+		return $output['zone'];
 	}
 }
 

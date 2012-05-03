@@ -9,7 +9,7 @@ $query = $_GET['query'];
 $variable = new variable();
 
 if (isset($_GET['type'])) {
-	if ($type = 'variable') {
+	if ($type == 'variable') {
 		if (isset($_GET['query'])) {
 			$result = $variable->getvariable($query);
 		}
@@ -17,5 +17,5 @@ if (isset($_GET['type'])) {
 }
 
 echo $result;
-echo "<br /> Type = ".$type."<br /> Query = ".$query;
+#echo "<br /> Type = ".$type."<br /> Query = ".$query;
 ?>
