@@ -1,5 +1,7 @@
 //JavaScript Document
 
+var Selector = new selector;
+
 function load() {
 	document.getElementById('splashcontinue').style.display = "block";
 }
@@ -46,7 +48,23 @@ function ajax(type, query) {
 }
 
 function selector() {
-	this.setCurrent = function(id) {
-		
+	this.setCurrent = function(id, group) {
+		if (group == "overview") {
+			if (id == "info") {
+				document.getElementById(id+'Button').style.color = "#FFF";
+				document.getElementById('statusButton').style.color = "#33B5E5";
+
+				document.getElementById(id).style.display = "block";
+				document.getElementById('status').style.display = "none";
+			}
+
+			if (id == "status") {
+				document.getElementById(id+'Button').style.color = "#FFF";
+				document.getElementById('infoButton').style.color = "#33B5E5";
+
+				document.getElementById(id).style.display = "block";
+				document.getElementById('info').style.display = "none";
+			}
+		}
 	}
 }
