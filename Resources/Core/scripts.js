@@ -44,3 +44,9 @@ function ajax(type, query) {
 	xmlhttp.open("GET","Resources/Core/ajax.php?type="+type+"&query="+query,true);
 	xmlhttp.send();
 }
+
+function selector() {
+	this.setCurrent = function(id) {
+		
+	}
+}

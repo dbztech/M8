@@ -2,8 +2,8 @@
 
 <div class="contentblock" id="Overview">
 <div class="selector">
-<p class="selected">Info</p>
-<p>Status</p>
+<p class="selected" id="info">Info</p>
+<p id="info">Status</p>
 </div>
 <p class="rightcontext" id="title">#M8 Overview</p>
 <br />
