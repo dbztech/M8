@@ -213,10 +213,10 @@ class page
 		while ($row = mysql_fetch_assoc($result)) {
 			$pass++;
 		    echo "<tr>";
-		    echo '<td><input type="text" id="'.$pass.'name'.'" value="'.$row['name'].'" /></td>';
-		    echo '<td><input type="text" id="'.$pass.'title'.'" value="'.$row['title'].'" /></td>';
-		    echo '<td><input type="text" id="'.$pass.'description'.'" value="'.$row['description'].'" /></td>';
-		    echo '<td><input type="text" id="'.$pass.'location'.'" value="'.$row['location'].'" /></td>';
+		    echo '<td><input type="text" id="'.$pass.'name'.'" value="'.$row['name'].'" onblur="pagewrite('.$pass.'name'.');" /></td>';
+		    echo '<td><input type="text" id="'.$pass.'title'.'" value="'.$row['title'].'" onblur="pagewrite('.$pass.'title'.');" /></td>';
+		    echo '<td><input type="text" id="'.$pass.'description'.'" value="'.$row['description'].'" onblur="pagewrite('.$pass.'description'.');" /></td>';
+		    echo '<td><input type="text" id="'.$pass.'location'.'" value="'.$row['location'].'" onblur="pagewrite('.$pass.'location'.');" /></td>';
 		    echo "</tr>";
 		}
 	}
@@ -228,6 +228,7 @@ class variable
 	#1 = Text
 	#2 = Location
 	#4 = Zone
+	#5 = Boolean
 
 	public function getvariable($name) {
 		$database = new database();
@@ -248,6 +249,10 @@ class variable
 			if ($result['type'] == 3 && isset($result['zone'])) {
 				#echo "Zone";
 				return $this->getzone($result['id']);
+			}
+			if ($result['type'] == 4 && isset($result['boolean'])) {
+				#echo "Zone";
+				return $this->getzone($result['boolean']);
 			}
 		} else {
 			return "Variable Does Not Exist";
