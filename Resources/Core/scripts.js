@@ -51,32 +51,34 @@ function selector() {
 	this.setCurrent = function(id, group) {
 		this.onColor = "#FFF";
 		this.offColor = "#33B5E5";
-		this.counter = "";
+		this.counter = new Array();
 
 		if (group == "overview") {
 			if (id == "info") {
-				this.counter = "status"
+				this.counter[0] = "status"
 			}
 
 			if (id == "status") {
-				this.counter = "info"
+				this.counter[0] = "info"
 			}
 		}
 
 		if (group == "variables") {
 			if (id == "editVariables") {
-				this.counter = "search"
+				this.counter[0] = "search"
 			}
 
 			if (id == "search") {
-				this.counter = "editVariables"
+				this.counter[0] = "editVariables"
 			}
 		}
 
-		this.turnOn(id);
-		this.turnOff(this.counter);
-		this.show(id);
-		this.hide(this.counter);
+		for (var i = this.counter.length - 1; i >= 0; i--) {
+			this.turnOn(id);
+			this.turnOff(this.counter[0]);
+			this.show(id);
+			this.hide(this.counter[0]);
+		}
 	}
 
 	this.turnOff = function(id) {
