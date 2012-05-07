@@ -213,10 +213,10 @@ class page
 		while ($row = mysql_fetch_assoc($result)) {
 			$pass++;
 		    echo "<tr>";
-		    echo '<td><input type="text" id="'.$pass.'name'.'" value="'.$row['name'].'"</input></td>';
-		    echo '<td><input type="text" id="'.$pass.'title'.'" value="'.$row['title'].'"</input></td>';
-		    echo '<td><input type="text" id="'.$pass.'description'.'" value="'.$row['description'].'"</input></td>';
-		    echo '<td><input type="text" id="'.$pass.'location'.'" value="'.$row['location'].'"</input></td>';
+		    echo '<td><input type="text" id="'.$pass.'name'.'" value="'.$row['name'].'" /></td>';
+		    echo '<td><input type="text" id="'.$pass.'title'.'" value="'.$row['title'].'" /></td>';
+		    echo '<td><input type="text" id="'.$pass.'description'.'" value="'.$row['description'].'" /></td>';
+		    echo '<td><input type="text" id="'.$pass.'location'.'" value="'.$row['location'].'" /></td>';
 		    echo "</tr>";
 		}
 	}
