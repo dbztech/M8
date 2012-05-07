@@ -51,44 +51,36 @@ function selector() {
 	this.setCurrent = function(id, group) {
 		this.onColor = "#FFF";
 		this.offColor = "#33B5E5";
+		this.counter = "";
 
 		if (group == "overview") {
 			if (id == "info") {
-				document.getElementById(id+'Button').style.color = "#FFF";
-				document.getElementById('statusButton').style.color = "#33B5E5";
-
-				document.getElementById(id).style.display = "block";
-				document.getElementById('status').style.display = "none";
+				this.counter = "status"
 			}
 
 			if (id == "status") {
-				document.getElementById(id+'Button').style.color = "#FFF";
-				document.getElementById('infoButton').style.color = "#33B5E5";
-
-				document.getElementById(id).style.display = "block";
-				document.getElementById('info').style.display = "none";
+				this.counter = "info"
 			}
 		}
 
 		if (group == "variables") {
 			if (id == "editVariables") {
-				this.turnOn(id);
-				this.turnOff('searchButton');
-				this.show(id);
-				this.hide('search');
+				this.counter = "search"
 			}
 
 			if (id == "search") {
-				this.turnOn(id);
-				this.turnOff('editVariablesButton');
-				this.show(id);
-				this.hide('editVariables');
+				this.counter = "editVariables"
 			}
 		}
+
+		this.turnOn(id);
+		this.turnOff(this.counter);
+		this.show(id);
+		this.hide(this.counter);
 	}
 
 	this.turnOff = function(id) {
-		document.getElementById(id).style.color = this.offColor;
+		document.getElementById(id+'Button').style.color = this.offColor;
 	}
 
 	this.turnOn = function(id) {
