@@ -49,6 +49,9 @@ function ajax(type, query) {
 
 function selector() {
 	this.setCurrent = function(id, group) {
+		this.onColor = "#FFF";
+		this.offColor = "#33B5E5";
+
 		if (group == "overview") {
 			if (id == "info") {
 				document.getElementById(id+'Button').style.color = "#FFF";
@@ -66,5 +69,37 @@ function selector() {
 				document.getElementById('info').style.display = "none";
 			}
 		}
+
+		if (group == "variables") {
+			if (id == "editVariables") {
+				this.turnOn(id);
+				this.turnOff('searchButton');
+				this.show(id);
+				this.hide('search');
+			}
+
+			if (id == "search") {
+				this.turnOn(id);
+				this.turnOff('editVariablesButton');
+				this.show(id);
+				this.hide('editVariables');
+			}
+		}
+	}
+
+	this.turnOff = function(id) {
+		document.getElementById(id).style.color = this.offColor;
+	}
+
+	this.turnOn = function(id) {
+		document.getElementById(id+'Button').style.color = this.onColor;
+	}
+
+	this.show = function(id) {
+		document.getElementById(id).style.display = "block";
+	}
+
+	this.hide = function(id) {
+		document.getElementById(id).style.display = "none";
 	}
 }

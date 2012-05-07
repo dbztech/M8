@@ -26,4 +26,30 @@
 <?php include("edit.php"); ?>
 </div>
 
+<div class="contentblock" id="Variables">
+<div class="selector">
+<p class="selected" id="editVariablesButton" onClick="Selector.setCurrent('editVariables','variables');">Edit</p>
+<p id="searchButton" onClick="Selector.setCurrent('search','variables');">Search</p>
+</div>
+<p class="rightcontext" id="title">#M8 Variables</p>
+<br />
+<br />
+<br />
+<br />
+<?php include("variables.php"); ?>
+<?php include("search.php"); ?>
+</div>
+
+<div class="contentblock" id="Settings">
+<div class="selector">
+<p class="selected" id="settingsButton">Settings</p>
+</div>
+<p class="rightcontext" id="title">#M8 Settings</p>
+<br />
+<br />
+<br />
+<br />
+<?php include("settingsedit.php"); ?>
+</div>
+
 </div>
