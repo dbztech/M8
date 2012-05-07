@@ -209,12 +209,14 @@ class page
 	public function getallpages() {
 		$database = new database();
 		$result = $database->returnmultiplerows('SELECT * FROM `pages`');
+		$pass = 0;
 		while ($row = mysql_fetch_assoc($result)) {
+			$pass++;
 		    echo "<tr>";
-		    echo "<td>".$row['name']."</td>";
-		    echo "<td>".$row['title']."</td>";
-		    echo "<td>".$row['description']."</td>";
-		    echo "<td>".$row['location']."</td>";
+		    echo '<td><input type="text" id="'.$pass.'name'.'" value="'.$row['name'].'"</input></td>';
+		    echo '<td><input type="text" id="'.$pass.'title'.'" value="'.$row['title'].'"</input></td>';
+		    echo '<td><input type="text" id="'.$pass.'description'.'" value="'.$row['description'].'"</input></td>';
+		    echo '<td><input type="text" id="'.$pass.'location'.'" value="'.$row['location'].'"</input></td>';
 		    echo "</tr>";
 		}
 	}

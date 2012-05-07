@@ -114,3 +114,7 @@ body {
 	margin-bottom: 25px;
 	border-radius: 5px;
 }
+
+input {
+	width: 92%;
+}
