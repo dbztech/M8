@@ -5,7 +5,7 @@
 <p class="selected" id="infoButton" onClick="Selector.setCurrent('info','overview');">Info</p>
 <p id="statusButton" onClick="Selector.setCurrent('status','overview');">Status</p>
 </div>
-<p class="rightcontext" id="title">#M8 Overview</p>
+<p class="rightcontext" id="title"><?php echo $variable->getvariable('overview'); ?></p>
 <br />
 <br />
 <br />
@@ -18,7 +18,7 @@
 <div class="selector">
 <p class="selected" id="editButton">Edit</p>
 </div>
-<p class="rightcontext" id="title">#M8 Pages</p>
+<p class="rightcontext" id="title"><?php echo $variable->getvariable('pages'); ?></p>
 <br />
 <br />
 <br />
@@ -31,7 +31,7 @@
 <p class="selected" id="editVariablesButton" onClick="Selector.setCurrent('editVariables','variables');">Edit</p>
 <p id="searchButton" onClick="Selector.setCurrent('search','variables');">Search</p>
 </div>
-<p class="rightcontext" id="title">#M8 Variables</p>
+<p class="rightcontext" id="title"><?php echo $variable->getvariable('variables'); ?></p>
 <br />
 <br />
 <br />
@@ -44,7 +44,7 @@
 <div class="selector">
 <p class="selected" id="settingsButton">Settings</p>
 </div>
-<p class="rightcontext" id="title">#M8 Settings</p>
+<p class="rightcontext" id="title"><?php echo $variable->getvariable('settings'); ?></p>
 <br />
 <br />
 <br />
