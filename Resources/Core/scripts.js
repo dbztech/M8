@@ -103,15 +103,27 @@ function pagewrite(id, column) {
 	//title = 1
 	//description = 2
 	//location = 3
-	var value = "Hello World";
+	var value = "ERROR";
+	var query;
+	var columnname;
 	if (column == 0) {
 		value = document.getElementById(id+'name').value;
+		columnname = "name";
 	} else if (column == 1) {
 		value = document.getElementById(id+'title').value;
+		columnname = "title";
 	} else if (column == 2) {
 		value = document.getElementById(id+'description').value;
+		columnname = "description";
 	} else if (column == 3) {
 		value = document.getElementById(id+'location').value;
+		columnname = "location";
 	}
-	console.log(id+', '+column+', '+value);
+	if (value != "ERROR") {
+		console.log(id+', '+column+', '+value);
+		query = "UPDATE `m8db`.`pages` SET `"+columnname+"` = '"+value+"' WHERE `pages`.`id` = "+id+";";
+		console.log(query);
+		ajax("query",query);
+	}
+
 }
