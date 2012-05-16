@@ -97,3 +97,21 @@ function selector() {
 		document.getElementById(id).style.display = "none";
 	}
 }
+
+function pagewrite(id, column) {
+	//name = 0
+	//title = 1
+	//description = 2
+	//location = 3
+	var value = "Hello World";
+	if (column == 0) {
+		value = document.getElementById(id+'name').value;
+	} else if (column == 1) {
+		value = document.getElementById(id+'title').value;
+	} else if (column == 2) {
+		value = document.getElementById(id+'description').value;
+	} else if (column == 3) {
+		value = document.getElementById(id+'location').value;
+	}
+	console.log(id+', '+column+', '+value);
+}
