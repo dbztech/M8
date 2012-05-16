@@ -252,7 +252,7 @@ class variable
 			}
 			if ($result['type'] == 4 && isset($result['boolean'])) {
 				#echo "Zone";
-				return $this->getzone($result['boolean']);
+				return $this->getboolean($result['id']);
 			}
 		} else {
 			return "Variable Does Not Exist";
@@ -281,6 +281,29 @@ class variable
 		$database = new database();
 		$output = $database->returndata('SELECT * FROM `variables` WHERE `id` = "'.$id.'"');
 		return $output['zone'];
+	}
+
+	public function getboolean($id) {
+		$database = new database();
+		$output = $database->returndata('SELECT * FROM `variables` WHERE `id` = "'.$id.'"');
+		if ($output['boolean'] == 1) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public function getallvariables() {
+		$database = new database();
+		$result = $database->returnmultiplerows('SELECT * FROM `variables`');
+		$pass = 0;
+		while ($row = mysql_fetch_assoc($result)) {
+			$pass++;
+		    echo "<tr>";
+		    echo '<td><input type="text" id="'.$row['id'].'name'.'" value="'.$row['name'].'" onblur="pagewrite('.$row['id'].', 0'.');" /></td>';
+		    echo '<td><input type="text" id="'.$row['id'].'value'.'" value="'.$this->getvariable($row['name']).'" onblur="pagewrite('.$row['id'].', 1'.');" /></td>';
+		    echo "</tr>";
+		}
 	}
 }
 

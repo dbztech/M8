@@ -123,6 +123,7 @@ function pagewrite(id, column) {
 		console.log(id+', '+column+', '+value);
 		query = "UPDATE `m8db`.`pages` SET `"+columnname+"` = '"+value+"' WHERE `pages`.`id` = "+id+";";
 		console.log(query);
+		ajax("query",query);
 	}
 
 }
