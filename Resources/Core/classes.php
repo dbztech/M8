@@ -28,7 +28,8 @@ class database
 		if (!$link) {
 	    	die('Could not connect: ' . mysql_error());
 		}
-		echo 'Connected successfully';
+		//echo 'Connected successfully';
+		return(true);
 		mysql_close($link);
     }
 
@@ -60,6 +61,38 @@ class database
 		while ($row = mysql_fetch_assoc($result)) {
 		    return($row);
 		}
+
+		// Free the resources associated with the result set
+		// This is done automatically at the end of the script
+		mysql_free_result($result);
+    }
+
+    public function returnmultiplerows($query) {
+    	$link = mysql_connect($this->dbhost, $this->dbuser, $this->dbpassword);
+
+		// make foo the current db
+		$db_selected = mysql_select_db($this->database, $link);
+		if (!$db_selected) {
+		    die ('Can\'t use foo : ' . mysql_error());
+		}
+
+		// Perform Query
+		$result = mysql_query($query);
+
+		// Check result
+		// This shows the actual query sent to MySQL, and the error. Useful for debugging.
+		if (!$result) {
+		    $message  = 'Invalid query: ' . mysql_error() . "\n";
+		    $message .= 'Whole query: ' . $query;
+		    return($message);
+		    die($message);
+		}
+
+		// Use result
+		// Attempting to print $result won't allow access to information in the resource
+		// One of the mysql result functions must be used
+		// See also mysql_result(), mysql_fetch_array(), mysql_fetch_row(), etc.
+		return $result;
 
 		// Free the resources associated with the result set
 		// This is done automatically at the end of the script
@@ -139,7 +172,6 @@ class database
 class page
 {
 	//property declaration
-	//Not here yet
 	public $location = "index.php";
 
 	//method declaration
@@ -173,7 +205,224 @@ class page
 		$result = $database->returndata('SELECT * FROM `pages` WHERE `location` = "'.$this->location.'"');
 		return $result['description'];
 	}
+
+	public function getallpages() {
+		$database = new database();
+		$result = $database->returnmultiplerows('SELECT * FROM `pages`');
+		$pass = 0;
+		while ($row = mysql_fetch_assoc($result)) {
+			$pass++;
+		    echo "<tr>";
+		    echo '<td><input type="text" id="'.$row['id'].'name'.'" value="'.$row['name'].'" onblur="pagewrite('.$row['id'].', 0'.');" /></td>';
+		    echo '<td><input type="text" id="'.$row['id'].'title'.'" value="'.$row['title'].'" onblur="pagewrite('.$row['id'].', 1'.');" /></td>';
+		    echo '<td><input type="text" id="'.$row['id'].'description'.'" value="'.$row['description'].'" onblur="pagewrite('.$row['id'].', 2'.');" /></td>';
+		    echo '<td><input type="text" id="'.$row['id'].'location'.'" value="'.$row['location'].'" onblur="pagewrite('.$row['id'].', 3'.');" /></td>';
+		    echo "</tr>";
+		}
+	}
 }
+
+class variable
+{
+	#0 = Number
+	#1 = Text
+	#2 = Location
+	#4 = Zone
+	#5 = Boolean
+
+	public function getvariable($name) {
+		$database = new database();
+		$result = $database->returndata('SELECT * FROM `variables` WHERE `name` = "'.$name.'"');
+		if (isset($result)) {
+			if ($result['type'] == 0 && isset($result['num'])) {
+				#echo "Number";
+				return $this->getnumber($result['id']);
+			}
+			if ($result['type'] == 1 && isset($result['text'])) {
+				#echo "Text";
+				return $this->gettext($result['id']);
+			}
+			if ($result['type'] == 2 && isset($result['location'])) {
+				#echo "Location";
+				return $this->getlocation($result['id']);
+			}
+			if ($result['type'] == 3 && isset($result['zone'])) {
+				#echo "Zone";
+				return $this->getzone($result['id']);
+			}
+			if ($result['type'] == 4 && isset($result['boolean'])) {
+				#echo "Zone";
+				return $this->getzone($result['boolean']);
+			}
+		} else {
+			return "Variable Does Not Exist";
+		}
+	}
+
+	public function getnumber($id) {
+		$database = new database();
+		$output = $database->returndata('SELECT * FROM `variables` WHERE `id` = "'.$id.'"');
+		return $output['num'];
+	}
+
+	public function gettext($id) {
+		$database = new database();
+		$output = $database->returndata('SELECT * FROM `variables` WHERE `id` = "'.$id.'"');
+		return $output['text'];
+	}
+
+	public function getlocation($id) {
+		$database = new database();
+		$output = $database->returndata('SELECT * FROM `variables` WHERE `id` = "'.$id.'"');
+		return $output['location'];
+	}
+
+	public function getzone($id) {
+		$database = new database();
+		$output = $database->returndata('SELECT * FROM `variables` WHERE `id` = "'.$id.'"');
+		return $output['zone'];
+	}
+}
+
+class file
+{
+	public function getfilecontent($location) {
+		if ($this->verifyfile($location)) {
+			echo file_get_contents($location);
+		}
+	}
+
+	public function verifyfile($location) {
+		if (file_exists($location)) {
+			#echo $location." Exists";
+			return true;
+		} else {
+			#echo $location." Does Not Exists";
+			return false;
+		}
+	}
+}
+
+
+
+
+#######################
+##Third Party Classes##
+#######################
+
+class Bcrypt {
+  private $rounds;
+  public function __construct($rounds = 12) {
+    if(CRYPT_BLOWFISH != 1) {
+      throw new Exception("bcrypt not supported in this installation. See http://php.net/crypt");
+    }
+
+    $this->rounds = $rounds;
+  }
+
+  public function hash($input) {
+    $hash = crypt($input, $this->getSalt());
+
+    if(strlen($hash) > 13)
+      return $hash;
+
+    return false;
+  }
+
+  public function verify($input, $existingHash) {
+    $hash = crypt($input, $existingHash);
+
+    return $hash === $existingHash;
+  }
+
+  private function getSalt() {
+    $salt = sprintf('$2a$%02d$', $this->rounds);
+
+    $bytes = $this->getRandomBytes(16);
+
+    $salt .= $this->encodeBytes($bytes);
+
+    return $salt;
+  }
+
+  private $randomState;
+  private function getRandomBytes($count) {
+    $bytes = '';
+
+    if(function_exists('openssl_random_pseudo_bytes') &&
+        (strtoupper(substr(PHP_OS, 0, 3)) !== 'WIN')) { // OpenSSL slow on Win
+      $bytes = openssl_random_pseudo_bytes($count);
+    }
+
+    if($bytes === '' && is_readable('/dev/urandom') &&
+       ($hRand = @fopen('/dev/urandom', 'rb')) !== FALSE) {
+      $bytes = fread($hRand, $count);
+      fclose($hRand);
+    }
+
+    if(strlen($bytes) < $count) {
+      $bytes = '';
+
+      if($this->randomState === null) {
+        $this->randomState = microtime();
+        if(function_exists('getmypid')) {
+          $this->randomState .= getmypid();
+        }
+      }
+
+      for($i = 0; $i < $count; $i += 16) {
+        $this->randomState = md5(microtime() . $this->randomState);
+
+        if (PHP_VERSION >= '5') {
+          $bytes .= md5($this->randomState, true);
+        } else {
+          $bytes .= pack('H*', md5($this->randomState));
+        }
+      }
+
+      $bytes = substr($bytes, 0, $count);
+    }
+
+    return $bytes;
+  }
+
+  private function encodeBytes($input) {
+    // The following is code from the PHP Password Hashing Framework
+    $itoa64 = './ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+
+    $output = '';
+    $i = 0;
+    do {
+      $c1 = ord($input[$i++]);
+      $output .= $itoa64[$c1 >> 2];
+      $c1 = ($c1 & 0x03) << 4;
+      if ($i >= 16) {
+        $output .= $itoa64[$c1];
+        break;
+      }
+
+      $c2 = ord($input[$i++]);
+      $c1 |= $c2 >> 4;
+      $output .= $itoa64[$c1];
+      $c1 = ($c2 & 0x0f) << 2;
+
+      $c2 = ord($input[$i++]);
+      $c1 |= $c2 >> 6;
+      $output .= $itoa64[$c1];
+      $output .= $itoa64[$c2 & 0x3f];
+    } while (1);
+
+    return $output;
+  }
+
+  /*
+  $bcrypt = new Bcrypt(15);
+  $hash = $bcrypt->hash('password');
+  $isGood = $bcrypt->verify('password', $hash);
+  */
+}
+
+
 
 #echo "Classes Initialized <br />";
 ?>

@@ -57,27 +57,17 @@ body {
 	background: #33B5E5;
 }
 
+::selection {
+	background: #99CC00; /* Safari */
+}
+::-moz-selection {
+	background: #99CC00; /* Firefox */
+}
+
 #content {
 	display: none;
 	float: right;
 	width: 75%;
-}
-
-#splashtext {
-	font-family: Roboto-Italic;
-	font-size: 1000%;
-	color: white;
-	position: fixed;
-	right: 25px;
-	bottom: -130px;
-}
-
-#splashcontinue {
-	position: fixed;
-	right: 0px;
-	width: 220px;
-	top: 25%;
-	display: none;
 }
 
 #leftnav {
@@ -92,6 +82,10 @@ body {
 	opacity: 0.8;
 	-moz-opacity: 0.8;
 	filter:alpha(opacity=8);
+}
+
+.leftnavitem {
+	color: white;
 }
 
 #logo {
@@ -111,10 +105,16 @@ body {
 	border-radius: 100px;
 }
 
-#contentblock {
-	width: 200px;
-	height: 200px;
+.contentblock {
+	width: 85%;
+	text-align: center;
 	background-color: black;
 	color: white;
 	margin: auto;
+	margin-bottom: 25px;
+	border-radius: 5px;
+}
+
+input {
+	width: 92%;
 }
