@@ -300,8 +300,8 @@ class variable
 		while ($row = mysql_fetch_assoc($result)) {
 			$pass++;
 		    echo "<tr>";
-		    echo '<td><input type="text" id="'.$row['id'].'name'.'" value="'.$row['name'].'" onblur="pagewrite('.$row['id'].', 0'.');" /></td>';
-		    echo '<td><input type="text" id="'.$row['id'].'value'.'" value="'.$this->getvariable($row['name']).'" onblur="pagewrite('.$row['id'].', 1'.');" /></td>';
+		    echo '<td><input type="text" id="'.$row['id'].'name'.'" value="'.$row['name'].'" onblur="variablerite('.$row['id'].', 0'.');" /></td>';
+		    echo '<td><input type="text" id="'.$row['id'].'value'.'" value="'.$this->getvariable($row['name']).'" onblur="variablewrite('.$row['id'].', 1'.');" /></td>';
 		    echo "</tr>";
 		}
 	}
