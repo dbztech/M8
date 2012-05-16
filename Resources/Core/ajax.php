@@ -6,9 +6,6 @@ include('settings.php');
 $type = $_GET['type'];
 $query = $_GET['query'];
 
-$variable = new variable();
-$file = new file();
-
 if (isset($_GET['type'])) {
 	if ($type == 'variable') {
 		if (isset($_GET['query'])) {
@@ -19,6 +16,12 @@ if (isset($_GET['type'])) {
 	if ($type == 'content') {
 		if (isset($_GET['query'])) {
 			$result = $file->getfilecontent($query);
+		}
+	}
+
+	if ($type == 'query') {
+		if (isset($_GET['query'])) {
+			echo "NOT THERE YET: ".$query;
 		}
 	}
 }
