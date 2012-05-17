@@ -5,6 +5,7 @@ include('settings.php');
 #Get variables
 $type = $_GET['type'];
 $query = $_GET['query'];
+$verify = $_GET['verify'];
 
 if (isset($_GET['type'])) {
 	if ($type == 'variable') {
