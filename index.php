@@ -1,12 +1,16 @@
 <?php
 include('Resources/Core/core.php');
 include('Resources/Site/settings.php');
-echo "<!doctype html><!-- Powered by M8 -->";
+#echo "<!doctype html><!-- Powered by M8 -->";
 if (isset($_GET['redirect'])) {
 	if ($_GET['redirect'] == "Admin") {
-		if ($login->checkcookie($sessionhashcookie, $usernamecookie)) {
+		/*
+		if ($login->checkcookie($usernamecookie, $sessionhashcookie)) {
 			echo "Cookies";
+		} else {
+			$login->loginUser("admin", "GreenGreen12");
 		}
+		*/
 		$page->location = '/Resources/Core/index.php';
 		include('Resources/Core/header.php');
 		if ($leftnav) {

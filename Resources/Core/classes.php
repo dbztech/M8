@@ -9,22 +9,22 @@ foreach (glob("Classes/*.php") as $filename)
 class database
 {
     // property declaration
-    private $dbuser = 'm8';
-    private $dbpassword = 'hunter3';
-    private $dbhost = 'localhost';
-    private $database = 'm8db';
-    private $prefix = 'meight';
+    static private $dbuser = 'm8';
+    static private $dbpassword = 'hunter3';
+    static private $dbhost = 'localhost';
+    static private $database = 'm8db';
+    static private $prefix = 'meight';
 
     // method declaration
-    public function info() {
-    	echo "Database: ".$this->database."<br />";
-        echo "Database User: ".$this->dbuser."<br />";
-        echo "Database Host: ".$this->dbhost."<br />";
-        echo "Database Prefix: ".$this->prefix."<br />";
+    public static function info() {
+    	echo "Database: ".database::$database."<br />";
+        echo "Database User: ".database::$dbuser."<br />";
+        echo "Database Host: ".database::$dbhost."<br />";
+        echo "Database Prefix: ".database::$prefix."<br />";
     }
 
-    public function test() {
-    	$link = mysql_connect($this->dbhost, $this->dbuser, $this->dbpassword);
+    public static function test() {
+    	$link = mysql_connect(database::$dbhost, database::$dbuser, database::$dbpassword);
 		if (!$link) {
 	    	die('Could not connect: ' . mysql_error());
 		}
@@ -33,11 +33,11 @@ class database
 		mysql_close($link);
     }
 
-    public function returndata($query) {
-    	$link = mysql_connect($this->dbhost, $this->dbuser, $this->dbpassword);
+    public static function returndata($query) {
+    	$link = mysql_connect(database::$dbhost, database::$dbuser, database::$dbpassword);
 
 		// make foo the current db
-		$db_selected = mysql_select_db($this->database, $link);
+		$db_selected = mysql_select_db(database::$database, $link);
 		if (!$db_selected) {
 		    die ('Can\'t use foo : ' . mysql_error());
 		}
@@ -67,11 +67,11 @@ class database
 		mysql_free_result($result);
     }
 
-    public function returnmultiplerows($query) {
-    	$link = mysql_connect($this->dbhost, $this->dbuser, $this->dbpassword);
+    public static function returnmultiplerows($query) {
+    	$link = mysql_connect(database::$dbhost, database::$dbuser, database::$dbpassword);
 
 		// make foo the current db
-		$db_selected = mysql_select_db($this->database, $link);
+		$db_selected = mysql_select_db(database::$database, $link);
 		if (!$db_selected) {
 		    die ('Can\'t use foo : ' . mysql_error());
 		}
@@ -99,11 +99,11 @@ class database
 		mysql_free_result($result);
     }
 
-    public function greatestid($query, $incriment) {
-    	$link = mysql_connect($this->dbhost, $this->dbuser, $this->dbpassword);
+    public static function greatestid($query, $incriment) {
+    	$link = mysql_connect(database::$dbhost, database::$dbuser, database::$dbpassword);
 
 		// make foo the current db
-		$db_selected = mysql_select_db($this->database, $link);
+		$db_selected = mysql_select_db(database::$database, $link);
 		if (!$db_selected) {
 		    die ('Can\'t use foo : ' . mysql_error());
 		}
@@ -140,11 +140,11 @@ class database
 		mysql_free_result($result);
     }
 
-    public function writedata($query) {
-    	$link = mysql_connect($this->dbhost, $this->dbuser, $this->dbpassword);
+    public static function writedata($query) {
+    	$link = mysql_connect(database::$dbhost, database::$dbuser, database::$dbpassword);
 
 		// make foo the current db
-		$db_selected = mysql_select_db($this->database, $link);
+		$db_selected = mysql_select_db(database::$database, $link);
 		if (!$db_selected) {
 		    die ('Can\'t use foo : ' . mysql_error());
 		}
@@ -177,8 +177,7 @@ class page
 	//method declaration
 	public function verifypage($pagename) {
 		//Check if page exists
-		$database = new database();
-		$result = $database->returndata('SELECT * FROM `pages` WHERE `name` = "'.$pagename.'"');
+		$result = database::returndata('SELECT * FROM `pages` WHERE `name` = "'.$pagename.'"');
 		if (file_exists('Resources/Site/Code/'.$pagename.'.php')) {
 			//Check database for page
 			if (isset($result['id'])) {
@@ -186,7 +185,7 @@ class page
 				return true;
 			} else {
 				//INSERT INTO `m8db`.`pages` (`name`, `title`, `description`, `location`, `id`) VALUES ('demo', 'This is a Demo', 'Hazzah', '/Demp.php', '4')
-				$result = $database->writedata("INSERT INTO `m8db`.`pages` (`name`, `title`, `description`, `location`, `id`) VALUES ('".$pagename."', '".$pagename."', 'No description currently', '/Resources/Site/Code/".$pagename.".php', '".$database->greatestid('SELECT * FROM `pages` WHERE 1',1)."')");
+				$result = database::writedata("INSERT INTO `m8db`.`pages` (`name`, `title`, `description`, `location`, `id`) VALUES ('".$pagename."', '".$pagename."', 'No description currently', '/Resources/Site/Code/".$pagename.".php', '".$database->greatestid('SELECT * FROM `pages` WHERE 1',1)."')");
 				return $result;
 			}
 		} else {
@@ -195,20 +194,17 @@ class page
 	}
 
 	public function gettitle() {
-		$database = new database();
-		$result = $database->returndata('SELECT * FROM `pages` WHERE `location` = "'.$this->location.'"');
+		$result = database::returndata('SELECT * FROM `pages` WHERE `location` = "'.$this->location.'"');
 		return $result['title'];
 	}
 
 	public function getdesc() {
-		$database = new database();
-		$result = $database->returndata('SELECT * FROM `pages` WHERE `location` = "'.$this->location.'"');
+		$result = database::returndata('SELECT * FROM `pages` WHERE `location` = "'.$this->location.'"');
 		return $result['description'];
 	}
 
 	public function getallpages() {
-		$database = new database();
-		$result = $database->returnmultiplerows('SELECT * FROM `pages`');
+		$result = database::returnmultiplerows('SELECT * FROM `pages`');
 		$pass = 0;
 		while ($row = mysql_fetch_assoc($result)) {
 			$pass++;
@@ -231,8 +227,7 @@ class variable
 	#5 = Boolean
 
 	public function getvariable($name) {
-		$database = new database();
-		$result = $database->returndata('SELECT * FROM `variables` WHERE `name` = "'.$name.'"');
+		$result = database::returndata('SELECT * FROM `variables` WHERE `name` = "'.$name.'"');
 		if (isset($result)) {
 			if ($result['type'] == 0 && isset($result['num'])) {
 				#echo "Number";
@@ -260,32 +255,27 @@ class variable
 	}
 
 	public function getnumber($id) {
-		$database = new database();
-		$output = $database->returndata('SELECT * FROM `variables` WHERE `id` = "'.$id.'"');
+		$output = database::returndata('SELECT * FROM `variables` WHERE `id` = "'.$id.'"');
 		return $output['num'];
 	}
 
 	public function gettext($id) {
-		$database = new database();
-		$output = $database->returndata('SELECT * FROM `variables` WHERE `id` = "'.$id.'"');
+		$output = database::returndata('SELECT * FROM `variables` WHERE `id` = "'.$id.'"');
 		return $output['text'];
 	}
 
 	public function getlocation($id) {
-		$database = new database();
-		$output = $database->returndata('SELECT * FROM `variables` WHERE `id` = "'.$id.'"');
+		$output = database::returndata('SELECT * FROM `variables` WHERE `id` = "'.$id.'"');
 		return $output['location'];
 	}
 
 	public function getzone($id) {
-		$database = new database();
-		$output = $database->returndata('SELECT * FROM `variables` WHERE `id` = "'.$id.'"');
+		$output = database::returndata('SELECT * FROM `variables` WHERE `id` = "'.$id.'"');
 		return $output['zone'];
 	}
 
 	public function getboolean($id) {
-		$database = new database();
-		$output = $database->returndata('SELECT * FROM `variables` WHERE `id` = "'.$id.'"');
+		$output = database::returndata('SELECT * FROM `variables` WHERE `id` = "'.$id.'"');
 		if ($output['boolean'] == 1) {
 			return true;
 		} else {
@@ -332,8 +322,8 @@ class login
 	public function checklogin($username, $password) {
 		$database = new database();
 		$bcrypt = new Bcrypt(15);
-		$hash = $database->returndata('SELECT `hash` FROM `users` WHERE `username` = "'.$username.'"');
-		if ($bcrypt->verify($password, $hash)) {
+		$user = $database->returndata('SELECT * FROM `users` WHERE `username` = "'.$username.'"');
+		if ($bcrypt->verify($password, $user['hash'])) {
 			return true;
 		} else {
 			return false;
@@ -344,9 +334,11 @@ class login
 		$database = new database();
 		$bcrypt = new Bcrypt(15);
 		if ($this->cookieexists($usernamecookie, $sessionhashcookie)) {
-			$hash = $database->returndata('SELECT `hash` FROM `users` WHERE `username` = "'.$usernamecookie.'"');
-			if ($bcrypt->verify($sessionhashcookie, $hash)) {
+			$user = $database->returndata('SELECT * FROM `users` WHERE `username` = "'.$usernamecookie.'"');
+			#echo "Session: ".$sessionhashcookie."<br /> Username: ".$usernamecookie."<br /> Hash: ".$user['random'];
+			if ($bcrypt->verify($sessionhashcookie, $user['random'])) {
 				return true;
+				echo "Here";
 			} else {
 				return false;
 			}
@@ -367,14 +359,15 @@ class login
 		$database = new database();
 		$bcrypt = new Bcrypt(15);
 		if ($this->checklogin($username, $password)) {
-			$hash = $database->returndata('SELECT `hash` FROM `users` WHERE `username` = "'.$username.'"');
-			if ($bcrypt->verify($password, $hash['hash'])) {
-				$sessionhash = $bcrypt->hash($hash['hash']);
+			$user = $database->returndata('SELECT * FROM `users` WHERE `username` = "'.$username.'"');
+			if ($bcrypt->verify($password, $user['hash'])) {
+				$sessionhash = $bcrypt->hash($user['random']);
+				#echo "<br />".$sessionhash."<br />";
 			} else {
-				$sessionhash = "";
+				$sessionhash = "SECURITY ERROR";
 			}
-			setcookie("sessionhash", $sessionhash);
-			setcookie("username", $username);
+			#setcookie("sessionhash", $sessionhash);
+			#setcookie("username", $username);
 		}
 	}
 }

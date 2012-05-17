@@ -27,7 +27,7 @@ if ($debug) {
 	echo '</div>';
 }
 if ($cookie) {
-	echo $bcrypt->hash('$2a$15$p1sD941DBOS.aUqWiWJ39OUMfsvD4sFqcyY8dFiLnkelTxHeRdmuS');
+	
 }
 
 #echo "Core Initialized <br />";
