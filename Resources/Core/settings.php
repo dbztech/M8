@@ -4,4 +4,5 @@
 $debug = false;
 $splash = false;
 $leftnav = true;
+$cookie = false;
 ?>

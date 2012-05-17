@@ -1,7 +1,7 @@
 <?php
-echo "<!doctype html><!-- Powered by M8 -->";
 include('Resources/Core/core.php');
 include('Resources/Site/settings.php');
+echo "<!doctype html><!-- Powered by M8 -->";
 if (isset($_GET['redirect'])) {
 	if ($_GET['redirect'] == "Admin") {
 		$page->location = '/Resources/Core/index.php';

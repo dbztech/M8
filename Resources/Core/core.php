@@ -21,6 +21,9 @@ if ($debug) {
 	$database->test();
 	echo '</div>';
 }
+if ($cookie) {
+	setcookie("Session:", $hash);
+}
 
 #echo "Core Initialized <br />";
 ?>

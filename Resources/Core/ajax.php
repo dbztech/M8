@@ -21,7 +21,12 @@ if (isset($_GET['type'])) {
 
 	if ($type == 'query') {
 		if (isset($_GET['query'])) {
-			echo "NOT THERE YET: ".$query;
+			$hash = $database->returndata('SELECT `hash` FROM `users` WHERE `username` = "admin"');
+			if ($bcrypt->verify($query, $hash['hash'])) {
+   				echo "Password verified!";
+			} else {
+				echo "Not verified";
+			}
 		}
 	}
 }
