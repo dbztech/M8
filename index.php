@@ -4,6 +4,9 @@ include('Resources/Site/settings.php');
 echo "<!doctype html><!-- Powered by M8 -->";
 if (isset($_GET['redirect'])) {
 	if ($_GET['redirect'] == "Admin") {
+		if ($login->checkcookie($sessionhashcookie, $usernamecookie)) {
+			echo "Cookies";
+		}
 		$page->location = '/Resources/Core/index.php';
 		include('Resources/Core/header.php');
 		if ($leftnav) {

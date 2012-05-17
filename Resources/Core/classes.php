@@ -326,6 +326,59 @@ class file
 	}
 }
 
+class login
+{
+
+	public function checklogin($username, $password) {
+		$database = new database();
+		$bcrypt = new Bcrypt(15);
+		$hash = $database->returndata('SELECT `hash` FROM `users` WHERE `username` = "'.$username.'"');
+		if ($bcrypt->verify($password, $hash)) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public function checkcookie($usernamecookie, $sessionhashcookie) {
+		$database = new database();
+		$bcrypt = new Bcrypt(15);
+		if ($this->cookieexists($usernamecookie, $sessionhashcookie)) {
+			$hash = $database->returndata('SELECT `hash` FROM `users` WHERE `username` = "'.$usernamecookie.'"');
+			if ($bcrypt->verify($sessionhashcookie, $hash)) {
+				return true;
+			} else {
+				return false;
+			}
+		} else {
+			return false;
+		}
+	}
+
+	public function cookieexists($usernamecookie, $sessionhashcookie) {
+		if (isset($sessionhashcookie) && isset($usernamecookie)) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public function loginUser($username, $password) {
+		$database = new database();
+		$bcrypt = new Bcrypt(15);
+		if ($this->checklogin($username, $password)) {
+			$hash = $database->returndata('SELECT `hash` FROM `users` WHERE `username` = "'.$username.'"');
+			if ($bcrypt->verify($password, $hash['hash'])) {
+				$sessionhash = $bcrypt->hash($hash['hash']);
+			} else {
+				$sessionhash = "";
+			}
+			setcookie("sessionhash", $sessionhash);
+			setcookie("username", $username);
+		}
+	}
+}
+
 
 
 

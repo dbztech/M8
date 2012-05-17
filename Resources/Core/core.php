@@ -12,7 +12,12 @@ $database = new database();
 $page = new page();
 $variable = new variable();
 $file = new file();
+$login = new login();
 $bcrypt = new Bcrypt(15);
+
+#Get cookies
+$sessionhashcookie = $_COOKIE['sessionhash'];
+$usernamecookie = $_COOKIE['username'];
 
 #Debug window
 if ($debug) {
@@ -22,7 +27,7 @@ if ($debug) {
 	echo '</div>';
 }
 if ($cookie) {
-	setcookie("Session:", $hash);
+	echo $bcrypt->hash('$2a$15$p1sD941DBOS.aUqWiWJ39OUMfsvD4sFqcyY8dFiLnkelTxHeRdmuS');
 }
 
 #echo "Core Initialized <br />";
