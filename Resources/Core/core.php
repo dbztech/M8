@@ -13,11 +13,16 @@ $page = new page();
 $variable = new variable();
 $file = new file();
 $login = new login();
-$bcrypt = new Bcrypt(15);
 
 #Get cookies
 $sessionhashcookie = $_COOKIE['sessionhash'];
 $usernamecookie = $_COOKIE['username'];
+
+if (isset($sessionhashcookie) && isset($usernamecookie)) {
+	$login->cookiesexist = true;
+} else {
+	$login->cookiesexist = false;
+}
 
 #Debug window
 if ($debug) {
@@ -27,7 +32,7 @@ if ($debug) {
 	echo '</div>';
 }
 if ($cookie) {
-	
+
 }
 
 #echo "Core Initialized <br />";

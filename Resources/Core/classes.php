@@ -316,29 +316,29 @@ class file
 	}
 }
 
-class login
+class login extends Bcrypt
 {
 
-	public function checklogin($username, $password) {
-		$database = new database();
-		$bcrypt = new Bcrypt(15);
-		$user = $database->returndata('SELECT * FROM `users` WHERE `username` = "'.$username.'"');
-		if ($bcrypt->verify($password, $user['hash'])) {
+	public $username;
+	public $passwordplain;
+	public $cookiesexist = false;
+
+
+	public function checklogin() {
+		$user = database::returndata('SELECT * FROM `users` WHERE `username` = "'.$this->username.'"');
+		if ($this->verify($this->passwordplain, $user['hash'])) {
 			return true;
 		} else {
 			return false;
 		}
 	}
 
-	public function checkcookie($usernamecookie, $sessionhashcookie) {
-		$database = new database();
-		$bcrypt = new Bcrypt(15);
-		if ($this->cookieexists($usernamecookie, $sessionhashcookie)) {
-			$user = $database->returndata('SELECT * FROM `users` WHERE `username` = "'.$usernamecookie.'"');
+	public function checkcookie() {
+		if ($this->cookiesexist) {
+			$user = database::returndata('SELECT * FROM `users` WHERE `username` = "'.$this->username.'"');
 			#echo "Session: ".$sessionhashcookie."<br /> Username: ".$usernamecookie."<br /> Hash: ".$user['random'];
-			if ($bcrypt->verify($sessionhashcookie, $user['random'])) {
+			if ($this->verify($sessionhashcookie, $user['random'])) {
 				return true;
-				echo "Here";
 			} else {
 				return false;
 			}
@@ -347,20 +347,10 @@ class login
 		}
 	}
 
-	public function cookieexists($usernamecookie, $sessionhashcookie) {
-		if (isset($sessionhashcookie) && isset($usernamecookie)) {
-			return true;
-		} else {
-			return false;
-		}
-	}
-
-	public function loginUser($username, $password) {
-		$database = new database();
-		$bcrypt = new Bcrypt(15);
-		if ($this->checklogin($username, $password)) {
-			$user = $database->returndata('SELECT * FROM `users` WHERE `username` = "'.$username.'"');
-			if ($bcrypt->verify($password, $user['hash'])) {
+	public function loginuser() {
+		if ($this->checklogin()) {
+			$user = database::returndata('SELECT * FROM `users` WHERE `username` = "'.$username.'"');
+			if ($this->verify($password, $user['hash'])) {
 				$sessionhash = $bcrypt->hash($user['random']);
 				#echo "<br />".$sessionhash."<br />";
 			} else {
