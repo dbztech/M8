@@ -11,7 +11,8 @@ class database
     // property declaration
     static private $dbuser = 'm8';
     static private $dbpassword = 'hunter3';
-    static private $dbhost = 'localhost';
+    #Do Not Set to localhost, does not work in all environments
+    static private $dbhost = '127.0.0.1';
     static private $database = 'm8db';
     static private $prefix = 'meight';
 
@@ -99,7 +100,7 @@ class database
 		mysql_free_result($result);
     }
 
-    public static function greatestid($query, $incriment) {
+    public static function greatestid($query, $increment) {
     	$link = mysql_connect(database::$dbhost, database::$dbuser, database::$dbpassword);
 
 		// make foo the current db
@@ -131,7 +132,7 @@ class database
 		    }
 		}
 
-		$id = $id+$incriment;
+		$id = $id+$increment;
 
 		return $id;
 
@@ -184,6 +185,7 @@ class page
 				//Do nothing
 				return true;
 			} else {
+				#FIX: Take database name ect. from settings above/in settings file
 				//INSERT INTO `m8db`.`pages` (`name`, `title`, `description`, `location`, `id`) VALUES ('demo', 'This is a Demo', 'Hazzah', '/Demp.php', '4')
 				$result = database::writedata("INSERT INTO `m8db`.`pages` (`name`, `title`, `description`, `location`, `id`) VALUES ('".$pagename."', '".$pagename."', 'No description currently', '/Resources/Site/Code/".$pagename.".php', '".$database->greatestid('SELECT * FROM `pages` WHERE 1',1)."')");
 				return $result;
@@ -290,7 +292,7 @@ class variable
 		while ($row = mysql_fetch_assoc($result)) {
 			$pass++;
 		    echo "<tr>";
-		    echo '<td><input type="text" id="'.$row['id'].'name'.'" value="'.$row['name'].'" onblur="variablerite('.$row['id'].', 0'.');" /></td>';
+		    echo '<td><input type="text" id="'.$row['id'].'name'.'" value="'.$row['name'].'" onblur="variablewrite('.$row['id'].', 0'.');" /></td>';
 		    echo '<td><input type="text" id="'.$row['id'].'value'.'" value="'.$this->getvariable($row['name']).'" onblur="variablewrite('.$row['id'].', 1'.');" /></td>';
 		    echo "</tr>";
 		}
