@@ -5,10 +5,12 @@ $version = "b0.0.1";
 #This is the core of M8
 include('classes.php');
 include('patch.php');
+
+#Initialize db connection
+$database = new database();
 include('settings.php');
 
 #Initialize core classes
-$database = new database();
 $page = new page();
 $variable = new variable();
 $file = new file();

@@ -8,13 +8,50 @@ foreach (glob("Classes/*.php") as $filename)
 #Basic database interaction class
 class database
 {
-    // property declaration
-    static private $dbuser = 'm8';
-    static private $dbpassword = 'hunter3';
+	#initialize variables. These are later changed in settings.php
+    static protected $dbuser = 'm8';
+    static protected $dbpassword = 'hunter3';
     #Do Not Set to localhost, does not work in all environments
-    static private $dbhost = '127.0.0.1';
-    static private $database = 'm8db';
-    static private $prefix = 'meight';
+    static protected $dbhost = '127.0.0.1';
+    static protected $database = 'm8db';
+    static protected $prefix = 'meight';
+
+	public static function setcredentials($user, $password, $host = '127.0.0.1', $db = 'm8db', $pre = 'm8db') {
+    	// property declaration
+    	$result = 'Credential(s) not set: ';
+    	$error = 0;
+    	if (is_string($user)) {database::$dbuser = $user;}
+    	else {
+    		$error = 1;
+    		$result .= '$dbuser ';
+    	}
+    	
+    	if (is_string($password)) {database::$dbpassword = $password;}
+    	else {
+    		$error = 1;
+    		$result .= '$dbpasswird ';
+    	}
+    	
+    	if (is_string($host)) {database::$dbhost = $host;}
+    	else {
+    		$error = 1;
+    		$result .= '$dbhost ';
+    	}
+    	
+    	if (is_string($db)) {database::$database = $db;}
+    	else {
+    		$error = 1;
+    		$result .= '$database ';
+    	}
+    	
+    	if (is_string($pre)) {database::$prefix = $pre;}
+    	else {
+    		$error = 1;
+    		$result .= '$prefix';
+    	}
+    	if (!$error) {$result = 'Success!';}
+    	return $result;
+    }
 
     // method declaration
     public static function info() {
