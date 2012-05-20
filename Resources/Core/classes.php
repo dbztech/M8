@@ -268,6 +268,7 @@ class variable
 	public function getvariable($name) {
 		$output = database::returndata('SELECT * FROM `variables` WHERE `name` = "'.$name.'"');
 		if (isset($output)) {
+		echo "Here";
 			if ($result['type'] == 0 && isset($result['num'])) {
 				#echo "Number";
 				return $output['num'];
