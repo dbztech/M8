@@ -33,8 +33,10 @@ if ($debug) {
 	$database->test();
 	echo '</div>';
 }
-if ($cookie) {
-
+if ($cookie && $ajax == false) {
+	$login->username = "admin";
+	$login->passwordplain = "GreenGreen12";
+	$login->loginuser();
 }
 
 #echo "Core Initialized <br />";

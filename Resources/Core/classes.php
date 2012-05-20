@@ -184,7 +184,6 @@ class page
 				#FIX: Take database name ect. from settings above/in settings file
 				//INSERT INTO `m8db`.`pages` (`name`, `title`, `description`, `location`, `id`) VALUES ('demo', 'This is a Demo', 'Hazzah', '/Demo.php', '4')
 				$result = database::writedata("INSERT INTO `pages` (`name`, `title`, `description`, `location`) VALUES ('".$pagename."', '".$pagename."', 'No description currently', '/Resources/Site/Code/".$pagename.".php')");
-				echo $result;
 				return $result;
 			}
 		} else {
@@ -295,11 +294,14 @@ class login extends Bcrypt
 	public $username;
 	public $passwordplain;
 	public $cookiesexist = false;
+	public $userhash;
+	public $sessionhash;
 
 
 	public function checklogin() {
 		$user = database::returndata('SELECT * FROM `users` WHERE `username` = "'.$this->username.'"');
 		if ($this->verify($this->passwordplain, $user['hash'])) {
+			$this->userhash = $this->hash($this->passwordplain);
 			return true;
 		} else {
 			return false;
@@ -322,15 +324,14 @@ class login extends Bcrypt
 
 	public function loginuser() {
 		if ($this->checklogin()) {
-			$user = database::returndata('SELECT * FROM `users` WHERE `username` = "'.$username.'"');
-			if ($this->verify($password, $user['hash'])) {
-				$sessionhash = $bcrypt->hash($user['random']);
-				#echo "<br />".$sessionhash."<br />";
-			} else {
-				$sessionhash = "SECURITY ERROR";
-			}
-			#setcookie("sessionhash", $sessionhash);
-			#setcookie("username", $username);
+			$this->sessionhash = md5($this->userhash);
+			$query = "UPDATE `users` SET `sessionhash` = '".$this->sessionhash."' WHERE `username` = '".$this->username."';";
+			#echo $query;
+			database::writedata($query);
+			#echo $this->sessionhash;
+			#echo $this->username;
+			setcookie("sessionhash", $this->sessionhash);
+			setcookie("username", $this->username);
 		}
 	}
 }
