@@ -137,47 +137,6 @@ class database
 		mysql_free_result($result);
     }
 
-    public static function greatestid($query, $increment) {
-    	$link = mysql_connect(database::$dbhost, database::$dbuser, database::$dbpassword);
-
-		// make foo the current db
-		$db_selected = mysql_select_db(database::$database, $link);
-		if (!$db_selected) {
-		    die ('Can\'t use foo : ' . mysql_error());
-		}
-
-		// Perform Query
-		$result = mysql_query($query);
-
-		// Check result
-		// This shows the actual query sent to MySQL, and the error. Useful for debugging.
-		if (!$result) {
-		    $message  = 'Invalid query: ' . mysql_error() . "\n";
-		    $message .= 'Whole query: ' . $query;
-		    return($message);
-		    die($message);
-		}
-
-		// Use result
-		// Attempting to print $result won't allow access to information in the resource
-		// One of the mysql result functions must be used
-		// See also mysql_result(), mysql_fetch_array(), mysql_fetch_row(), etc.
-		$id = 0;
-		while ($row = mysql_fetch_assoc($result)) {
-		    if ($row['id'] > $id) {
-		    	$id = $row['id'];
-		    }
-		}
-
-		$id = $id+$increment;
-
-		return $id;
-
-		// Free the resources associated with the result set
-		// This is done automatically at the end of the script
-		mysql_free_result($result);
-    }
-
     public static function writedata($query) {
     	$link = mysql_connect(database::$dbhost, database::$dbuser, database::$dbpassword);
 
@@ -224,7 +183,8 @@ class page
 			} else {
 				#FIX: Take database name ect. from settings above/in settings file
 				//INSERT INTO `m8db`.`pages` (`name`, `title`, `description`, `location`, `id`) VALUES ('demo', 'This is a Demo', 'Hazzah', '/Demo.php', '4')
-				$result = database::writedata("INSERT INTO `m8db`.`pages` (`name`, `title`, `description`, `location`, `id`) VALUES ('".$pagename."', '".$pagename."', 'No description currently', '/Resources/Site/Code/".$pagename.".php', '".database::greatestid('SELECT * FROM `pages` WHERE 1',1)."')");
+				$result = database::writedata("INSERT INTO `pages` (`name`, `title`, `description`, `location`) VALUES ('".$pagename."', '".$pagename."', 'No description currently', '/Resources/Site/Code/".$pagename.".php')");
+				echo $result;
 				return $result;
 			}
 		} else {
