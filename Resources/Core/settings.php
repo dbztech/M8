@@ -6,6 +6,6 @@ $splash = false;
 $leftnav = true;
 $cookie = true;
 
-echo database::setcredentials('m8','hunter3','127.0.0.1','m8db','meight');
+database::setcredentials('m8','hunter3','127.0.0.1','m8db','meight');
 
 ?>
