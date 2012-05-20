@@ -29,7 +29,7 @@ class database
     	if (is_string($password)) {database::$dbpassword = $password;}
     	else {
     		$error = 1;
-    		$result .= '$dbpasswird ';
+    		$result .= '$dbpassword ';
     	}
     	
     	if (is_string($host)) {database::$dbhost = $host;}
@@ -223,7 +223,7 @@ class page
 				return true;
 			} else {
 				#FIX: Take database name ect. from settings above/in settings file
-				//INSERT INTO `m8db`.`pages` (`name`, `title`, `description`, `location`, `id`) VALUES ('demo', 'This is a Demo', 'Hazzah', '/Demp.php', '4')
+				//INSERT INTO `m8db`.`pages` (`name`, `title`, `description`, `location`, `id`) VALUES ('demo', 'This is a Demo', 'Hazzah', '/Demo.php', '4')
 				$result = database::writedata("INSERT INTO `m8db`.`pages` (`name`, `title`, `description`, `location`, `id`) VALUES ('".$pagename."', '".$pagename."', 'No description currently', '/Resources/Site/Code/".$pagename.".php', '".$database->greatestid('SELECT * FROM `pages` WHERE 1',1)."')");
 				return $result;
 			}
