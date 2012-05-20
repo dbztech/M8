@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteBase /M8/Resources/Site/Code
+RewriteRule ^(.*)$ $1
