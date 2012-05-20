@@ -268,24 +268,23 @@ class variable
 	public function getvariable($name) {
 		$output = database::returndata('SELECT * FROM `variables` WHERE `name` = "'.$name.'"');
 		if (isset($output)) {
-		echo "Here";
-			if ($result['type'] == 0 && isset($result['num'])) {
+			if ($output['type'] == 0 && isset($output['num'])) {
 				#echo "Number";
 				return $output['num'];
 			}
-			if ($result['type'] == 1 && isset($result['text'])) {
+			if ($output['type'] == 1 && isset($output['text'])) {
 				#echo "Text";
 				return $output['text'];
 			}
-			if ($result['type'] == 2 && isset($result['location'])) {
+			if ($output['type'] == 2 && isset($output['location'])) {
 				#echo "Location";
 				return $output['location'];
 			}
-			if ($result['type'] == 3 && isset($result['zone'])) {
+			if ($output['type'] == 3 && isset($output['zone'])) {
 				#echo "Zone";
 				return $output['zone'];
 			}
-			if ($result['type'] == 4 && isset($result['boolean'])) {
+			if ($output['type'] == 4 && isset($output['boolean'])) {
 				#echo "Zone";
 				if ($output['boolean'] == 1) {
 					return true;
