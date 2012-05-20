@@ -1,5 +1,4 @@
-LogLevel debug
 RewriteEngine On 
-RewriteRule ^([A-Z].*)$ index.php?in=$1 [L]
-RewriteRule ^([a-z].*)$ /Resources/Site/Code/$1 [L]
+RewriteRule ^([A-Z] [A-Za-z0-9]*)$ index.php?in=$1 [L]
+RewriteRule ^([a-z].*)$ /Resources/Site/Code/$2 [L]
 #RewriteRule ^/$ /Resources/Site/Code
