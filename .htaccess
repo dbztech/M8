@@ -1,13 +1,4 @@
 RewriteEngine On 
-SetEnvIf Host ^([A-Z][A-Za-z0-9]*). HOST_ABC
-SetEnvIf Host ^([a-z].*). HOST_DEF
-
-<IfDefine HOST_ABC>
-    RewriteRule ^([A-Z][A-Za-z0-9]*)$ index.php?in=$1 [L]
-</IfDefine>
-<IfDefine HOST_DEF>
-    RewriteRule ^([a-z].*)$ /Resources/Site/Code/$2 [L]
-</IfDefine>
-
-
+RewriteRule ^([A-Z][A-Za-z0-9]*)$ index.php?in=$1 [L]
+#RewriteRule ^([a-z].*)$ /Resources/Site/Code/$1 [L]
 #RewriteRule ^/$ /Resources/Site/Code
