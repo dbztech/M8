@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: May 20, 2012 at 05:08 PM
+-- Generation Time: May 20, 2012 at 05:17 PM
 -- Server version: 5.5.23
 -- PHP Version: 5.3.10
 
@@ -41,9 +41,10 @@ CREATE TABLE IF NOT EXISTS `pages` (
 --
 
 INSERT INTO `pages` (`name`, `title`, `description`, `location`, `id`) VALUES
-('Test', 'Test', 'No description currently', '/Resources/Site/Code/Test.php', 1),
+('Admin', 'M8 Admin Panel', 'This the the location where you can edit various settings, and monitor the status of M8', '/Resources/Core/index.php', 1),
 ('AnotherTest', 'AnotherTest', 'No description currently', '/Resources/Site/Code/AnotherTest.php', 2),
-('AnotherTestb', 'AnotherTestb', 'No description currently', '/Resources/Site/Code/AnotherTestb.php', 3);
+('AnotherTestb', 'AnotherTestb', 'No description currently', '/Resources/Site/Code/AnotherTestb.php', 3),
+('Test', 'Test', 'No description currently', '/Resources/Site/Code/Test.php', 4);
 
 -- --------------------------------------------------------
 
