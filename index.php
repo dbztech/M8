@@ -1,6 +1,6 @@
 <?php
 include('Resources/Core/core.php');
-include('Resources/Site/settings.php');
+include('Resources/Site/options.php');
 #echo "<!doctype html><!-- Powered by M8 -->";
 if (isset($_GET['in'])) {
 	if ($_GET['in'] == "Admin") {
