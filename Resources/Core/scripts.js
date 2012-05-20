@@ -26,7 +26,7 @@ function delay(command, time) {
 }
 
 function ajax(type, query) {
-	var verify = Cookie.getCookie('Session:');
+	var verify = Cookie.getCookie('sessionhash');
 	var xmlhttp;
 	if (window.XMLHttpRequest) {
 		// code for IE7+, Firefox, Chrome, Opera, Safari
