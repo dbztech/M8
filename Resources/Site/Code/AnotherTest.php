@@ -6,5 +6,5 @@ Rewrite test:<br />
 <br /><br />
 Variable test:<br />
 <?php
-$variable->getvariable(testtext);
+$variable->getvariable('testtext');
 ?>
