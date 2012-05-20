@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: May 20, 2012 at 05:17 PM
+-- Generation Time: May 20, 2012 at 06:07 PM
 -- Server version: 5.5.23
 -- PHP Version: 5.3.10
 
@@ -32,8 +32,7 @@ CREATE TABLE IF NOT EXISTS `pages` (
   `description` text NOT NULL,
   `location` text NOT NULL,
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `id` (`id`)
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
@@ -56,18 +55,17 @@ CREATE TABLE IF NOT EXISTS `users` (
   `username` text NOT NULL,
   `hash` text NOT NULL,
   `level` int(11) NOT NULL,
-  `random` text NOT NULL,
+  `sessionhash` text NOT NULL,
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `id` (`id`)
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`username`, `hash`, `level`, `random`, `id`) VALUES
-('admin', '$2a$15$p1sD941DBOS.aUqWiWJ39OUMfsvD4sFqcyY8dFiLnkelTxHeRdmuS', 0, 'iCifVSq1IXuEnLXobCMQv4nwDtrxMmOeSGhyA7G29oGQngE1UXwDgFY4vNV0Y6K', 1);
+INSERT INTO `users` (`username`, `hash`, `level`, `sessionhash`, `id`) VALUES
+('admin', '$2a$15$p1sD941DBOS.aUqWiWJ39OUMfsvD4sFqcyY8dFiLnkelTxHeRdmuS', 0, '921838198ec7561483c16c1a91eabc6d', 1);
 
 -- --------------------------------------------------------
 
@@ -84,8 +82,7 @@ CREATE TABLE IF NOT EXISTS `variables` (
   `location` text,
   `zone` text,
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `id` (`id`)
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
 
 --
