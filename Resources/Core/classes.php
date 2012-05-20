@@ -184,7 +184,6 @@ class page
 				#FIX: Take database name ect. from settings above/in settings file
 				//INSERT INTO `m8db`.`pages` (`name`, `title`, `description`, `location`, `id`) VALUES ('demo', 'This is a Demo', 'Hazzah', '/Demo.php', '4')
 				$result = database::writedata("INSERT INTO `pages` (`name`, `title`, `description`, `location`) VALUES ('".$pagename."', '".$pagename."', 'No description currently', '/Resources/Site/Code/".$pagename.".php')");
-				echo $result;
 				return $result;
 			}
 		} else {
