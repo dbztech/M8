@@ -2,8 +2,8 @@
 include('Resources/Core/core.php');
 include('Resources/Site/settings.php');
 #echo "<!doctype html><!-- Powered by M8 -->";
-if (isset($_GET['redirect'])) {
-	if ($_GET['redirect'] == "Admin") {
+if (isset($_GET['in'])) {
+	if ($_GET['in'] == "Admin") {
 		/*
 		if ($login->checkcookie($usernamecookie, $sessionhashcookie)) {
 			echo "Cookies";
@@ -19,13 +19,13 @@ if (isset($_GET['redirect'])) {
 		include('Resources/Core/index.php');
 		include('Resources/Core/footer.php');
 	} else {
-		if ($page->verifypage($_GET['redirect'])) {
-			$page->location = '/Resources/Site/Code/'.$_GET['redirect'].'.php';
+		if ($page->verifypage($_GET['in'])) {
+			$page->location = '/Resources/Site/Code/'.$_GET['in'].'.php';
 			#include('Resources/Core/header.php');
 			#if ($leftnav) {
 			#	include('Resources/Core/leftnav.php');
 			#}
-			include('Resources/Site/Code/'.$_GET['redirect'].'.php');
+			include('Resources/Site/Code/'.$_GET['in'].'.php');
 			#include('Resources/Core/footer.php');
 		} else {
 			echo "404";
