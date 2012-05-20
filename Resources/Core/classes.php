@@ -323,8 +323,7 @@ class variable
 	}
 
 	public function getallvariables() {
-		$database = new database();
-		$result = $database->returnmultiplerows('SELECT * FROM `variables`');
+		$result = database::returnmultiplerows('SELECT * FROM `variables`');
 		$pass = 0;
 		while ($row = mysql_fetch_assoc($result)) {
 			$pass++;
