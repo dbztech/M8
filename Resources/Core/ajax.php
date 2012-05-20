@@ -9,7 +9,7 @@ $ajaxhash = $_GET['verify'];
 
 $hash = $database->returndata('SELECT `hash` FROM `users` WHERE `username` = "admin"');
 
-if ($bcrypt->verify($ajaxhash, $hash['hash'])) {
+if (false) {
    	echo "Password verified!";
    	if (isset($_GET['type'])) {
 		if ($type == 'variable') {
