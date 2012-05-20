@@ -5,14 +5,26 @@ $version = "b0.0.1";
 #This is the core of M8
 include('classes.php');
 include('patch.php');
+
+#Initialize db connection
+$database = new database();
 include('settings.php');
 
 #Initialize core classes
-$database = new database();
 $page = new page();
 $variable = new variable();
 $file = new file();
-$bcrypt = new Bcrypt(15);
+$login = new login();
+
+#Get cookies
+$sessionhashcookie = $_COOKIE['sessionhash'];
+$usernamecookie = $_COOKIE['username'];
+
+if (isset($sessionhashcookie) && isset($usernamecookie)) {
+	$login->cookiesexist = true;
+} else {
+	$login->cookiesexist = false;
+}
 
 #Debug window
 if ($debug) {
@@ -20,6 +32,9 @@ if ($debug) {
 	$database->info();
 	$database->test();
 	echo '</div>';
+}
+if ($cookie) {
+
 }
 
 #echo "Core Initialized <br />";
