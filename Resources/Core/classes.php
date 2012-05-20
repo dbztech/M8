@@ -266,31 +266,26 @@ class variable
 	#5 = Boolean
 
 	public function getvariable($name) {
-		$result = database::returndata('SELECT * FROM `variables` WHERE `name` = "'.$name.'"');
-		if (isset($result)) {
+		$output = database::returndata('SELECT * FROM `variables` WHERE `name` = "'.$name.'"');
+		if (isset($output)) {
 			if ($result['type'] == 0 && isset($result['num'])) {
 				#echo "Number";
-				$output = database::returndata('SELECT * FROM `variables` WHERE `id` = "'.$result['id'].'"');
 				return $output['num'];
 			}
 			if ($result['type'] == 1 && isset($result['text'])) {
 				#echo "Text";
-				$output = database::returndata('SELECT * FROM `variables` WHERE `id` = "'.$result['id'].'"');
 				return $output['text'];
 			}
 			if ($result['type'] == 2 && isset($result['location'])) {
 				#echo "Location";
-				$output = database::returndata('SELECT * FROM `variables` WHERE `id` = "'.$result['id'].'"');
 				return $output['location'];
 			}
 			if ($result['type'] == 3 && isset($result['zone'])) {
 				#echo "Zone";
-				$output = database::returndata('SELECT * FROM `variables` WHERE `id` = "'.$result['id'].'"');
 				return $output['zone'];
 			}
 			if ($result['type'] == 4 && isset($result['boolean'])) {
 				#echo "Zone";
-				$output = database::returndata('SELECT * FROM `variables` WHERE `id` = "'.$result['id'].'"');
 				if ($output['boolean'] == 1) {
 					return true;
 				} else {
