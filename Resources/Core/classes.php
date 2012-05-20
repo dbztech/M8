@@ -270,55 +270,35 @@ class variable
 		if (isset($result)) {
 			if ($result['type'] == 0 && isset($result['num'])) {
 				#echo "Number";
-				return $this->getnumber($result['id']);
+				$output = database::returndata('SELECT * FROM `variables` WHERE `id` = "'.$result['id'].'"');
+				return $output['num'];
 			}
 			if ($result['type'] == 1 && isset($result['text'])) {
 				#echo "Text";
-				return $this->gettext($result['id']);
+				$output = database::returndata('SELECT * FROM `variables` WHERE `id` = "'.$result['id'].'"');
+				return $output['text'];
 			}
 			if ($result['type'] == 2 && isset($result['location'])) {
 				#echo "Location";
-				return $this->getlocation($result['id']);
+				$output = database::returndata('SELECT * FROM `variables` WHERE `id` = "'.$result['id'].'"');
+				return $output['location'];
 			}
 			if ($result['type'] == 3 && isset($result['zone'])) {
 				#echo "Zone";
-				return $this->getzone($result['id']);
+				$output = database::returndata('SELECT * FROM `variables` WHERE `id` = "'.$result['id'].'"');
+				return $output['zone'];
 			}
 			if ($result['type'] == 4 && isset($result['boolean'])) {
 				#echo "Zone";
-				return $this->getboolean($result['id']);
+				$output = database::returndata('SELECT * FROM `variables` WHERE `id` = "'.$result['id'].'"');
+				if ($output['boolean'] == 1) {
+					return true;
+				} else {
+					return false;
+				}
 			}
 		} else {
 			return "Variable Does Not Exist";
-		}
-	}
-
-	public function getnumber($id) {
-		$output = database::returndata('SELECT * FROM `variables` WHERE `id` = "'.$id.'"');
-		return $output['num'];
-	}
-
-	public function gettext($id) {
-		$output = database::returndata('SELECT * FROM `variables` WHERE `id` = "'.$id.'"');
-		return $output['text'];
-	}
-
-	public function getlocation($id) {
-		$output = database::returndata('SELECT * FROM `variables` WHERE `id` = "'.$id.'"');
-		return $output['location'];
-	}
-
-	public function getzone($id) {
-		$output = database::returndata('SELECT * FROM `variables` WHERE `id` = "'.$id.'"');
-		return $output['zone'];
-	}
-
-	public function getboolean($id) {
-		$output = database::returndata('SELECT * FROM `variables` WHERE `id` = "'.$id.'"');
-		if ($output['boolean'] == 1) {
-			return true;
-		} else {
-			return false;
 		}
 	}
 
