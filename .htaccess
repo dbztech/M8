@@ -1,4 +1,4 @@
 RewriteEngine On 
 RewriteRule ^([A-Z][A-Za-z0-9]*)$ index.php?in=$1 [L]
-RewriteRule ^([a-z][A-Za-z0-9].*)$ /Resources/Site/Code/$1 [L]
+RewriteRule ^([a-z][A-Za-z0-9]*)$ /Resources/Site/Code/$1 [L]
 #RewriteRule ^/$ /Resources/Site/Code
