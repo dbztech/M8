@@ -1,3 +1,5 @@
+Options +FollowSymLinks -MultiViews
+
 RewriteEngine On 
-RewriteRule ^([A-Z][A-Za-z0-9]*)$ index.php?in=$1 [L]
-RewriteRule ^![A-Z]$ /Resources/Site/Code/$0 [L]
+RewriteRule ^([A-Z][A-Za-z0-9]*)$ index.php?in=$1 [QSA,PT,L]
+RewriteRule ^![A-Z]$ Resources/Site/Code/$0 [QSA]
