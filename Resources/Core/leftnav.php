@@ -5,4 +5,5 @@
 <a href="#Pages" class="leftnavitem">Pages</a><br /><br />
 <a href="#Variables" class="leftnavitem">Variables</a><br /><br />
 <a href="#Settings" class="leftnavitem">Settings</a><br /><br />
+<a href="/Logout" class="leftnavitem">Logout</a><br /><br />
 </div>

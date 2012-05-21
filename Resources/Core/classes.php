@@ -16,7 +16,7 @@ class database
     static protected $database = 'm8db';
     static protected $prefix = 'meight';
 
-	public static function setcredentials($user, $password, $host = '127.0.0.1', $db = 'm8db', $pre = 'm8db') {
+	public static function setcredentials($user, $password, $host = '127.0.0.1', $db = 'm8db', $pre = 'meight') {
     	// property declaration
     	$result = 'Credential(s) not set: ';
     	$error = 0;
@@ -49,7 +49,7 @@ class database
     		$error = 1;
     		$result .= '$prefix';
     	}
-    	if (!$error) {$result = 'Success!';}
+    	#if (!$error) {$result = 'Success!';}
     	return $result;
     }
 
@@ -337,6 +337,11 @@ class login extends Bcrypt
 		} else {
 			return false;
 		}
+	}
+	
+	public function logout() {
+		setcookie("sessionhash", '0');
+		setcookie("username", '0');
 	}
 }
 
