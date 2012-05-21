@@ -28,9 +28,8 @@ if (isset($_GET['in'])) {
 		} else {
 			include('Resources/Core/login.php');
 		}
-	} 
-	if ($_GET['in'] == "Logout") {
-		echo 'Logout';
+	} elseif ($_GET['in'] == "Logout") {
+		#echo 'Logout';
 		include('Resources/Core/logout.php');
 	} else {
 		if ($page->verifypage($_GET['in'])) {
