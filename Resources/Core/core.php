@@ -22,6 +22,8 @@ $usernamecookie = $_COOKIE['username'];
 
 if (isset($sessionhashcookie) && isset($usernamecookie)) {
 	$login->cookiesexist = true;
+	$login->cookiehash = $sessionhashcookie;
+	$login->username = $usernamecookie;
 } else {
 	$login->cookiesexist = false;
 }
@@ -34,9 +36,7 @@ if ($debug) {
 	echo '</div>';
 }
 if ($cookie && $ajax == false) {
-	$login->username = "admin";
-	$login->passwordplain = "GreenGreen12";
-	$login->loginuser();
+	
 }
 
 #echo "Core Initialized <br />";

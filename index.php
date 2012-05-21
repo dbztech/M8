@@ -4,7 +4,20 @@ include('Resources/Site/options.php');
 #echo "<!doctype html><!-- Powered by M8 -->";
 if (isset($_GET['in'])) {
 	if ($_GET['in'] == "Admin") {
-		if (true) {
+		$authenticated = false;
+		if (isset($_POST['username']) && isset($_POST['password'])) {
+			$login->username = $_POST['username'];
+			$login->passwordplain = $_POST['password'];
+			$authenticated = $login->loginuser();
+		} else {
+			if ($login->checkcookie()) {
+				#echo "Cookie Verified";
+				$authenticated = true;
+			} else {
+				$authenticated = false;
+			}
+		}
+		if ($authenticated) {
 			$page->location = '/Resources/Core/index.php';
 			include('Resources/Core/header.php');
 			if ($leftnav) {

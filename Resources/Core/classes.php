@@ -294,6 +294,7 @@ class login extends Bcrypt
 	public $username;
 	public $passwordplain;
 	public $cookiesexist = false;
+	public $cookiehash;
 	public $userhash;
 	public $sessionhash;
 
@@ -312,7 +313,7 @@ class login extends Bcrypt
 		if ($this->cookiesexist) {
 			$user = database::returndata('SELECT * FROM `users` WHERE `username` = "'.$this->username.'"');
 			#echo "Session: ".$sessionhashcookie."<br /> Username: ".$usernamecookie."<br /> Hash: ".$user['random'];
-			if ($this->verify($sessionhashcookie, $user['random'])) {
+			if ($user['sessionhash'] == $this->cookiehash) {
 				return true;
 			} else {
 				return false;
@@ -332,6 +333,9 @@ class login extends Bcrypt
 			#echo $this->username;
 			setcookie("sessionhash", $this->sessionhash);
 			setcookie("username", $this->username);
+			return true;
+		} else {
+			return false;
 		}
 	}
 }

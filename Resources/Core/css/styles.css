@@ -118,3 +118,31 @@ body {
 input {
 	width: 92%;
 }
+
+#loginbox {
+	background: #363535;
+	width: 400px;
+	height: 300px;
+	margin: auto;
+	color: 
+	white;
+	border-radius: 15px;
+	padding: 13px;
+	margin-top: 50px;
+	text-align: center;
+}
+
+#logintitle {
+	font-family: Roboto-Italic;
+	font-size: 60px;
+	margin: 0px;
+}
+
+.logininput {
+	border: 0px;
+	height: 31px;
+	border-radius: 5px;
+	font-family: Roboto-Italic;
+	font-size: 14pt;
+	padding: 4px;
+}
