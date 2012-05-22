@@ -87,7 +87,18 @@ body {
 }
 
 .leftnavitem {
-	color: white;
+	font-size: 55px;
+	text-decoration: none;
+	font-family: Roboto-Italic;
+	color: black;
+	background: white;
+	border-radius: 5px;
+	padding: 5px;
+
+}
+
+.leftnavitem:hover {
+	background: orange;
 }
 
 #logo {
