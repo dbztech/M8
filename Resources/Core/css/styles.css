@@ -146,3 +146,24 @@ input {
 	font-size: 14pt;
 	padding: 4px;
 }
+
+.admintable th,tr {
+	border:1px solid white;
+	margin:auto; 
+	color:#fff;
+	border-radius:2px;
+}
+
+.admintable {
+	width:98%;
+	margin:auto;
+	border-radius:2px;
+}
+
+.admintable td {
+	margin:auto;
+}
+.admintable td input {
+	width:100%;
+	margin:auto;
+}
