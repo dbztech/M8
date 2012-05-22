@@ -31,28 +31,21 @@ class database
     		$error = 1;
     		$result .= '$dbpassword ';
     	}
-    	
-    	if (is_string($host)) {database::$dbhost = $host;}
-    	else {
-    		$error = 1;
-    		$result .= '$dbhost ';
-    	}
-    	
-    	if (is_string($db)) {database::$database = $db;}
-    	else {
-    		$error = 1;
-    		$result .= '$database ';
-    	}
-    	
-    	if (is_string($pre)) {database::$prefix = $pre;}
-    	else {
-    		$error = 1;
-    		$result .= '$prefix';
-    	}
     	#if (!$error) {$result = 'Success!';}
     	return $result;
     }
-
+    
+    public static function sqlconn() {	
+		try {
+    		$dbh = new PDO('mysql:host='.database::$dbhost.';dbname='.database::$database, database::$dbuser, database::$dbpassword);
+    	}
+    	catch (PDOException $e) {
+			print ("Could not connect to server.\n");
+			die ("getMessage(): " . $e->getMessage () . "\n");
+		}
+		return $dbh;
+	}
+	
     // method declaration
     public static function info() {
     	echo "Database: ".database::$database."<br />";
@@ -62,107 +55,58 @@ class database
     }
 
     public static function test() {
-    	$link = mysql_connect(database::$dbhost, database::$dbuser, database::$dbpassword);
-		if (!$link) {
-	    	die('Could not connect: ' . mysql_error());
-		}
-		//echo 'Connected successfully';
-		return(true);
-		mysql_close($link);
+    	$dbh = database::sqlconn();
+    	if ($dbh) {
+    		return true;
+    		$dbh = NULL;
+    	}
+    	else {
+    		return false;
+    	}
     }
 
     public static function returndata($query) {
-    	$link = mysql_connect(database::$dbhost, database::$dbuser, database::$dbpassword);
-
-		// make foo the current db
-		$db_selected = mysql_select_db(database::$database, $link);
-		if (!$db_selected) {
-		    die ('Can\'t use foo : ' . mysql_error());
-		}
+    	$dbh = database::sqlconn();
 
 		// Perform Query
-		$result = mysql_query($query);
-
-		// Check result
-		// This shows the actual query sent to MySQL, and the error. Useful for debugging.
-		if (!$result) {
-		    $message  = 'Invalid query: ' . mysql_error() . "\n";
-		    $message .= 'Whole query: ' . $query;
-		    return($message);
-		    die($message);
-		}
-
-		// Use result
-		// Attempting to print $result won't allow access to information in the resource
-		// One of the mysql result functions must be used
-		// See also mysql_result(), mysql_fetch_array(), mysql_fetch_row(), etc.
-		while ($row = mysql_fetch_assoc($result)) {
+		$result = $dbh->query ($query);
+	
+	
+		while ($row = $result->fetch()) {
 		    return($row);
 		}
 
-		// Free the resources associated with the result set
-		// This is done automatically at the end of the script
-		mysql_free_result($result);
+		$dbh = NULL;
     }
 
     public static function returnmultiplerows($query) {
-    	$link = mysql_connect(database::$dbhost, database::$dbuser, database::$dbpassword);
+    	$dbh = database::sqlconn();
 
-		// make foo the current db
-		$db_selected = mysql_select_db(database::$database, $link);
-		if (!$db_selected) {
-		    die ('Can\'t use foo : ' . mysql_error());
-		}
+		$result = $dbh->query ($query);
 
-		// Perform Query
-		$result = mysql_query($query);
-
-		// Check result
-		// This shows the actual query sent to MySQL, and the error. Useful for debugging.
-		if (!$result) {
-		    $message  = 'Invalid query: ' . mysql_error() . "\n";
-		    $message .= 'Whole query: ' . $query;
-		    return($message);
-		    die($message);
-		}
-
-		// Use result
-		// Attempting to print $result won't allow access to information in the resource
-		// One of the mysql result functions must be used
-		// See also mysql_result(), mysql_fetch_array(), mysql_fetch_row(), etc.
 		return $result;
 
-		// Free the resources associated with the result set
-		// This is done automatically at the end of the script
-		mysql_free_result($result);
+		$dbh = NULL;
     }
 
     public static function writedata($query) {
-    	$link = mysql_connect(database::$dbhost, database::$dbuser, database::$dbpassword);
-
-		// make foo the current db
-		$db_selected = mysql_select_db(database::$database, $link);
-		if (!$db_selected) {
-		    die ('Can\'t use foo : ' . mysql_error());
-		}
+    	$dbh = database::sqlconn();
 
 		// Perform Query
-		$result = mysql_query($query);
+		try {
+			$result = $dbh->exec ($query);
+		}
 
 		// Check result
 		// This shows the actual query sent to MySQL, and the error. Useful for debugging.
-		if (!$result) {
-		    $message  = 'Invalid query: ' . mysql_error() . "\n";
-		    $message .= 'Whole query: ' . $query;
-		    return($message);
-		    die($message);
-		} else {
-			return("Query Successful");
+  		catch (PDOException $e) {
+			print ("Could not connect to server.\n");
+			die ("getMessage(): " . $e->getMessage () . "\n");
 		}
+		
+		return("Query Successful");
 
-		// Free the resources associated with the result set
-		// This is done automatically at the end of the script
-		mysql_free_result($result);
+		$dbh = NULL;
     }
 }
 
@@ -204,7 +148,7 @@ class page
 	public function getallpages() {
 		$result = database::returnmultiplerows('SELECT * FROM `pages`');
 		$pass = 0;
-		while ($row = mysql_fetch_assoc($result)) {
+		while ($row = $result->fetch()) {
 			$pass++;
 		    echo "<tr>";
 		    echo '<td><input type="text" id="'.$row['id'].'name'.'" value="'.$row['name'].'" onblur="pagewrite('.$row['id'].', 0'.');" /></td>';
@@ -259,7 +203,7 @@ class variable
 	public function getallvariables() {
 		$result = database::returnmultiplerows('SELECT * FROM `variables`');
 		$pass = 0;
-		while ($row = mysql_fetch_assoc($result)) {
+		while ($row = $result->fetch()) {
 			$pass++;
 		    echo "<tr>";
 		    echo '<td><input type="text" id="'.$row['id'].'name'.'" value="'.$row['name'].'" onblur="variablewrite('.$row['id'].', 0'.');" /></td>';
