@@ -6,4 +6,5 @@
 <?php $page->getallpages(); ?>
 </table>
 </form>
+<br />
 </div>
