@@ -87,14 +87,16 @@ body {
 }
 
 .leftnavitem {
-	font-size: 55px;
+	font-size: 45px;
 	text-decoration: none;
 	font-family: Roboto-Italic;
 	color: black;
 	background: white;
 	border-radius: 5px;
 	padding: 5px;
-
+	display:block;
+	margin:auto;
+	width:75%;
 }
 
 .leftnavitem:hover {
