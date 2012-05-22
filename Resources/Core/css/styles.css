@@ -55,6 +55,7 @@
 body {
 	font-family: Roboto;
 	background: #33B5E5;
+	min-width: 1000px;
 }
 
 ::selection {
@@ -82,6 +83,7 @@ body {
 	opacity: 0.8;
 	-moz-opacity: 0.8;
 	filter:alpha(opacity=8);
+	min-width: 300px;
 }
 
 .leftnavitem {
