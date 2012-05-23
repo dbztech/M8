@@ -49,7 +49,7 @@ function ajax(type, query) {
 	  	console.log(xmlhttp.responseText);
 	    return(true);
 	  } else {
-	  	console.log("Query failed");
+	  	//console.log("Query failed");
 	    return(false);
 	  }
 	}
@@ -151,9 +151,7 @@ function pagewrite(id, column) {
 		columnname = "location";
 	}
 	if (value != "ERROR") {
-		console.log(id+', '+column+', '+value);
-		query = "UPDATE `m8db`.`pages` SET `"+columnname+"` = '"+value+"' WHERE `pages`.`id` = "+id+";";
-		console.log(query);
+		query = "UPDATE `pages` SET `"+columnname+"` = '"+value+"' WHERE `pages`.`id` = "+id+";";
 		ajax("query",query);
 	}
 
