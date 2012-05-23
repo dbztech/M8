@@ -2,7 +2,7 @@
 
 .rightcontext {
 	color: white;
-	background: url('..//Images/rightcontext.svg');
+	background: url('../images/rightcontext.svg');
 	width: 325px;
 	height: 75px;
 	float: right;
@@ -10,4 +10,5 @@
 	margin-top: -40px;
 	font-family: Roboto-Italic;
 	font-size: 255%;
+	margin-bottom: -40px;
 }

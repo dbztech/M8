@@ -1,6 +1,7 @@
 //JavaScript Document
 
 var Selector = new selector;
+var Cookie = new cookie;
 
 function load() {
 	document.getElementById('splashcontinue').style.display = "block";
@@ -24,7 +25,16 @@ function delay(command, time) {
 	setTimeout(command, time);
 }
 
+function logout() {
+	var username = Cookie.getCookie("username");
+	ajax("logout", username);
+	Cookie.setCookie("sessionhash","0");
+	Cookie.setCookie("username","0");
+	delay('window.location.reload()',1500);
+}
+
 function ajax(type, query) {
+	var verify = Cookie.getCookie('sessionhash');
 	var xmlhttp;
 	if (window.XMLHttpRequest) {
 		// code for IE7+, Firefox, Chrome, Opera, Safari
@@ -39,11 +49,11 @@ function ajax(type, query) {
 	  	console.log(xmlhttp.responseText);
 	    return(true);
 	  } else {
-	  	console.log("Query failed");
+	  	//console.log("Query failed");
 	    return(false);
 	  }
 	}
-	xmlhttp.open("GET","Resources/Core/ajax.php?type="+type+"&query="+query,true);
+	xmlhttp.open("GET","Resources/Core/ajax.php?type="+type+"&query="+query+"&verify="+verify,true);
 	xmlhttp.send();
 }
 
@@ -98,20 +108,66 @@ function selector() {
 	}
 }
 
+function cookie() {
+	this.getCookie = function(c_name) {
+		var i,x,y,ARRcookies=document.cookie.split(";");
+		for (i=0;i<ARRcookies.length;i++) {
+	 		x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+	  		y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+	  		x=x.replace(/^\s+|\s+$/g,"");
+		  	if (x==c_name) {
+		  		return unescape(y);
+		  	}
+	 	}
+	}
+
+	this.setCookie = function(c_name,value,exdays) {
+		var exdate=new Date();
+		exdate.setDate(exdate.getDate() + exdays);
+		var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+		document.cookie=c_name + "=" + c_value;
+	}
+}
+
 function pagewrite(id, column) {
 	//name = 0
 	//title = 1
 	//description = 2
 	//location = 3
-	var value = "Hello World";
+	var value = "ERROR";
+	var query;
+	var columnname;
 	if (column == 0) {
 		value = document.getElementById(id+'name').value;
+		columnname = "name";
 	} else if (column == 1) {
 		value = document.getElementById(id+'title').value;
+		columnname = "title";
 	} else if (column == 2) {
 		value = document.getElementById(id+'description').value;
+		columnname = "description";
 	} else if (column == 3) {
 		value = document.getElementById(id+'location').value;
+		columnname = "location";
 	}
-	console.log(id+', '+column+', '+value);
+	if (value != "ERROR") {
+		query = "UPDATE `pages` SET `"+columnname+"` = '"+value+"' WHERE `pages`.`id` = "+id+";";
+		ajax("query",query);
+	}
+
+}
+
+function variablewrite(id) {
+	var value = "ERROR";
+	var name = "ERROR";
+	var query;
+	var columnname;
+	value = document.getElementById(id+'varvalue').value;
+	name = document.getElementById(id+'varname').value;
+	if (value != "ERROR" && name != "ERROR") {
+		query = "UPDATE `variables` SET `name` = '"+name+"', `text` = '"+value+"' WHERE `variables`.`id` = "+id+";";
+		//console.log(query);
+		ajax("query",query);
+	}
+
 }

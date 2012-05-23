@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: May 15, 2012 at 10:37 PM
+-- Generation Time: May 22, 2012 at 09:03 PM
 -- Server version: 5.5.23
 -- PHP Version: 5.3.10
 
@@ -31,18 +31,41 @@ CREATE TABLE IF NOT EXISTS `pages` (
   `title` text NOT NULL,
   `description` text NOT NULL,
   `location` text NOT NULL,
-  `id` int(11) NOT NULL,
-  UNIQUE KEY `id` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `pages`
 --
 
 INSERT INTO `pages` (`name`, `title`, `description`, `location`, `id`) VALUES
-('Index', '#M8 Admin', 'Welcome to the #M8 admin panel. Here you can change settings and tune #M8 to perfection.', '/Resources/Core/index.php', 0),
-('Test', 'PHP Test', 'No description currently', '/Resources/Site/Code/Test.php', 1),
-('AnotherTest', 'Demo Page', 'No description currently', '/Resources/Site/Code/AnotherTest.php', 2);
+('Admin', 'M8 Admin Panel', 'This the the location where you can edit various settings, and monitor the status of M8', '/Resources/Core/index.php', 1),
+('AnotherTest', 'AnotherTest', 'No description currently', '/Resources/Site/Code/AnotherTest.php', 2),
+('AnotherTestb', 'AnotherTestb', 'No description currently', '/Resources/Site/Code/AnotherTestb.php', 3),
+('Test', 'Test', 'No description currently', '/Resources/Site/Code/Test.php', 4);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE IF NOT EXISTS `users` (
+  `username` text NOT NULL,
+  `hash` text NOT NULL,
+  `level` int(11) NOT NULL,
+  `sessionhash` text NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`username`, `hash`, `level`, `sessionhash`, `id`) VALUES
+('admin', '$2a$15$p1sD941DBOS.aUqWiWJ39OUMfsvD4sFqcyY8dFiLnkelTxHeRdmuS', 0, 'dc5d1878c10fa2b4e6c1e04b06f453b3', 1);
 
 -- --------------------------------------------------------
 
@@ -58,24 +81,24 @@ CREATE TABLE IF NOT EXISTS `variables` (
   `boolean` int(11) DEFAULT NULL,
   `location` text,
   `zone` text,
-  `id` int(11) NOT NULL,
-  UNIQUE KEY `id` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
 
 --
 -- Dumping data for table `variables`
 --
 
 INSERT INTO `variables` (`name`, `type`, `num`, `text`, `boolean`, `location`, `zone`, `id`) VALUES
-('test', 0, 15, NULL, NULL, NULL, NULL, 0),
-('testtext', 1, NULL, 'Yay', NULL, NULL, NULL, 1),
-('testlocation', 2, NULL, NULL, NULL, 'http://apple.com', NULL, 2),
+('testtext', 1, NULL, 'Yuuuuuuupp', NULL, NULL, NULL, 1),
+('testlocation', 2, NULL, NULL, NULL, 'http://www.apple.com', NULL, 2),
 ('testzone', 3, NULL, NULL, NULL, NULL, 'Zone, Data, Here', 3),
-('testboolean', 4, NULL, NULL, 1, NULL, NULL, 4),
-('overview', 1, NULL, '#M8 Overview', NULL, NULL, NULL, 5),
-('pages', 1, NULL, '#M8 Pages', NULL, NULL, NULL, 6),
-('variables', 1, NULL, '#M8 Variables', NULL, NULL, NULL, 7),
-('settings', 1, NULL, '#M8 Settings', NULL, NULL, NULL, 8);
+('testboolean', 4, NULL, '1', 1, NULL, NULL, 4),
+('overview', 1, NULL, 'M8 Overview', NULL, NULL, NULL, 5),
+('pages', 1, NULL, 'M8 Pages', NULL, NULL, NULL, 6),
+('variables', 1, NULL, 'M8 Variables', NULL, NULL, NULL, 7),
+('settings', 1, NULL, 'M8 Settings', NULL, NULL, NULL, 8),
+('test', 0, 15, NULL, NULL, NULL, NULL, 9);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
