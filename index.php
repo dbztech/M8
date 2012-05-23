@@ -45,7 +45,7 @@ if (isset($_GET['in'])) {
 		}
 	}
 } else {
-	if ($page->verifypage("Index")) {
+	if ($page->verifypage("index")) {
 		$page->location = '/Resources/Site/Code/index.php';
 		include('Resources/Site/Code/index.php');
 	} else {
