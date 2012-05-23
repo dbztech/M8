@@ -34,6 +34,9 @@ class database
     	#if (!$error) {$result = 'Success!';}
     	return $result;
     }
+    	database::$dbhost = $host;
+    	database::$database = $db;
+    	database::$prefix = $pre;
     
     public static function sqlconn() {	
 		try {
