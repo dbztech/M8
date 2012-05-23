@@ -35,6 +35,7 @@ function logout() {
 
 function ajax(type, query) {
 	var verify = Cookie.getCookie('sessionhash');
+	var username = Cookie.getCookie('username');
 	var xmlhttp;
 	if (window.XMLHttpRequest) {
 		// code for IE7+, Firefox, Chrome, Opera, Safari
@@ -53,7 +54,7 @@ function ajax(type, query) {
 	    return(false);
 	  }
 	}
-	xmlhttp.open("GET","Resources/Core/ajax.php?type="+type+"&query="+query+"&verify="+verify,true);
+	xmlhttp.open("GET","Resources/Core/ajax.php?type="+type+"&query="+query+"&verify="+verify+"&username="+username,true);
 	xmlhttp.send();
 }
 

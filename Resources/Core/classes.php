@@ -287,6 +287,15 @@ class login extends Bcrypt
 		$query = "UPDATE `users` SET `sessionhash` = '".$this->hash(rand())."' WHERE `username` = '".$this->username."';";
 		database::writedata($query);
 	}
+
+	public function createuser($actuiallycreateuser) {
+		$query = "INSERT INTO `users` (`username`, `hash`, `level`, `sessionhash`, `id`) VALUES ('".$this->username."', '".$this->hash($this->passwordplain)."', '0', '".$this->hash(rand())."', NULL);";
+		echo $query;
+		if ($actuiallycreateuser) {
+			database::writedata($query);
+			echo "Created";
+		}
+	}
 }
 
 
