@@ -25,7 +25,14 @@ if ($user['sessionhash'] == $ajaxhash) {
 		}
 
 		if ($type == 'query') {
-			$result = $query+" Not Executed";
+			$query = stripslashes($query);
+			#echo $query;
+			database::writedata($query);
+		}
+
+		if ($type == 'logout') {
+			$login->username = $query;
+			$login->logout();
 		}
 	}
 } else {

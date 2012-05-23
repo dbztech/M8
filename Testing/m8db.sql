@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: May 20, 2012 at 06:07 PM
+-- Generation Time: May 22, 2012 at 09:03 PM
 -- Server version: 5.5.23
 -- PHP Version: 5.3.10
 
@@ -65,7 +65,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`username`, `hash`, `level`, `sessionhash`, `id`) VALUES
-('admin', '$2a$15$p1sD941DBOS.aUqWiWJ39OUMfsvD4sFqcyY8dFiLnkelTxHeRdmuS', 0, '921838198ec7561483c16c1a91eabc6d', 1);
+('admin', '$2a$15$p1sD941DBOS.aUqWiWJ39OUMfsvD4sFqcyY8dFiLnkelTxHeRdmuS', 0, 'dc5d1878c10fa2b4e6c1e04b06f453b3', 1);
 
 -- --------------------------------------------------------
 
@@ -90,14 +90,14 @@ CREATE TABLE IF NOT EXISTS `variables` (
 --
 
 INSERT INTO `variables` (`name`, `type`, `num`, `text`, `boolean`, `location`, `zone`, `id`) VALUES
-('testtext', 1, NULL, 'Yay', NULL, NULL, NULL, 1),
+('testtext', 1, NULL, 'Yuuuuuuupp', NULL, NULL, NULL, 1),
 ('testlocation', 2, NULL, NULL, NULL, 'http://www.apple.com', NULL, 2),
 ('testzone', 3, NULL, NULL, NULL, NULL, 'Zone, Data, Here', 3),
-('testboolean', 4, NULL, NULL, 1, NULL, NULL, 4),
-('overview', 1, NULL, '#M8 Overview', NULL, NULL, NULL, 5),
-('pages', 1, NULL, '#M8 Pages', NULL, NULL, NULL, 6),
-('variables', 1, NULL, '#M8 Variables', NULL, NULL, NULL, 7),
-('settings', 1, NULL, '#M8 Settings', NULL, NULL, NULL, 8),
+('testboolean', 4, NULL, '1', 1, NULL, NULL, 4),
+('overview', 1, NULL, 'M8 Overview', NULL, NULL, NULL, 5),
+('pages', 1, NULL, 'M8 Pages', NULL, NULL, NULL, 6),
+('variables', 1, NULL, 'M8 Variables', NULL, NULL, NULL, 7),
+('settings', 1, NULL, 'M8 Settings', NULL, NULL, NULL, 8),
 ('test', 0, 15, NULL, NULL, NULL, NULL, 9);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -25,6 +25,14 @@ function delay(command, time) {
 	setTimeout(command, time);
 }
 
+function logout() {
+	var username = Cookie.getCookie("username");
+	ajax("logout", username);
+	Cookie.setCookie("sessionhash","0");
+	Cookie.setCookie("username","0");
+	delay('window.location.reload()',1500);
+}
+
 function ajax(type, query) {
 	var verify = Cookie.getCookie('sessionhash');
 	var xmlhttp;
@@ -41,7 +49,7 @@ function ajax(type, query) {
 	  	console.log(xmlhttp.responseText);
 	    return(true);
 	  } else {
-	  	console.log("Query failed");
+	  	//console.log("Query failed");
 	    return(false);
 	  }
 	}
@@ -143,9 +151,22 @@ function pagewrite(id, column) {
 		columnname = "location";
 	}
 	if (value != "ERROR") {
-		console.log(id+', '+column+', '+value);
-		query = "UPDATE `m8db`.`pages` SET `"+columnname+"` = '"+value+"' WHERE `pages`.`id` = "+id+";";
-		console.log(query);
+		query = "UPDATE `pages` SET `"+columnname+"` = '"+value+"' WHERE `pages`.`id` = "+id+";";
+		ajax("query",query);
+	}
+
+}
+
+function variablewrite(id) {
+	var value = "ERROR";
+	var name = "ERROR";
+	var query;
+	var columnname;
+	value = document.getElementById(id+'varvalue').value;
+	name = document.getElementById(id+'varname').value;
+	if (value != "ERROR" && name != "ERROR") {
+		query = "UPDATE `variables` SET `name` = '"+name+"', `text` = '"+value+"' WHERE `variables`.`id` = "+id+";";
+		//console.log(query);
 		ajax("query",query);
 	}
 
