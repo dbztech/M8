@@ -284,8 +284,8 @@ class login extends Bcrypt
 	}
 	
 	public function logout() {
-		setcookie("sessionhash", '0');
-		setcookie("username", '0');
+		$query = "UPDATE `users` SET `sessionhash` = '".$this->hash(rand())."' WHERE `username` = '".$this->username."';";
+		database::writedata($query);
 	}
 }
 

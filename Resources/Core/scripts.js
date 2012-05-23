@@ -25,6 +25,14 @@ function delay(command, time) {
 	setTimeout(command, time);
 }
 
+function logout() {
+	var username = Cookie.getCookie("username");
+	ajax("logout", username);
+	Cookie.setCookie("sessionhash","0");
+	Cookie.setCookie("username","0");
+	delay('window.location.reload()',1500);
+}
+
 function ajax(type, query) {
 	var verify = Cookie.getCookie('sessionhash');
 	var xmlhttp;

@@ -27,6 +27,11 @@ if ($user['sessionhash'] == $ajaxhash) {
 		if ($type == 'query') {
 			$result = $query+" Not Executed";
 		}
+
+		if ($type == 'logout') {
+			$login->username = $query;
+			$login->logout();
+		}
 	}
 } else {
 	echo "Not verified";
