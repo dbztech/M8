@@ -156,3 +156,18 @@ function pagewrite(id, column) {
 	}
 
 }
+
+function variablewrite(id) {
+	var value = "ERROR";
+	var name = "ERROR";
+	var query;
+	var columnname;
+	value = document.getElementById(id+'varvalue').value;
+	name = document.getElementById(id+'varname').value;
+	if (value != "ERROR" && name != "ERROR") {
+		query = "UPDATE `variables` SET `name` = '"+name+"', `text` = '"+value+"' WHERE `variables`.`id` = "+id+";";
+		//console.log(query);
+		ajax("query",query);
+	}
+
+}

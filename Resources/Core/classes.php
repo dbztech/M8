@@ -206,8 +206,8 @@ class variable
 		while ($row = $result->fetch()) {
 			$pass++;
 		    echo "<tr>";
-		    echo '<td><input type="text" id="'.$row['id'].'name'.'" value="'.$row['name'].'" onblur="variablewrite('.$row['id'].', 0'.');" /></td>';
-		    echo '<td><input type="text" id="'.$row['id'].'value'.'" value="'.$this->getvariable($row['name']).'" onblur="variablewrite('.$row['id'].', 1'.');" /></td>';
+		    echo '<td><input type="text" id="'.$row['id'].'varname'.'" value="'.$row['name'].'" onblur="variablewrite('.$row['id'].');" /></td>';
+		    echo '<td><input type="text" id="'.$row['id'].'varvalue'.'" value="'.$this->getvariable($row['name']).'" onblur="variablewrite('.$row['id'].');" /></td>';
 		    echo "</tr>";
 		}
 	}
