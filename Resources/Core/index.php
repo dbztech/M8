@@ -8,8 +8,6 @@
 <p class="rightcontext" id="title"><?php echo $variable->getvariable('overview'); ?></p>
 <br />
 <br />
-<br />
-<br />
 <?php include("info.php"); ?>
 <?php include("status.php"); ?>
 </div>
@@ -19,8 +17,6 @@
 <p class="selected" id="editButton">Edit</p>
 </div>
 <p class="rightcontext" id="title"><?php echo $variable->getvariable('pages'); ?></p>
-<br />
-<br />
 <br />
 <br />
 <?php include("edit.php"); ?>
@@ -34,8 +30,6 @@
 <p class="rightcontext" id="title"><?php echo $variable->getvariable('variables'); ?></p>
 <br />
 <br />
-<br />
-<br />
 <?php include("variables.php"); ?>
 <?php include("search.php"); ?>
 </div>
@@ -45,8 +39,6 @@
 <p class="selected" id="settingsButton">Settings</p>
 </div>
 <p class="rightcontext" id="title"><?php echo $variable->getvariable('settings'); ?></p>
-<br />
-<br />
 <br />
 <br />
 <?php include("settingsedit.php"); ?>

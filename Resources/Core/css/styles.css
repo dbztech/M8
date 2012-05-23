@@ -55,6 +55,7 @@
 body {
 	font-family: Roboto;
 	background: #33B5E5;
+	min-width: 1000px;
 }
 
 ::selection {
@@ -82,10 +83,24 @@ body {
 	opacity: 0.8;
 	-moz-opacity: 0.8;
 	filter:alpha(opacity=8);
+	min-width: 300px;
 }
 
 .leftnavitem {
-	color: white;
+	font-size: 45px;
+	text-decoration: none;
+	font-family: Roboto-Italic;
+	color: black;
+	background: white;
+	border-radius: 5px;
+	padding: 5px;
+	display:block;
+	margin:auto;
+	width:75%;
+}
+
+.leftnavitem:hover {
+	background: orange;
 }
 
 #logo {
@@ -117,4 +132,53 @@ body {
 
 input {
 	width: 92%;
+}
+
+#loginbox {
+	background: #363535;
+	width: 400px;
+	height: 300px;
+	margin: auto;
+	color: 
+	white;
+	border-radius: 15px;
+	padding: 13px;
+	margin-top: 50px;
+	text-align: center;
+}
+
+#logintitle {
+	font-family: Roboto-Italic;
+	font-size: 60px;
+	margin: 0px;
+}
+
+.logininput {
+	border: 0px;
+	height: 31px;
+	border-radius: 5px;
+	font-family: Roboto-Italic;
+	font-size: 14pt;
+	padding: 4px;
+}
+
+.admintable th,tr {
+	border:1px solid white;
+	margin:auto; 
+	color:#fff;
+	border-radius:2px;
+}
+
+.admintable {
+	width:98%;
+	margin:auto;
+	border-radius:2px;
+}
+
+.admintable td {
+	margin:auto;
+}
+.admintable td input {
+	width:100%;
+	margin:auto;
 }

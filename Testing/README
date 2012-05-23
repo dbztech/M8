@@ -1,0 +1,33 @@
+#M8 Testing Info
+
+Instalation:
+1. Import the SQL file into your database
+2. Make the user denoted in classes.php
+3. Set up apache so that m8 has its own document root
+4. Drop your site code in /Resources/Site/Code
+5. ???
+6. Profit
+
+Using Variables:
+1. Navigate to the variables table in phpMyAdmin
+2. Insert a row with
+2.1 Name of variable
+2.2 Type (0=number, 1=text, 2=location, 3=zone, 4=boolean)
+2.3 Content
+3. Put this line in your PHP code "<?php echo $variable->getvariable('variablename'); ?>"
+3.5 Or call this ajax "ajax("variable","variablename");"
+
+
+What Works:
+*Variables
+*Ajax variable and file contents get
+*Admin panel (No real functionality but it loads)
+*Site Loading
+*No 500 errors?
+
+
+What Does Not:
+*Admin panel editing
+*Ajax editing
+*Login
+*Site code folder is not document root

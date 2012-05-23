@@ -1,2 +1,6 @@
-RewriteEngine On
-RewriteRule ^([A-Z][A-Za-z]*)$ index.php?redirect=$1
+Options +FollowSymLinks -MultiViews
+
+RewriteEngine On 
+RewriteRule ^([A-Z][A-Za-z0-9]*)$ index.php?in=$1 [QSA,PT,L]
+RewriteCond %{REQUEST_URI} !^/(index)\.php$
+RewriteRule ^([^A-Z].*)$ Resources/Site/Code/$1 [QSA]

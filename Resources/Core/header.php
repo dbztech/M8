@@ -1,11 +1,11 @@
 <html>
 <head>
 <title><?php echo $page->gettitle(); ?></title>
-<script type="text/javascript" src="/M8/Resources/Core/scripts.js"></script>
-<link rel="stylesheet" type="text/css" href="/M8/Resources/Core/css/styles.css">
-<link rel="stylesheet" type="text/css" href="/M8/Resources/Core/css/selector.css">
-<link rel="stylesheet" type="text/css" href="/M8/Resources/Core/css/splash.css">
-<link rel="stylesheet" type="text/css" href="/M8/Resources/Core/css/rightcontext.css">
+<script type="text/javascript" src="Resources/Core/scripts.js"></script>
+<link rel="stylesheet" type="text/css" href="Resources/Core/css/styles.css">
+<link rel="stylesheet" type="text/css" href="Resources/Core/css/selector.css">
+<link rel="stylesheet" type="text/css" href="Resources/Core/css/splash.css">
+<link rel="stylesheet" type="text/css" href="Resources/Core/css/rightcontext.css">
 <meta name="description" content="<?php echo $page->getdesc(); ?>">
 </head>
 <?php

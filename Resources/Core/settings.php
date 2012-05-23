@@ -4,4 +4,8 @@
 $debug = false;
 $splash = false;
 $leftnav = true;
+$cookie = false;
+
+database::setcredentials('m8','hunter3','127.0.0.1','m8db','meight');
+
 ?>
