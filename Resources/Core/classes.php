@@ -246,7 +246,7 @@ class login extends Bcrypt
 	public function checklogin() {
 		$user = database::returndata('SELECT * FROM `users` WHERE `username` = "'.$this->username.'"');
 		if ($this->verify($this->passwordplain, $user['hash'])) {
-			$this->userhash = $this->hash($this->passwordplain);
+			$this->userhash = $this->hash(rand());
 			return true;
 		} else {
 			return false;
