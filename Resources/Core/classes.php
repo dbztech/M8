@@ -20,25 +20,29 @@ class database
     	// property declaration
     	$result = 'Credential(s) not set: ';
     	$error = 0;
-    	if (is_string($user)) {database::$dbuser = $user;}
-    	else {
+    	if (is_string($user)) {
+	    	database::$dbuser = $user;
+	    } else {
     		$error = 1;
     		$result .= '$dbuser ';
     	}
     	
-    	if (is_string($password)) {database::$dbpassword = $password;}
-    	else {
+    	if (is_string($password)) {
+	    	database::$dbpassword = $password;
+	    } else {
     		$error = 1;
     		$result .= '$dbpassword ';
     	}
-    	#if (!$error) {$result = 'Success!';}
-    	return $result;
-    }
-    	database::$dbhost = $host;
-    	database::$database = $db;
-    	database::$prefix = $pre;
     	
-    	#if (!$error) {$result = 'Success!';}
+    	if (!$error) {
+    		database::$dbhost = $host;
+    		database::$database = $db;
+    		database::$prefix = $pre;
+	    	$result = 'Success!';
+	    } else {
+	    	$result = 'Error!';
+	    }
+
     	return $result;
     }
     
