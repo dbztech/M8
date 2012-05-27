@@ -178,8 +178,8 @@ function variablewrite(id) {
 function dialog() {
 	this.open = function(title, content) {
 		document.getElementById('dialog').style.display = "block";
-		document.getElementById('dialogTitle').innerHTML = "Hello World";
-		document.getElementById('dialogContent').innerHTML = "This is content";
+		document.getElementById('dialogTitle').innerHTML = title;
+		document.getElementById('dialogContent').innerHTML = content;
 	}
 
 	this.close = function() {

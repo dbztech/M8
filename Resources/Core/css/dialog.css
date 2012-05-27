@@ -1,6 +1,7 @@
 /* CSS Document */
 
 #dialog {
+	display: none;
 	position: absolute;
 	left: 50%;
 	top: 15%;
