@@ -20,7 +20,7 @@ if(typeof addEvent!='function'){var addEvent=function(o,t,f,l){var d='addEventLi
 // whose keys constitute optional parameters/settings:
 
 var dragresize = new DragResize('dragresize',
- { minWidth: 50, minHeight: 50, minLeft: 20, minTop: 20, maxLeft: 600, maxTop: 600 });
+ { minWidth: 50, minHeight: 50, minLeft: 20, minTop: 20, maxLeft: screen.width-20, maxTop: screen.height-20 });
 
 // Optional settings/properties of the DragResize object are:
 //  enabled: Toggle whether the object is active.
