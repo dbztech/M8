@@ -9,4 +9,12 @@
 	background: white;
 	z-index: 2;
 	border-radius: 15px;
+	padding: 10px;
+	text-align: center;
+}
+
+#dialogTitle {
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	height: 10px;
 }
