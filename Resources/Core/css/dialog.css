@@ -16,7 +16,7 @@
 #dialogTitle {
 	border-top-left-radius: 14px;
 	border-top-right-radius: 14px;
-	height: 25px;
+	height: 12%;
 	background: url('../images/background.gif');
 	margin: -10px;
 	padding-top: 5px;
@@ -24,7 +24,10 @@
 }
 
 #dialogContent {
-	background: #0099CC;
+	background: #09C;
 	border-bottom-left-radius: 14px;
 	border-bottom-right-radius: 14px;
+	height: 90%;
+	margin: 10px -10px;
+	padding-top: 10px;
 }
