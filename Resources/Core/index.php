@@ -1,5 +1,5 @@
 <div id="dialog">
-<p id="dialogTitle">Hey<p>X</p></p>
+<p id="dialogTitle">Hey</p>
 <p id="dialogContent">Hey</p>
 </div>
 
