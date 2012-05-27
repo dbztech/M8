@@ -178,11 +178,11 @@ function variablewrite(id) {
 function dialog() {
 	this.open = function(title, content) {
 		document.getElementById('dialog').style.display = "block";
-		document.getElementById('dialogTitle').innerHTML = "block";
-		document.getElementById('dialogContent').innerHTML = "block";
+		document.getElementById('dialogTitle').innerHTML = "Hello World";
+		document.getElementById('dialogContent').innerHTML = "This is content";
 	}
 
-	this.setCookie = function() {
+	this.close = function() {
 		document.getElementById('dialog').style.display = "none";
 	}
 }
