@@ -20,4 +20,5 @@
 	background: url('../images/background.gif');
 	margin: -10px;
 	padding-top: 5px;
+	border-bottom: 2px solid black;
 }
