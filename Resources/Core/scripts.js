@@ -252,7 +252,6 @@ function dragResizeLoad() {
 
 	//]]>
 }
-}
 
 
 /*
