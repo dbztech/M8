@@ -6,7 +6,7 @@
 	top: 15%;
 	width: 400px;
 	height: 200px;
-	background: #9933CC;
+	background: white;
 	z-index: 2;
 	border-radius: 15px;
 	padding: 10px;
@@ -21,4 +21,10 @@
 	margin: -10px;
 	padding-top: 5px;
 	border-bottom: 2px solid black;
+}
+
+#dialogContent {
+	background: #0099CC;
+	border-bottom-left-radius: 14px;
+	border-bottom-right-radius: 14px;
 }
