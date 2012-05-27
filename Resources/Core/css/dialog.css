@@ -1,0 +1,11 @@
+/* CSS Document */
+
+#dialog {
+	position: relative;
+	left: 50%;
+	top: 50%;
+	width: 400px;
+	height: 200px;
+	background: white;
+	z-index: 2;
+}

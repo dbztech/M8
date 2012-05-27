@@ -2,6 +2,7 @@
 
 var Selector = new selector;
 var Cookie = new cookie;
+var Dialog = new dialog;
 
 function load() {
 	document.getElementById('splashcontinue').style.display = "block";

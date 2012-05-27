@@ -6,6 +6,7 @@
 <link rel="stylesheet" type="text/css" href="Resources/Core/css/selector.css">
 <link rel="stylesheet" type="text/css" href="Resources/Core/css/splash.css">
 <link rel="stylesheet" type="text/css" href="Resources/Core/css/rightcontext.css">
+<link rel="stylesheet" type="text/css" href="Resources/Core/css/dialog.css">
 <meta name="description" content="<?php echo $page->getdesc(); ?>">
 </head>
 <?php
