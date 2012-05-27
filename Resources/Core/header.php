@@ -1,7 +1,8 @@
 <html>
 <head>
 <title><?php echo $page->gettitle(); ?></title>
-<script type="text/javascript" src="Resources/Core/scripts.js"></script>
+<script type="text/javascript" src="Resources/Core/js/dragresize.js"></script>
+<script type="text/javascript" src="Resources/Core/js/scripts.js"></script>
 <link rel="stylesheet" type="text/css" href="Resources/Core/css/styles.css">
 <link rel="stylesheet" type="text/css" href="Resources/Core/css/selector.css">
 <link rel="stylesheet" type="text/css" href="Resources/Core/css/splash.css">
