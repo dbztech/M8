@@ -14,7 +14,10 @@
 }
 
 #dialogTitle {
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
-	height: 10px;
+	border-top-left-radius: 14px;
+	border-top-right-radius: 14px;
+	height: 25px;
+	background: url('../images/background.gif');
+	margin: -10px;
+	padding-top: 5px;
 }
