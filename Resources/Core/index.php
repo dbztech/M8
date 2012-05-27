@@ -1,6 +1,6 @@
 <div id="dialog">
 <div class="drsElement"
- style="left: 50px; top: 150px; width: 250px; height: 120px;
+ style="left: 50%; top: 150px; width: 250px; height: 120px;
  background: #CDF; text-align: center">
  <div class="drsMoveHandle">Div 0</div>
  Content
