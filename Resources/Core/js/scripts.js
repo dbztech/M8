@@ -5,7 +5,7 @@ var Cookie = new cookie;
 
 function load() {
 	document.getElementById('splashcontinue').style.display = "block";
-	dragResizeLoad();
+	//dragResizeLoad();
 }
 
 function unveil() {
