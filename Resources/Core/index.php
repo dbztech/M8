@@ -1,4 +1,4 @@
-<div id="">
+<div id="dialog">
 <div class="drsElement"
  style="left: 50px; top: 150px; width: 250px; height: 120px;
  background: #CDF; text-align: center">
