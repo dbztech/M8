@@ -59,10 +59,10 @@ body {
 }
 
 ::selection {
-	background: #99CC00; /* Safari */
+	background: #FFBB33; /* Safari */
 }
 ::-moz-selection {
-	background: #99CC00; /* Firefox */
+	background: #FFBB33; /* Firefox */
 }
 
 #content {

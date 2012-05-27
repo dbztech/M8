@@ -1,3 +1,8 @@
+<div id="dialog">
+<p id="dialogTitle">Hey</p>
+<p id="dialogContent">Hey</p>
+</div>
+
 <div id="content">
 
 <div class="contentblock" id="Overview">

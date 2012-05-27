@@ -2,9 +2,11 @@
 
 var Selector = new selector;
 var Cookie = new cookie;
+var Dialog = new dialog;
 
 function load() {
 	document.getElementById('splashcontinue').style.display = "block";
+	//dragResizeLoad();
 }
 
 function unveil() {
@@ -35,6 +37,7 @@ function logout() {
 
 function ajax(type, query) {
 	var verify = Cookie.getCookie('sessionhash');
+	var username = Cookie.getCookie('username');
 	var xmlhttp;
 	if (window.XMLHttpRequest) {
 		// code for IE7+, Firefox, Chrome, Opera, Safari
@@ -53,7 +56,7 @@ function ajax(type, query) {
 	    return(false);
 	  }
 	}
-	xmlhttp.open("GET","Resources/Core/ajax.php?type="+type+"&query="+query+"&verify="+verify,true);
+	xmlhttp.open("GET","Resources/Core/ajax.php?type="+type+"&query="+query+"&verify="+verify+"&username="+username,true);
 	xmlhttp.send();
 }
 
@@ -170,4 +173,16 @@ function variablewrite(id) {
 		ajax("query",query);
 	}
 
+}
+
+function dialog() {
+	this.open = function(title, content) {
+		document.getElementById('dialog').style.display = "block";
+		document.getElementById('dialogTitle').innerHTML = title;
+		document.getElementById('dialogContent').innerHTML = content;
+	}
+
+	this.close = function() {
+		document.getElementById('dialog').style.display = "none";
+	}
 }
