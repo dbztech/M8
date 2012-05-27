@@ -20,18 +20,29 @@ class database
     	// property declaration
     	$result = 'Credential(s) not set: ';
     	$error = 0;
-    	if (is_string($user)) {database::$dbuser = $user;}
-    	else {
+    	if (is_string($user)) {
+	    	database::$dbuser = $user;
+	    } else {
     		$error = 1;
     		$result .= '$dbuser ';
     	}
     	
-    	if (is_string($password)) {database::$dbpassword = $password;}
-    	else {
+    	if (is_string($password)) {
+	    	database::$dbpassword = $password;
+	    } else {
     		$error = 1;
     		$result .= '$dbpassword ';
     	}
-    	#if (!$error) {$result = 'Success!';}
+    	
+    	if (!$error) {
+    		database::$dbhost = $host;
+    		database::$database = $db;
+    		database::$prefix = $pre;
+	    	$result = 'Success!';
+	    } else {
+	    	$result = 'Error!';
+	    }
+
     	return $result;
     }
     
@@ -246,7 +257,7 @@ class login extends Bcrypt
 	public function checklogin() {
 		$user = database::returndata('SELECT * FROM `users` WHERE `username` = "'.$this->username.'"');
 		if ($this->verify($this->passwordplain, $user['hash'])) {
-			$this->userhash = $this->hash($this->passwordplain);
+			$this->userhash = $this->hash(rand());
 			return true;
 		} else {
 			return false;
@@ -286,6 +297,15 @@ class login extends Bcrypt
 	public function logout() {
 		$query = "UPDATE `users` SET `sessionhash` = '".$this->hash(rand())."' WHERE `username` = '".$this->username."';";
 		database::writedata($query);
+	}
+
+	public function createuser($actuiallycreateuser) {
+		$query = "INSERT INTO `users` (`username`, `hash`, `level`, `sessionhash`, `id`) VALUES ('".$this->username."', '".$this->hash($this->passwordplain)."', '0', '".$this->hash(rand())."', NULL);";
+		echo $query;
+		if ($actuiallycreateuser) {
+			database::writedata($query);
+			echo "Created";
+		}
 	}
 }
 

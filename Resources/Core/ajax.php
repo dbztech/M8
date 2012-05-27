@@ -7,8 +7,9 @@ include('settings.php');
 $type = $_GET['type'];
 $query = $_GET['query'];
 $ajaxhash = $_GET['verify'];
+$username = $_GET['username'];
 
-$user = $database->returndata('SELECT * FROM `users` WHERE `username` = "admin"');
+$user = $database->returndata('SELECT * FROM `users` WHERE `username` = "'.$username.'"');
 
 #echo $ajaxhash." ".$user['sessionhash']." ";
 
