@@ -1,11 +1,12 @@
 /* CSS Document */
 
 #dialog {
-	position: relative;
+	position: absolute;
 	left: 50%;
-	top: 50%;
+	top: 15%;
 	width: 400px;
 	height: 200px;
 	background: white;
 	z-index: 2;
+	border-radius: 15px;
 }
