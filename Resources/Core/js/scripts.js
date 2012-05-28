@@ -170,7 +170,7 @@ function page() {
 		//console.log(query);
 		ajax("query", query);
 		ajax("pages", "");
-		delay("document.getElementById('pagestable').innerHTML = lastAjax", 500);
+		delay("document.getElementById('pagestable').innerHTML = lastAjax", 1500);
 	}
 }
 
@@ -194,7 +194,7 @@ function variable() {
 		//console.log(query);
 		ajax("query", query);
 		ajax("variables", "");
-		delay("document.getElementById('variablestable').innerHTML = lastAjax", 500);
+		delay("document.getElementById('variablestable').innerHTML = lastAjax", 1500);
 	}
 }
 
