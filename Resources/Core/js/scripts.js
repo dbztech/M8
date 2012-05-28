@@ -6,7 +6,7 @@ var Dialog = new dialog;
 var Page = new page;
 var Variable = new variable;
 
-var lastAjax = "";
+var lastAjax = "Not set";
 
 function load() {
 	document.getElementById('splashcontinue').style.display = "block";
@@ -169,7 +169,7 @@ function page() {
 		var query = "DELETE FROM `pages` WHERE `id` = "+id;
 		//console.log(query);
 		ajax("query", query);
-		ajax("pages", "");
+		delay('ajax("pages", "")', 100);
 		delay("document.getElementById('pagestable').innerHTML = lastAjax", 1500);
 	}
 }
@@ -193,7 +193,7 @@ function variable() {
 		var query = "DELETE FROM `variables` WHERE `id` = "+id;
 		//console.log(query);
 		ajax("query", query);
-		ajax("variables", "");
+		delay('ajax("variables", "")', 100);
 		delay("document.getElementById('variablestable').innerHTML = lastAjax", 1500);
 	}
 }
