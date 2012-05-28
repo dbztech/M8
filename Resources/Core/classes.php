@@ -157,6 +157,7 @@ class page
 	}
 
 	public function getallpages() {
+		echo "<th>Page Name:</th><th>Page Title:</th><th>Page Description:</th><th>Page Location:</th>";
 		$result = database::returnmultiplerows('SELECT * FROM `pages` ORDER BY `pages`.`title` ASC');
 		$pass = 0;
 		while ($row = $result->fetch()) {
@@ -213,6 +214,7 @@ class variable
 	}
 
 	public function getallvariables() {
+		echo "<th>Variable Name:</th><th>Variable Value:</th>";
 		$result = database::returnmultiplerows('SELECT * FROM `variables` ORDER BY `variables`.`name` ASC');
 		$pass = 0;
 		while ($row = $result->fetch()) {
