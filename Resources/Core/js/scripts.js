@@ -3,6 +3,8 @@
 var Selector = new selector;
 var Cookie = new cookie;
 var Dialog = new dialog;
+var Page = new page;
+var Variable = new variable;
 
 function load() {
 	document.getElementById('splashcontinue').style.display = "block";
@@ -132,47 +134,55 @@ function cookie() {
 	}
 }
 
-function pagewrite(id, column) {
-	//name = 0
-	//title = 1
-	//description = 2
-	//location = 3
-	var value = "ERROR";
-	var query;
-	var columnname;
-	if (column == 0) {
-		value = document.getElementById(id+'name').value;
-		columnname = "name";
-	} else if (column == 1) {
-		value = document.getElementById(id+'title').value;
-		columnname = "title";
-	} else if (column == 2) {
-		value = document.getElementById(id+'description').value;
-		columnname = "description";
-	} else if (column == 3) {
-		value = document.getElementById(id+'location').value;
-		columnname = "location";
-	}
-	if (value != "ERROR") {
-		query = "UPDATE `pages` SET `"+columnname+"` = '"+value+"' WHERE `pages`.`id` = "+id+";";
-		ajax("query",query);
+function page() {
+	this.write = function(id, column) {
+		//name = 0
+		//title = 1
+		//description = 2
+		//location = 3
+		var value = "ERROR";
+		var query;
+		var columnname;
+		if (column == 0) {
+			value = document.getElementById(id+'name').value;
+			columnname = "name";
+		} else if (column == 1) {
+			value = document.getElementById(id+'title').value;
+			columnname = "title";
+		} else if (column == 2) {
+			value = document.getElementById(id+'description').value;
+			columnname = "description";
+		} else if (column == 3) {
+			value = document.getElementById(id+'location').value;
+			columnname = "location";
+		}
+		if (value != "ERROR") {
+			query = "UPDATE `pages` SET `"+columnname+"` = '"+value+"' WHERE `pages`.`id` = "+id+";";
+			ajax("query",query);
+		}
 	}
 
+	this.remove = function(id) {
+	}
 }
 
-function variablewrite(id) {
-	var value = "ERROR";
-	var name = "ERROR";
-	var query;
-	var columnname;
-	value = document.getElementById(id+'varvalue').value;
-	name = document.getElementById(id+'varname').value;
-	if (value != "ERROR" && name != "ERROR") {
-		query = "UPDATE `variables` SET `name` = '"+name+"', `text` = '"+value+"' WHERE `variables`.`id` = "+id+";";
-		//console.log(query);
-		ajax("query",query);
+function variable() {
+	this.write = function(id) {
+		var value = "ERROR";
+		var name = "ERROR";
+		var query;
+		var columnname;
+		value = document.getElementById(id+'varvalue').value;
+		name = document.getElementById(id+'varname').value;
+		if (value != "ERROR" && name != "ERROR") {
+			query = "UPDATE `variables` SET `name` = '"+name+"', `text` = '"+value+"' WHERE `variables`.`id` = "+id+";";
+			//console.log(query);
+			ajax("query",query);
+		}
 	}
 
+	this.remove = function(id) {
+	}
 }
 
 function dialog() {

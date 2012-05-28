@@ -162,10 +162,11 @@ class page
 		while ($row = $result->fetch()) {
 			$pass++;
 		    echo "<tr>";
-		    echo '<td><input type="text" id="'.$row['id'].'name'.'" value="'.$row['name'].'" onblur="pagewrite('.$row['id'].', 0'.');" disabled /></td>';
-		    echo '<td><input type="text" id="'.$row['id'].'title'.'" value="'.$row['title'].'" onblur="pagewrite('.$row['id'].', 1'.');" /></td>';
-		    echo '<td><input type="text" id="'.$row['id'].'description'.'" value="'.$row['description'].'" onblur="pagewrite('.$row['id'].', 2'.');" /></td>';
-		    echo '<td><input type="text" id="'.$row['id'].'location'.'" value="'.$row['location'].'" onblur="pagewrite('.$row['id'].', 3'.');" /></td>';
+		    echo '<td><input type="text" id="'.$row['id'].'name'.'" value="'.$row['name'].'" onblur="Page.write('.$row['id'].', 0'.');" disabled /></td>';
+		    echo '<td><input type="text" id="'.$row['id'].'title'.'" value="'.$row['title'].'" onblur="Page.write('.$row['id'].', 1'.');" /></td>';
+		    echo '<td><input type="text" id="'.$row['id'].'description'.'" value="'.$row['description'].'" onblur="Page.write('.$row['id'].', 2'.');" /></td>';
+		    echo '<td><input type="text" id="'.$row['id'].'location'.'" value="'.$row['location'].'" onblur="Page.write('.$row['id'].', 3'.');" /></td>';
+			echo '<td><input type="button" id="'.$row['id'].'remove'.'" value="X" onblur="Page.remove('.$row['id'].');" /></td>';
 		    echo "</tr>";
 		}
 	}
@@ -217,8 +218,9 @@ class variable
 		while ($row = $result->fetch()) {
 			$pass++;
 		    echo "<tr>";
-		    echo '<td><input type="text" id="'.$row['id'].'varname'.'" value="'.$row['name'].'" onblur="variablewrite('.$row['id'].');" /></td>';
-		    echo '<td><input type="text" id="'.$row['id'].'varvalue'.'" value="'.$this->getvariable($row['name']).'" onblur="variablewrite('.$row['id'].');" /></td>';
+		    echo '<td><input type="text" id="'.$row['id'].'varname'.'" value="'.$row['name'].'" onblur="Variable.write('.$row['id'].');" /></td>';
+		    echo '<td><input type="text" id="'.$row['id'].'varvalue'.'" value="'.$this->getvariable($row['name']).'" onblur="Variable.write('.$row['id'].');" /></td>';
+			echo '<td><input type="button" id="'.$row['id'].'remove'.'" value="X" onblur="Variable.remove('.$row['id'].');" /></td>';
 		    echo "</tr>";
 		}
 	}
