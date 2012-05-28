@@ -35,6 +35,14 @@ if ($user['sessionhash'] == $ajaxhash) {
 			$login->username = $query;
 			$login->logout();
 		}
+		
+		if ($type == 'pages') {
+			$result = $page->getallpages();
+		}
+		
+		if ($type == 'variables') {
+			$result = $variable->getallvariables();
+		}
 	}
 } else {
 	echo "Not verified";
