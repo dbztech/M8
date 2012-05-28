@@ -163,6 +163,9 @@ function page() {
 	}
 
 	this.remove = function(id) {
+		var query = "DELETE FROM `pages` WHERE `id` = "+id;
+		//console.log(query);
+		ajax("query", query);
 	}
 }
 
@@ -182,6 +185,9 @@ function variable() {
 	}
 
 	this.remove = function(id) {
+		var query = "DELETE FROM `variables` WHERE `id` = "+id;
+		//console.log(query);
+		ajax("query", query);
 	}
 }
 
