@@ -178,8 +178,8 @@ class variable
 	#0 = Number
 	#1 = Text
 	#2 = Location
-	#4 = Zone
-	#5 = Boolean
+	#3 = Zone
+	#4 = Boolean
 
 	public function getvariable($name) {
 		$output = database::returndata('SELECT * FROM `variables` WHERE `name` = "'.$name.'"');

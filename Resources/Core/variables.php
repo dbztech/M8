@@ -5,6 +5,7 @@
 <?php $variable->getallvariables(); ?>
 </table>
 <input type="button" value="Submit Changes" style="width: 100px;" />
+<input type="button" value="Add Variable" style="width: 100px;" onclick="Variable.addDialog()" />
 </form>
 <br />
 </div>
