@@ -1,6 +1,6 @@
 <div id="dialog">
-<p id="dialogTitle">Hey</p>
-<p id="dialogContent">Hey</p>
+<p id="dialogTitle">Title Not Set</p>
+<p id="dialogContent">No Content</p>
 </div>
 
 <div id="content">
