@@ -1,3 +1,3 @@
 <?php
-echo "ayyy";
+echo $variable->getvariable('indextext');
 ?>
