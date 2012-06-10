@@ -1,8 +1,13 @@
 <?php
 #This is the basic M8 classes file
-foreach (glob("Classes/*.php") as $filename)
+
+class m8
 {
-    include $filename;
+	public static $version = "b0.0.2";
+	
+	public static function variable($id) {
+		echo variable::getvariable($id);
+	}
 }
 
 #Basic database interaction class
@@ -181,7 +186,7 @@ class variable
 	#3 = Zone
 	#4 = Boolean
 
-	public function getvariable($name) {
+	public static function getvariable($name) {
 		$output = database::returndata('SELECT * FROM `variables` WHERE `name` = "'.$name.'"');
 		if (isset($output)) {
 			if ($output['type'] == 0 && isset($output['num'])) {

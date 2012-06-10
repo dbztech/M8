@@ -1,3 +1,3 @@
 <?php
-echo $variable->getvariable('indextext');
+m8::variable('indextext');
 ?>

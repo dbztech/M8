@@ -1,7 +1,4 @@
 <?php
-#Initialize core variables
-$version = "b0.0.1";
-
 #This is the core of M8
 include('classes.php');
 include('patch.php');
