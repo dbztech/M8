@@ -1,4 +1,4 @@
-<form action="#">
+<form>
 <p>Type:</p>
 <select id="newvariableselector">
 <option value="0">Number</option>
@@ -11,5 +11,6 @@
 <input type="text" id="newvariablename" onclick="Variable.setAddFormType();" required />
 <p>Value:</p>
 <input type="text" id="newvariablevalue" onclick="Variable.setAddFormType();" required />
-<input type="submit" style="width: 100px;" onclick="Variable.add()" /> 
+<input type="button" value="Add" style="width: 100px;" onclick="Variable.add()" /> 
+<input type="button" value="Close" style="width: 100px;" onclick="Dialog.close()" /> 
 </form>
