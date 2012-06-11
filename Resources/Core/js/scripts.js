@@ -100,11 +100,11 @@ function selector() {
 	}
 
 	this.turnOff = function(id) {
-		document.getElementById(id+'Button').style.color = this.offColor;
+		document.getElementById(id+'Button').setAttribute("class", "deselected");
 	}
 
 	this.turnOn = function(id) {
-		document.getElementById(id+'Button').style.color = this.onColor;
+		document.getElementById(id+'Button').setAttribute("class", "selected");
 	}
 
 	this.show = function(id) {
