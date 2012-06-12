@@ -10,7 +10,7 @@
 <p class="selected" id="infoButton" onClick="Selector.setCurrent('info','overview');">Info</p>
 <p id="statusButton" onClick="Selector.setCurrent('status','overview');">Status</p>
 </div>
-<p class="rightcontext" id="title"><?php m8::variable('overview'); ?></p>
+<p class="rightcontext" id="title">M8 Overview</p>
 <br />
 <br />
 <?php include("info.php"); ?>
@@ -21,7 +21,7 @@
 <div class="selector">
 <p class="selected" id="editButton">Edit</p>
 </div>
-<p class="rightcontext" id="title"><?php m8::variable('pages'); ?></p>
+<p class="rightcontext" id="title">M8 Pages</p>
 <br />
 <br />
 <?php include("edit.php"); ?>
@@ -32,7 +32,7 @@
 <p class="selected" id="editVariablesButton" onClick="Selector.setCurrent('editVariables','variables');">Edit</p>
 <p id="searchButton" onClick="Selector.setCurrent('search','variables');">Search</p>
 </div>
-<p class="rightcontext" id="title"><?php m8::variable('variables'); ?></p>
+<p class="rightcontext" id="title">M8 Variables</p>
 <br />
 <br />
 <?php include("variables.php"); ?>
@@ -43,7 +43,7 @@
 <div class="selector">
 <p class="selected" id="settingsButton">Settings</p>
 </div>
-<p class="rightcontext" id="title"><?php m8::variable('settings'); ?></p>
+<p class="rightcontext" id="title">M8 Settings</p>
 <br />
 <br />
 <?php include("settingsedit.php"); ?>
