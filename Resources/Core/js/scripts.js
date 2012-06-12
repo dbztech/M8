@@ -90,12 +90,22 @@ function selector() {
 				this.counter[0] = "editVariables"
 			}
 		}
+		
+		if (group == "settings") {
+			if (id == "settings") {
+				this.counter[0] = "users"
+			}
+
+			if (id == "users") {
+				this.counter[0] = "settings"
+			}
+		}
 
 		for (var i = this.counter.length - 1; i >= 0; i--) {
 			this.turnOn(id);
-			this.turnOff(this.counter[0]);
+			this.turnOff(this.counter[i]);
 			this.show(id);
-			this.hide(this.counter[0]);
+			this.hide(this.counter[i]);
 		}
 	}
 

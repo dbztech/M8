@@ -41,12 +41,14 @@
 
 <div class="contentblock" id="Settings">
 <div class="selector">
-<p class="selected" id="settingsButton">Settings</p>
+<p class="selected" id="settingsButton" onClick="Selector.setCurrent('settings','settings');">Settings</p>
+<p id="usersButton" onClick="Selector.setCurrent('users','settings');">Users</p>
 </div>
 <p class="rightcontext" id="title">M8 Settings</p>
 <br />
 <br />
 <?php include("settingsedit.php"); ?>
+<?php include("users.php"); ?>
 </div>
 
 </div>

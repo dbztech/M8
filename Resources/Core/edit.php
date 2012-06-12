@@ -4,7 +4,7 @@
 <table class="admintable" id="pagestable">
 <?php $page->getallpages(); ?>
 </table>
-<input type="button" value="Submit Changes" style="width: 100px;" />
+<input type="button" value="Submit Changes" style="width: 110px;" />
 </form>
 <br />
 </div>
