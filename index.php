@@ -18,7 +18,7 @@ if (isset($_GET['in'])) {
 			}
 		}
 		if ($authenticated) {
-			$page->location = '/Resources/Core/index.php';
+			page::$location = '/Resources/Core/index.php';
 			include('Resources/Core/header.php');
 			if ($leftnav) {
 				include('Resources/Core/leftnav.php');
@@ -33,7 +33,7 @@ if (isset($_GET['in'])) {
 		include('Resources/Core/logout.php');
 	} else {
 		if ($page->verifypage($_GET['in'])) {
-			$page->location = '/Resources/Site/Code/'.$_GET['in'].'.php';
+			page::$location = '/Resources/Site/Code/'.$_GET['in'].'.php';
 			#include('Resources/Core/header.php');
 			#if ($leftnav) {
 			#	include('Resources/Core/leftnav.php');
@@ -46,7 +46,7 @@ if (isset($_GET['in'])) {
 	}
 } else {
 	if ($page->verifypage("index")) {
-		$page->location = '/Resources/Site/Code/index.php';
+		page::$location = '/Resources/Site/Code/index.php';
 		include('Resources/Site/Code/index.php');
 	} else {
 		echo "404";

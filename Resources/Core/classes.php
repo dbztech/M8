@@ -8,6 +8,15 @@ class m8
 	public static function variable($id) {
 		echo variable::getvariable($id);
 	}
+	
+	public static function title() {
+		#echo "Yay";
+		echo page::gettitle();
+	}
+	
+	public static function description() {
+		echo page::getdesc();
+	}
 }
 
 #Basic database interaction class
@@ -129,7 +138,7 @@ class database
 class page
 {
 	//property declaration
-	public $location = "index.php";
+	public static $location = "index.php";
 
 	//method declaration
 	public function verifypage($pagename) {
@@ -151,13 +160,13 @@ class page
 		}
 	}
 
-	public function gettitle() {
-		$result = database::returndata('SELECT * FROM `pages` WHERE `location` = "'.$this->location.'"');
+	public static function gettitle() {
+		$result = database::returndata('SELECT * FROM `pages` WHERE `location` = "'.page::$location.'"');
 		return $result['title'];
 	}
 
-	public function getdesc() {
-		$result = database::returndata('SELECT * FROM `pages` WHERE `location` = "'.$this->location.'"');
+	public static function getdesc() {
+		$result = database::returndata('SELECT * FROM `pages` WHERE `location` = "'.page::$location.'"');
 		return $result['description'];
 	}
 
