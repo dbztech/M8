@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jun 10, 2012 at 02:56 PM
+-- Generation Time: Jun 16, 2012 at 10:29 PM
 -- Server version: 5.5.25
 -- PHP Version: 5.3.13
 
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `pages` (
   `location` text NOT NULL,
   `id` int(11) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
 
 --
 -- Dumping data for table `pages`
@@ -44,7 +44,8 @@ INSERT INTO `pages` (`name`, `title`, `description`, `location`, `id`) VALUES
 ('AnotherTest', 'AnotherTest', 'No description currently', '/Resources/Site/Code/AnotherTest.php', 2),
 ('AnotherTestb', 'AnotherTestb', 'No description currently', '/Resources/Site/Code/AnotherTestb.php', 3),
 ('Test', 'Test', 'No description currently', '/Resources/Site/Code/Test.php', 4),
-('index', 'index', 'No description currently', '/Resources/Site/Code/index.php', 5);
+('index', 'index', 'No description currently', '/Resources/Site/Code/index.php', 5),
+('CreateUser', 'CreateUser', 'No description currently', '/Resources/Site/Code/CreateUser.php', 6);
 
 -- --------------------------------------------------------
 
@@ -59,14 +60,15 @@ CREATE TABLE IF NOT EXISTS `users` (
   `sessionhash` text NOT NULL,
   `id` int(11) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`username`, `hash`, `level`, `sessionhash`, `id`) VALUES
-('admin', '$2a$15$p1sD941DBOS.aUqWiWJ39OUMfsvD4sFqcyY8dFiLnkelTxHeRdmuS', 0, '46fb39cd40b5a903f43417f590f9f964', 1);
+('admin', '$2a$15$p1sD941DBOS.aUqWiWJ39OUMfsvD4sFqcyY8dFiLnkelTxHeRdmuS', 0, '$2a$12$4g3t81ZU6Nl.i3R63LwaxehPXnQiKyGrC9Gvvva1nxUwS2SJWUQbe', 1),
+('Username', '$2a$12$evRxPrlplARpXHAbhfIa9efGaErbECZM7MXaK767fwoSE4BMO8z0.', 0, '$2a$12$fl..0tqsI1qCCiS9I7mjEuYaoD0vJDcoptSj4e4u7MWPkN0xCMreu', 4);
 
 -- --------------------------------------------------------
 
@@ -84,19 +86,14 @@ CREATE TABLE IF NOT EXISTS `variables` (
   `zone` text,
   `id` int(11) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
 
 --
 -- Dumping data for table `variables`
 --
 
 INSERT INTO `variables` (`name`, `type`, `num`, `text`, `boolean`, `location`, `zone`, `id`) VALUES
-('overview', 1, NULL, 'M8 Overview', NULL, NULL, NULL, 5),
-('pages', 1, NULL, 'M8 Pages', NULL, NULL, NULL, 6),
-('variables', 1, NULL, 'M8 Variables', NULL, NULL, NULL, 7),
-('settings', 1, NULL, 'M8 Settings', NULL, NULL, NULL, 8),
-('indextext', 1, NULL, 'This is the index page loaded by M8 <br /> It can be found in /Resources/Site/Code/index.php', NULL, NULL, NULL, 10),
-('maybe', 0, 66, NULL, NULL, NULL, NULL, 11);
+('indextext', 1, NULL, 'This is the index page loaded by M8 <br /> It can be found in /Resources/Site/Code/index.php', NULL, NULL, NULL, 10);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
