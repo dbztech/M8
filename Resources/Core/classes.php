@@ -317,12 +317,17 @@ class login extends Bcrypt
 		database::writedata($query);
 	}
 
-	public function createuser($actuiallycreateuser) {
-		$query = "INSERT INTO `users` (`username`, `hash`, `level`, `sessionhash`, `id`) VALUES ('".$this->username."', '".$this->hash($this->passwordplain)."', '0', '".$this->hash(rand())."', NULL);";
-		echo $query;
+	public function createuser($username, $password, $level, $actuiallycreateuser) {
+		$query = "INSERT INTO `users` (`username`, `hash`, `level`, `sessionhash`, `id`) VALUES ('".$username."', '".$this->hash($password)."', '0', '".$this->hash(rand())."', NULL);";
+		if (database::returndata('SELECT * FROM `users` WHERE `users`.`username` = "'.$username.'"')) {
+			echo "Already exists";
+			$actuiallycreateuser = false;
+		}
 		if ($actuiallycreateuser) {
 			database::writedata($query);
 			echo "Created";
+		} else {
+			echo $query;
 		}
 	}
 }
