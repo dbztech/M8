@@ -9,6 +9,16 @@ $query = $_GET['query'];
 $ajaxhash = $_GET['verify'];
 $username = $_GET['username'];
 
+
+#Non ajax variables
+if ($query == "nonajax") {
+	$ajax = false;
+}
+#Add User
+$addusername = $_GET['addusername'];
+$addpassword = $_GET['addpassword'];
+$addlevel = $_GET['addlevel'];
+
 $user = $database->returndata('SELECT * FROM `users` WHERE `username` = "'.$username.'"');
 
 #echo $ajaxhash." ".$user['sessionhash']." ";
@@ -35,11 +45,28 @@ if ($user['sessionhash'] == $ajaxhash) {
 			$login->username = $query;
 			$login->logout();
 		}
+		
+		if ($type == 'pages') {
+			$result = $page->getallpages();
+		}
+		
+		if ($type == 'variables') {
+			$result = $variable->getallvariables();
+		}
+		
+		if ($type == 'adduser') {
+			#echo "Here";
+			$result = $login->createuser($addusername, $addpassword, $addlevel, true);
+		}
 	}
 } else {
 	echo "Not verified";
 }
 
-echo $result;
+if($ajax) {
+	echo $result;
+} else {
+	echo "<!doctype><html><head><meta http-equiv='Refresh' content='0;url=javascript:history.go(-1)'></head><body>Redirecting....... <br /> ".$result."</body></html>";
+}
 #echo "<br /> Type = ".$type."<br /> Query = ".$query;
 ?>

@@ -15,6 +15,7 @@
 
 .selector p:hover {
 	color: #FFBB33;
+	cursor: pointer;cursor: hand;
 }
 
 .selector p:focus {

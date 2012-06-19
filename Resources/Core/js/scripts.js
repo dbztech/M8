@@ -3,6 +3,10 @@
 var Selector = new selector;
 var Cookie = new cookie;
 var Dialog = new dialog;
+var Page = new page;
+var Variable = new variable;
+
+var lastAjax = "Not set";
 
 function load() {
 	document.getElementById('splashcontinue').style.display = "block";
@@ -49,7 +53,8 @@ function ajax(type, query) {
 	xmlhttp.onreadystatechange=function() {
 	  if (xmlhttp.readyState==4 && xmlhttp.status==200) {
 	  	console.log("Query successful");
-	  	console.log(xmlhttp.responseText);
+	  	//console.log(xmlhttp.responseText);
+		lastAjax = xmlhttp.responseText;
 	    return(true);
 	  } else {
 	  	//console.log("Query failed");
@@ -85,21 +90,31 @@ function selector() {
 				this.counter[0] = "editVariables"
 			}
 		}
+		
+		if (group == "settings") {
+			if (id == "settings") {
+				this.counter[0] = "users"
+			}
+
+			if (id == "users") {
+				this.counter[0] = "settings"
+			}
+		}
 
 		for (var i = this.counter.length - 1; i >= 0; i--) {
 			this.turnOn(id);
-			this.turnOff(this.counter[0]);
+			this.turnOff(this.counter[i]);
 			this.show(id);
-			this.hide(this.counter[0]);
+			this.hide(this.counter[i]);
 		}
 	}
 
 	this.turnOff = function(id) {
-		document.getElementById(id+'Button').style.color = this.offColor;
+		document.getElementById(id+'Button').setAttribute("class", "deselected");
 	}
 
 	this.turnOn = function(id) {
-		document.getElementById(id+'Button').style.color = this.onColor;
+		document.getElementById(id+'Button').setAttribute("class", "selected");
 	}
 
 	this.show = function(id) {
@@ -132,47 +147,119 @@ function cookie() {
 	}
 }
 
-function pagewrite(id, column) {
-	//name = 0
-	//title = 1
-	//description = 2
-	//location = 3
-	var value = "ERROR";
-	var query;
-	var columnname;
-	if (column == 0) {
-		value = document.getElementById(id+'name').value;
-		columnname = "name";
-	} else if (column == 1) {
-		value = document.getElementById(id+'title').value;
-		columnname = "title";
-	} else if (column == 2) {
-		value = document.getElementById(id+'description').value;
-		columnname = "description";
-	} else if (column == 3) {
-		value = document.getElementById(id+'location').value;
-		columnname = "location";
-	}
-	if (value != "ERROR") {
-		query = "UPDATE `pages` SET `"+columnname+"` = '"+value+"' WHERE `pages`.`id` = "+id+";";
-		ajax("query",query);
+function page() {
+	this.write = function(id, column) {
+		//name = 0
+		//title = 1
+		//description = 2
+		//location = 3
+		var value = "ERROR";
+		var query;
+		var columnname;
+		if (column == 0) {
+			value = document.getElementById(id+'name').value;
+			columnname = "name";
+		} else if (column == 1) {
+			value = document.getElementById(id+'title').value;
+			columnname = "title";
+		} else if (column == 2) {
+			value = document.getElementById(id+'description').value;
+			columnname = "description";
+		} else if (column == 3) {
+			value = document.getElementById(id+'location').value;
+			columnname = "location";
+		}
+		if (value != "ERROR") {
+			query = "UPDATE `pages` SET `"+columnname+"` = '"+value+"' WHERE `pages`.`id` = "+id+";";
+			ajax("query",query);
+		}
 	}
 
+	this.remove = function(id) {
+		var query = "DELETE FROM `pages` WHERE `id` = "+id;
+		//console.log(query);
+		ajax("query", query);
+		delay('ajax("pages", "")', 200);
+		delay("document.getElementById('pagestable').innerHTML = lastAjax", 1600);
+	}
 }
 
-function variablewrite(id) {
-	var value = "ERROR";
-	var name = "ERROR";
-	var query;
-	var columnname;
-	value = document.getElementById(id+'varvalue').value;
-	name = document.getElementById(id+'varname').value;
-	if (value != "ERROR" && name != "ERROR") {
-		query = "UPDATE `variables` SET `name` = '"+name+"', `text` = '"+value+"' WHERE `variables`.`id` = "+id+";";
-		//console.log(query);
-		ajax("query",query);
+function variable() {
+	this.write = function(id) {
+		var value = "ERROR";
+		var name = "ERROR";
+		var query;
+		var columnname;
+		value = document.getElementById(id+'varvalue').value;
+		name = document.getElementById(id+'varname').value;
+		if (value != "ERROR" && name != "ERROR") {
+			query = "UPDATE `variables` SET `name` = '"+name+"', `text` = '"+value+"' WHERE `variables`.`id` = "+id+";";
+			//console.log(query);
+			ajax("query",query);
+		}
 	}
 
+	this.remove = function(id) {
+		var query = "DELETE FROM `variables` WHERE `id` = "+id;
+		//console.log(query);
+		ajax("query", query);
+		delay('ajax("variables", "")', 200);
+		delay("document.getElementById('variablestable').innerHTML = lastAjax", 1600);
+	}
+	
+	this.addDialog = function() {
+		Dialog.open("Add Variable", "Please Wait...");
+		Dialog.setContent('addvariable.php');
+	}
+	
+	this.add = function() {
+		var name = document.getElementById('newvariablename').value;
+		var value = document.getElementById('newvariablevalue').value;
+		var type = document.getElementById('newvariableselector').value;
+		var query = "INVALID";
+		if (type == 0) {
+			query = "INSERT INTO `variables` (`name`, `type`, `num`, `text`, `location`, `zone`, `boolean`, `id`) VALUES ('"+name+"', '0', '"+value+"', NULL, NULL, NULL, NULL, NULL);";
+		} else if (type == 1) {
+			query = "INSERT INTO `variables` (`name`, `type`, `num`, `text`, `location`, `zone`, `boolean`, `id`) VALUES ('"+name+"', '1', NULL, '"+value+"', NULL, NULL, NULL, NULL);";
+		} else if (type == 2) {
+			query = "INSERT INTO `variables` (`name`, `type`, `num`, `text`, `location`, `zone`, `boolean`, `id`) VALUES ('"+name+"', '2', NULL, NULL, '"+value+"', NULL, NULL, NULL);";
+		} else if (type == 3) {
+			query = "INSERT INTO `variables` (`name`, `type`, `num`, `text`, `location`, `zone`, `boolean`, `id`) VALUES ('"+name+"', '3', NULL, NULL, NULL, '"+value+"', NULL, NULL);";
+		} else if (type == 4) {
+			query = "INSERT INTO `variables` (`name`, `type`, `num`, `text`, `location`, `zone`, `boolean`, `id`) VALUES ('"+name+"', '4', NULL, NULL, NULL, NULL, '"+value+"', NULL);";
+		}
+		ajax("query", query);
+		delay('ajax("variables", "")', 200);
+		delay("document.getElementById('variablestable').innerHTML = lastAjax", 1600);
+		Dialog.close();
+	}
+	
+	this.setAddFormType = function() {
+		var type = document.getElementById('newvariableselector').value;
+		if (type == 0) {
+			document.getElementById('newvariablevalue').type = "number";
+		} else if (type == 1) {
+			document.getElementById('newvariablevalue').type = "text";
+		} else if (type == 2) {
+			document.getElementById('newvariablevalue').type = "text";
+		} else if (type == 3) {
+			document.getElementById('newvariablevalue').type = "text";
+		} else if (type == 4) {
+			document.getElementById('newvariablevalue').type = "number";
+		}
+	}
+	
+	this.enlarge = function(id) {
+		var context = document.getElementById(id+'varvalue');
+		var text = context.value;
+		Dialog.open('Edit variable', '<form><textarea id="variabledetail" style="width: 400px; height: 150px; margin: 0px; resize: vertical;">'+text+'</textarea><input type="button" onClick="Variable.writeDetail('+id+')" value="Submit Changes" /></form>');
+	}
+	
+	this.writeDetail = function(id) {
+		document.getElementById(id+'varvalue').value = document.getElementById('variabledetail').value;
+		this.write(id);
+		Dialog.close();
+	}
 }
 
 function dialog() {
@@ -181,8 +268,21 @@ function dialog() {
 		document.getElementById('dialogTitle').innerHTML = title;
 		document.getElementById('dialogContent').innerHTML = content;
 	}
+	
+	this.setContent = function(page) {
+		ajax("content", page);
+		delay("document.getElementById('dialogContent').innerHTML = lastAjax",1600);
+	}
 
 	this.close = function() {
 		document.getElementById('dialog').style.display = "none";
 	}
+}
+
+function is_int(value){ 
+  if((parseFloat(value) == parseInt(value)) && !isNaN(value)){
+      return true;
+  } else { 
+      return false;
+  } 
 }
