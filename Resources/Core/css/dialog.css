@@ -2,11 +2,10 @@
 
 #dialog {
 	display: none;
-	position: absolute;
+	position: fixed;
 	left: 50%;
 	top: 15%;
 	width: 400px;
-	height: 200px;
 	background: white;
 	z-index: 2;
 	border-radius: 15px;
@@ -28,7 +27,8 @@
 	background: #09C;
 	border-bottom-left-radius: 14px;
 	border-bottom-right-radius: 14px;
-	height: 90%;
 	margin: 10px -10px;
 	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: -10px;
 }

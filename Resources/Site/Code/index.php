@@ -1,3 +1,3 @@
 <?php
-echo "ayyy";
+m8::variable('indextext');
 ?>
