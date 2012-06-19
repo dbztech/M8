@@ -248,6 +248,18 @@ function variable() {
 			document.getElementById('newvariablevalue').type = "number";
 		}
 	}
+	
+	this.enlarge = function(id) {
+		var context = document.getElementById(id+'varvalue');
+		var text = context.value;
+		Dialog.open('Edit variable', '<form><textarea id="variabledetail" style="width: 400px; height: 150px; margin: 0px; resize: vertical;">'+text+'</textarea><input type="button" onClick="Variable.writeDetail('+id+')" value="Submit Changes" /></form>');
+	}
+	
+	this.writeDetail = function(id) {
+		document.getElementById(id+'varvalue').value = document.getElementById('variabledetail').value;
+		this.write(id);
+		Dialog.close();
+	}
 }
 
 function dialog() {

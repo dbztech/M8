@@ -235,7 +235,7 @@ class variable
 			$pass++;
 		    echo "<tr>";
 		    echo '<td><input type="text" id="'.$row['id'].'varname'.'" value="'.$row['name'].'" onblur="Variable.write('.$row['id'].');" /></td>';
-		    echo '<td><input type="text" id="'.$row['id'].'varvalue'.'" value="'.$this->getvariable($row['name']).'" onblur="Variable.write('.$row['id'].');" /></td>';
+		    echo '<td><input type="text" id="'.$row['id'].'varvalue'.'" value="'.$this->getvariable($row['name']).'" onblur="Variable.write('.$row['id'].');" onclick="Variable.enlarge('.$row['id'].');" /></td>';
 			echo '<td><input type="button" id="'.$row['id'].'remove'.'" value="X" onclick="Variable.remove('.$row['id'].');" /></td>';
 		    echo "</tr>";
 		}
