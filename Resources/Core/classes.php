@@ -1,8 +1,22 @@
 <?php
 #This is the basic M8 classes file
-foreach (glob("Classes/*.php") as $filename)
+
+class m8
 {
-    include $filename;
+	public static $version = "b0.0.2";
+	
+	public static function variable($id) {
+		echo variable::getvariable($id);
+	}
+	
+	public static function title() {
+		#echo "Yay";
+		echo page::gettitle();
+	}
+	
+	public static function description() {
+		echo page::getdesc();
+	}
 }
 
 #Basic database interaction class
@@ -20,18 +34,29 @@ class database
     	// property declaration
     	$result = 'Credential(s) not set: ';
     	$error = 0;
-    	if (is_string($user)) {database::$dbuser = $user;}
-    	else {
+    	if (is_string($user)) {
+	    	database::$dbuser = $user;
+	    } else {
     		$error = 1;
     		$result .= '$dbuser ';
     	}
     	
-    	if (is_string($password)) {database::$dbpassword = $password;}
-    	else {
+    	if (is_string($password)) {
+	    	database::$dbpassword = $password;
+	    } else {
     		$error = 1;
     		$result .= '$dbpassword ';
     	}
-    	#if (!$error) {$result = 'Success!';}
+    	
+    	if (!$error) {
+    		database::$dbhost = $host;
+    		database::$database = $db;
+    		database::$prefix = $pre;
+	    	$result = 'Success!';
+	    } else {
+	    	$result = 'Error!';
+	    }
+
     	return $result;
     }
     
@@ -113,7 +138,7 @@ class database
 class page
 {
 	//property declaration
-	public $location = "index.php";
+	public static $location = "index.php";
 
 	//method declaration
 	public function verifypage($pagename) {
@@ -135,26 +160,28 @@ class page
 		}
 	}
 
-	public function gettitle() {
-		$result = database::returndata('SELECT * FROM `pages` WHERE `location` = "'.$this->location.'"');
+	public static function gettitle() {
+		$result = database::returndata('SELECT * FROM `pages` WHERE `location` = "'.page::$location.'"');
 		return $result['title'];
 	}
 
-	public function getdesc() {
-		$result = database::returndata('SELECT * FROM `pages` WHERE `location` = "'.$this->location.'"');
+	public static function getdesc() {
+		$result = database::returndata('SELECT * FROM `pages` WHERE `location` = "'.page::$location.'"');
 		return $result['description'];
 	}
 
 	public function getallpages() {
-		$result = database::returnmultiplerows('SELECT * FROM `pages`');
+		echo "<th>Page Name:</th><th>Page Title:</th><th>Page Description:</th><th>Page Location:</th>";
+		$result = database::returnmultiplerows('SELECT * FROM `pages` ORDER BY `pages`.`title` ASC');
 		$pass = 0;
 		while ($row = $result->fetch()) {
 			$pass++;
 		    echo "<tr>";
-		    echo '<td><input type="text" id="'.$row['id'].'name'.'" value="'.$row['name'].'" onblur="pagewrite('.$row['id'].', 0'.');" /></td>';
-		    echo '<td><input type="text" id="'.$row['id'].'title'.'" value="'.$row['title'].'" onblur="pagewrite('.$row['id'].', 1'.');" /></td>';
-		    echo '<td><input type="text" id="'.$row['id'].'description'.'" value="'.$row['description'].'" onblur="pagewrite('.$row['id'].', 2'.');" /></td>';
-		    echo '<td><input type="text" id="'.$row['id'].'location'.'" value="'.$row['location'].'" onblur="pagewrite('.$row['id'].', 3'.');" /></td>';
+		    echo '<td><input type="text" id="'.$row['id'].'name'.'" value="'.$row['name'].'" onblur="Page.write('.$row['id'].', 0'.');" disabled /></td>';
+		    echo '<td><input type="text" id="'.$row['id'].'title'.'" value="'.$row['title'].'" onblur="Page.write('.$row['id'].', 1'.');" /></td>';
+		    echo '<td><input type="text" id="'.$row['id'].'description'.'" value="'.$row['description'].'" onblur="Page.write('.$row['id'].', 2'.');" /></td>';
+		    echo '<td><input type="text" id="'.$row['id'].'location'.'" value="'.$row['location'].'" onblur="Page.write('.$row['id'].', 3'.');" /></td>';
+			echo '<td><input type="button" id="'.$row['id'].'remove'.'" value="X" onclick="Page.remove('.$row['id'].');" /></td>';
 		    echo "</tr>";
 		}
 	}
@@ -165,10 +192,10 @@ class variable
 	#0 = Number
 	#1 = Text
 	#2 = Location
-	#4 = Zone
-	#5 = Boolean
+	#3 = Zone
+	#4 = Boolean
 
-	public function getvariable($name) {
+	public static function getvariable($name) {
 		$output = database::returndata('SELECT * FROM `variables` WHERE `name` = "'.$name.'"');
 		if (isset($output)) {
 			if ($output['type'] == 0 && isset($output['num'])) {
@@ -201,13 +228,15 @@ class variable
 	}
 
 	public function getallvariables() {
-		$result = database::returnmultiplerows('SELECT * FROM `variables`');
+		echo "<th>Variable Name:</th><th>Variable Value:</th>";
+		$result = database::returnmultiplerows('SELECT * FROM `variables` ORDER BY `variables`.`name` ASC');
 		$pass = 0;
 		while ($row = $result->fetch()) {
 			$pass++;
 		    echo "<tr>";
-		    echo '<td><input type="text" id="'.$row['id'].'varname'.'" value="'.$row['name'].'" onblur="variablewrite('.$row['id'].');" /></td>';
-		    echo '<td><input type="text" id="'.$row['id'].'varvalue'.'" value="'.$this->getvariable($row['name']).'" onblur="variablewrite('.$row['id'].');" /></td>';
+		    echo '<td><input type="text" id="'.$row['id'].'varname'.'" value="'.$row['name'].'" onblur="Variable.write('.$row['id'].');" /></td>';
+		    echo '<td><input type="text" id="'.$row['id'].'varvalue'.'" value="'.$this->getvariable($row['name']).'" onblur="Variable.write('.$row['id'].');" onclick="Variable.enlarge('.$row['id'].');" /></td>';
+			echo '<td><input type="button" id="'.$row['id'].'remove'.'" value="X" onclick="Variable.remove('.$row['id'].');" /></td>';
 		    echo "</tr>";
 		}
 	}
@@ -246,7 +275,7 @@ class login extends Bcrypt
 	public function checklogin() {
 		$user = database::returndata('SELECT * FROM `users` WHERE `username` = "'.$this->username.'"');
 		if ($this->verify($this->passwordplain, $user['hash'])) {
-			$this->userhash = $this->hash($this->passwordplain);
+			$this->userhash = $this->hash(rand());
 			return true;
 		} else {
 			return false;
@@ -286,6 +315,20 @@ class login extends Bcrypt
 	public function logout() {
 		$query = "UPDATE `users` SET `sessionhash` = '".$this->hash(rand())."' WHERE `username` = '".$this->username."';";
 		database::writedata($query);
+	}
+
+	public function createuser($username, $password, $level, $actuiallycreateuser) {
+		$query = "INSERT INTO `users` (`username`, `hash`, `level`, `sessionhash`, `id`) VALUES ('".$username."', '".$this->hash($password)."', '0', '".$this->hash(rand())."', NULL);";
+		if (database::returndata('SELECT * FROM `users` WHERE `users`.`username` = "'.$username.'"')) {
+			echo "Already exists";
+			$actuiallycreateuser = false;
+		}
+		if ($actuiallycreateuser) {
+			database::writedata($query);
+			echo "Created";
+		} else {
+			echo $query;
+		}
 	}
 }
 
