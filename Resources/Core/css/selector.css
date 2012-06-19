@@ -14,11 +14,12 @@
 }
 
 .selector p:hover {
-	color: #99CC00;
+	color: #FFBB33;
+	cursor: pointer;cursor: hand;
 }
 
 .selector p:focus {
-	color: #99CC00;
+	color: #FFBB33;
 }
 
 .selected {
