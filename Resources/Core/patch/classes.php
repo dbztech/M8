@@ -275,14 +275,8 @@ class file
 		return $output;
 	}
 	
-	public static function copy($oldFile, $newFile) {
-		if (!copy($oldFile, $newFile)) {
-			echo "failed to copy $file...\n";
-		}
-	}
-	
 	public static function backup($filename) {
-		file::copy(getcwd().'/Resources/Core/'.$filename,getcwd().'/Resources/Core/backup/'.$filename);
+		#Move file to backup folder
 	}
 }
 
@@ -380,12 +374,9 @@ class patch
 	public static function getfiles() {
 		#Return an array of all the files to be patched
 		$files = file::listdir('/Resources/Core/patch');
-		$inew = 0;
 		for($i = 2; $i <= count($files)-1; $i++) {
-			$output[$inew] = $files[$i];
-			$inew++;
+			echo $i;
 		}
-		return $output;
 	}
 }
 
@@ -404,10 +395,7 @@ class backup
 	}
 	
 	public static function patch() {
-		$files = patch::getfiles();
-		for($i = 0; $i <= count($files)-1; $i++) {
-			file::backup($files[$i]);
-		}
+		#Backup files to be patched
 	}
 }
 

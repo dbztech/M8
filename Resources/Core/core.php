@@ -25,6 +25,8 @@ if (isset($sessionhashcookie) && isset($usernamecookie)) {
 	$login->cookiesexist = false;
 }
 
+patch::verify();
+
 #Debug window
 if ($debug) {
 	echo '<div id="debug">Database Info: <br /> ';
