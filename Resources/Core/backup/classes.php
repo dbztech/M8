@@ -360,9 +360,12 @@ class login extends Bcrypt
 class patch
 {
 	public static function verify() {
-		backup::patch();
-		#Verify Current
-		#Verify Patch
+		if (patch::getfiles()) {
+			echo "PATCHING";
+			backup::patch();
+			#Verify Current
+			#Verify Patch
+		}
 	}
 	
 	public static function apply() {
