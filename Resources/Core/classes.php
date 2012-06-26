@@ -259,6 +259,10 @@ class file
 			return false;
 		}
 	}
+	
+	public static function backup($filename) {
+		#Move file to backup folder
+	}
 }
 
 class login extends Bcrypt
@@ -332,6 +336,45 @@ class login extends Bcrypt
 	}
 }
 
+class patch
+{
+	public static function verify() {
+		#Backup
+		#Verify Current
+		#Verify Patch
+	}
+	
+	public static function apply() {
+		patch::verify();
+		#Update Files
+		#Update Database
+		patch::cleanup();
+	}
+	
+	public static function cleanup() {
+		#Delete patch files
+		#Remove unnecesary files
+	}
+}
+
+class backup
+{
+	public static function database() {
+		#Db to file
+	}
+	
+	public static function content() {
+		#Copy content to backup folder
+	}
+	
+	public static function core() {
+		#Copy core to backup folder
+	}
+	
+	public static function patch() {
+		#backup files to be patched
+	}
+}
 
 
 
