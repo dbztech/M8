@@ -2,6 +2,7 @@
 include('Resources/Core/core.php');
 include('Resources/Site/options.php');
 #echo "<!doctype html><!-- Powered by M8 -->";
+flush();
 if (isset($_GET['in'])) {
 	if ($_GET['in'] == "Admin") {
 		$authenticated = false;
@@ -25,8 +26,10 @@ if (isset($_GET['in'])) {
 			}
 			include('Resources/Core/index.php');
 			include('Resources/Core/footer.php');
+			flush();
 		} else {
 			include('Resources/Core/login.php');
+			flush();
 		}
 	} elseif ($_GET['in'] == "Logout") {
 		#echo 'Logout';
@@ -42,6 +45,7 @@ if (isset($_GET['in'])) {
 			#include('Resources/Core/footer.php');
 		} else {
 			echo "404";
+			flush();
 		}
 	}
 } else {
@@ -50,6 +54,7 @@ if (isset($_GET['in'])) {
 		include('Resources/Site/Code/index.php');
 	} else {
 		echo "404";
+		flush();
 	}
 }
 ?>
