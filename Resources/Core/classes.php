@@ -189,11 +189,11 @@ class page
 
 class variable
 {
-	#0 = Number
-	#1 = Text
-	#2 = Location
-	#3 = Zone
-	#4 = Boolean
+	#0 = Number (Long)
+	#1 = Text (String)
+	#2 = Location (Filesystem)
+	#3 = Zone (HTML)
+	#4 = Boolean (Bool)
 
 	public static function getvariable($name) {
 		$output = database::returndata('SELECT * FROM `variables` WHERE `name` = "'.$name.'"');
@@ -410,6 +410,21 @@ class backup
 		for($i = 0; $i <= count($files)-1; $i++) {
 			file::backup($files[$i]);
 		}
+	}
+}
+
+class sanatize
+{
+	public static function login() {
+		#First entry point
+	}
+	
+	public static function general() {
+		#Once logged in, general dont break shit with weird characters
+	}
+    
+    public static function ajax() {
+		#Verified execution, seceptable to injection
 	}
 }
 
