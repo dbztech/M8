@@ -415,15 +415,15 @@ class backup
 
 class sanatize
 {
-	public static function login() {
+	public static function login(input) {
 		#First entry point
 	}
 	
-	public static function general() {
+	public static function general(input) {
 		#Once logged in, general dont break shit with weird characters
 	}
     
-    public static function ajax() {
+    public static function ajax(input) {
 		#Verified execution, seceptable to injection
 	}
 }
