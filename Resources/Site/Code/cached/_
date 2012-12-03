@@ -1,0 +1,4142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <meta name="keywords" content="" />
+ <meta name="description" content="" />
+ 
+ <link rel="stylesheet" type="text/css" href="http://cs6292.userapi.com/u165554321/docs/7b9f391be4e0/style.css" />
+ <link rel="stylesheet" type="text/css" href="http://cs6292.userapi.com/u165554321/docs/78073e60b14a/general.css" />
+ <script type="text/javascript" src="media/js/dynprice.lib.out.js"></script>
+	<script type="text/javascript" src="media/js/dynprice.out.js"></script>
+ <script type="text/javascript" src="media/js/date_extend.js"></script>
+ <script type="text/javascript" src="media/js/swfobject.js"></script>
+ <script type="text/javascript" src="media/js/vertical_menu.js"></script>
+ <script type="text/javascript" src="media/js/multi_divider.js"></script>
+ <script type="text/javascript" src="media/js/jquery.slideshow.js"></script>
+ <script type="text/javascript" src="media/js/jquery.jcarousel.min.js"></script>
+ <script type="text/javascript" src="media/js/custom.js"></script>
+ <script type="text/javascript">
+ 
+ 	var	params = {
+	allowFullScreen	 :'false',
+	allowScriptAccess:'always',
+	scale	 :'noscale',
+	menu	 :'false',
+	wmode	 :'transparent',
+	quality	 :'high'
+	};
+
+	swfobject.embedSWF('media/flash/flash_header.swf',
+	 'flash_alt',
+	 '781',
+	 '138',
+	 "9.0.0",
+	 "media/js/expressInstall.swf",
+	 {},
+	 params,
+	 {});
+
+ $(function() {
+ $("#products_menu_sidebar").webwidget_vertical_menu({
+ directory: "media/images"
+ });
+ });
+
+ $(document).ready(function(){
+ base.html.resetNavbar("multi_category_navigation");
+ });
+
+ 
+ </script>
+
+ <title>Online Pharmacy</title>
+
+ 
+ <style type="text/css">
+ .main_header h1 a[href]{
+ background:url(http://cs6292.userapi.com/u165554321/docs/b7c44dec20d7/logo.png) 0 12px no-repeat;
+ }
+ </style>
+ 	<!--[if IE 6]>
+ 	<link rel="stylesheet" type="text/css" href="http://cs6292.userapi.com/u165554321/docs/d9023951b9ed/style_ie6.css" />
+ 	<style type="text/css">
+ 	 button{width:1; padding:0; margin:0}
+ 	.main_header h1 a {
+ 	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=image, src="http://cs6292.userapi.com/u165554321/docs/b7c44dec20d7/logo.png");
+ 	}
+
+	#bestSellersPopupBox #bs_top {background:url(http://cs6292.userapi.com/u165554321/docs/f31fb2cd36c6/best-sellers-popup-top.gif) no-repeat left top;}
+	#bestSellersPopupBox #bs_bottom {background:url(http://cs6292.userapi.com/u165554321/docs/b3bf4dfc7a0f/best-sellers-popup-bottom.gif) no-repeat left top;}
+	#bestSellersPopupBox #bs_content {background:url(http://cs6292.userapi.com/u165554321/docs/cc0eae4e65ce/best-sellers-popup-back-y.gif) repeat-y left top;}
+	#bestSellersPopupBox #bs_content #bs_sub_content {background:url(http://cs6292.userapi.com/u165554321/docs/356267cb8ae9/best-sellers-popup-back-x.gif) repeat-x left top;}
+	#bestSellersPopupBox a#bs_close {background:url(http://cs6292.userapi.com/u165554321/docs/7fcab969bc0d/best-sellers-popup-close.gif) no-repeat left top;}
+
+	#bestseller_container {
+	padding-top:10px;
+	}
+ 	</style>
+ 	<![endif]-->
+ 
+</head>
+
+<body>
+ 
+<div class="wrapper clearfix">
+	<img src="http://cs6292.userapi.com/u165554321/docs/ae109a9f0a19/pic-loader.gif" style="display:none;" alt="" />
+	<div class="main_header clearfix">
+	<div class="date_currency_and_share">
+	<!-- live chat-->
+
+<script type="text/javascript">
+ $(document).ready(function(){
+ var _uri = location.href;
+ var _match = _uri.match(/^(.+)\/(.+\.html)$/);
+ if ( _match ) {
+ _uri = _match[1];
+ }
+ _uri += '/media/images/'
+ $('iframe').attr('src', 'http://www.safe-charge.com/live_chat_iframe?image_src='+encodeURIComponent(_uri));
+
+ });
+</script>
+<iframe scrolling="no" frameborder="0" src="" allowTransparency="true"></iframe>
+
+	<img class="phone_banner" src="http://cs6292.userapi.com/u165554321/docs/9e7265377b0d/phone.png" alt="" />
+	</div>
+	<div id="header">
+	<h1>
+	<a href="index.html">Online Pharmacy</a>
+	</h1>
+	<div class="shopping_cart">
+	<strong>Shopping Cart</strong>
+	<a href="javascript:void(0)" class="cart_link" style="width:101px;"><span class="cart_num_items">0</span></a>
+</div>	<ul class="navigation clearfix" id="navigation">
+	<li><a href="index.html" >Home</a></li>
+	<li><a href="about.html" >About</a></li>
+	<li><a href="faq.html">FAQ</a></li>
+	<li><a href="http://www.safe-charge.com/contact.php">Contact</a></li>
+	<li><a href="shipping.html">Shipping</a></li>
+	<li><a href="http://www.safe-charge.com/status.php" target="_blank">Order Status</a></li>
+	
+	</ul>
+	
+	<a href="#" class="all_categories">all categories</a>
+	<div id="category_popup">
+	<div class="inner">
+	<ul class="main_list">
+<!-- Products menu start -->
+	<li class="items">
+	<a href="mens_sexual_health.html" class="category" title="View all Men's Sexual Health">Men's Sexual Health</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="viagra_generic.html">Viagra (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="cialis_generic.html">Cialis (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="viagra_brand.html">Viagra® (Brand)</a>
+	</li>
+	<li class="sub_items">
+	<a href="levitra_generic.html">Levitra (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="viagra_soft_pills_generic.html">Viagra Soft Pills (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="cialis_soft_pills_generic.html">Cialis Soft pills (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="viagra_oral_jelly_generic.html">Viagra Jellies (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="avanafil.html">Avanafil</a>
+	</li>
+	<li class="sub_items">
+	<a href="professionalviagra.html">Professional Viagra</a>
+	</li>
+	<li class="sub_items">
+	<a href="professionalcialis.html">Professional Cialis</a>
+	</li>
+	<li class="sub_items">
+	<a href="trial_ed_pack_generic.html">Trial ED Pack (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="priligy_dapoxetine.html">Generic Priligy Dapoxetine</a>
+	</li>
+	<li class="sub_items">
+	<a href="tadalafil.html">Tadalafil</a>
+	</li>
+	<li class="sub_items">
+	<a href="sildenafil.html">Sildenafil Citrate</a>
+	</li>
+	<li class="sub_items">
+	<a href="herbal_viagra.html">Herbal Viagra</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="mens_sexual_health.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="antidepressants.html" class="category" title="View all Antidepressants">Antidepressants</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="cymbalta_generic.html">Cymbalta (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="prozac_generic.html">Prozac (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="Fluoxetine.html">Fluoxetine</a>
+	</li>
+	<li class="sub_items">
+	<a href="zoloft_generic.html">Zoloft (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="seroquel_generic.html">Seroquel (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="celexa_generic.html">Celexa (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="effexor_generic.html">Effexor (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="paxil_generic.html">Paxil (Generic)</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="antidepressants.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="muscle_relaxants.html" class="category" title="View all Muscle Relaxants">Muscle Relaxants</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="imitrex.html">Imitrex (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="imigran_generic.html">Imigran (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="lioresal_generic.html">Lioresal (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="zanaflex_generic.html">Zanaflex (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="requip_generic.html">Requip (Generic)</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="muscle_relaxants.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="adhd.html" class="category" title="View all ADHD">ADHD</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="strattera_generic.html">Strattera (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="atomoxetine.html">Atomoxetine</a>
+	</li>
+	<li class="sub_items">
+	<a href="mentat.html">Mentat</a>
+	</li>
+	<li class="sub_items">
+	<a href="brahmi.html">Brahmi</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="adhd.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="blood_pressure.html" class="category" title="View all Blood Pressure">Blood Pressure</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="norvasc_generic.html">Norvasc (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="inderal_generic.html">Inderal (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="lasix_generic.html">Lasix (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="adalat_generic.html">Adalat (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="altace_generic.html">Altace (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="aldactone_generic.html">Aldactone (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="avapro_generic.html">Avapro (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="calan_generic.html">Calan (Generic)</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="blood_pressure.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="antibiotics.html" class="category" title="View all Antibiotics">Antibiotics</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="cipro_generic.html">Cipro (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="lamisil_generic.html">Lamisil (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="diflucan_generic.html">Diflucan (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="famvir_generic.html">Famvir (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="zovirax_generic.html">Zovirax (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="zithromax_generic.html">Zithromax (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="levaquin_generic.html">Levaquin (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="amoxicillin_generic.html">Amoxicillin (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="cephalexin_generic.html">Cephalexin (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="augmentin_generic.html">Augmentin (Generic)</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="antibiotics.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="womens_sexual_health.html" class="category" title="View all Women's Sexual Health">Women's Sexual Health</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="womenra.html">Womenra</a>
+	</li>
+	<li class="sub_items">
+	<a href="female_viagra_generic.html">Female Viagra</a>
+	</li>
+	<li class="sub_items">
+	<a href="female_rx_oil.html">Female Lust Gel</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="womens_sexual_health.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="womens_health.html" class="category" title="View all Women's Health">Women's Health</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="clomid_generic.html">Clomid (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="valtrex_generic.html">Valtrex (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="levlen_generic.html">Levlen (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="fosamax_generic.html">Fosamax (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="premarin_brand.html">Premarin® (Brand)</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="womens_health.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="smoking_cessation.html" class="category" title="View all Smoking Cessation">Smoking Cessation</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="zyban_generic.html">Zyban (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="smok-ox.html">Smok-OX</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="smoking_cessation.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="heart_and_cholesterol.html" class="category" title="View all Heart & Cholesterol">Heart & Cholesterol</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="zocor_generic.html">Zocor (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="lipitor_generic.html">Lipitor (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="crestor_generic.html">Crestor (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="plavix_generic.html">Plavix (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="plavix_brand.html">Plavix® (Brand)</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="heart_and_cholesterol.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="allergy_relief.html" class="category" title="View all Allergy Relief">Allergy Relief</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="zyrtec_generic.html">Zyrtec (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="allegra_generic.html">Allegra (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="aristocort_generic.html">Aristocort (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="phenergan_generic.html">Phenergan (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="deltasone_generic.html">Deltasone (Generic)</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="allergy_relief.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="digestive_health_and_nausea.html" class="category" title="View all Digestive Health & Nausea">Digestive Health & Nausea</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="nexium_generic.html">Nexium (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="protonix_generic.html">Protonix (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="prevacid_generic.html">Prevacid (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="prilosec_generic.html">Prilosec (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="aciphex_generic.html">Aciphex (Generic)</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="digestive_health_and_nausea.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="cancer_symptoms_relief.html" class="category" title="View all Cancer Symptoms Relief">Cancer Symptoms Relief</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="casodex_generic.html">Casodex (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="prednisone_generic.html">Prednisone (Generic)</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="cancer_symptoms_relief.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="diabetes_treatment.html" class="category" title="View all Diabetes Treatment">Diabetes Treatment</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="amaryl_generic.html">Amaryl (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="avandia_generic.html">Avandia (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="actos_generic.html">Actos (Generic)</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="diabetes_treatment.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="skin_care_and_dermatology.html" class="category" title="View all Skin Care & Dermatology">Skin Care & Dermatology</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="retin_a_generic.html">Retin-A (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="renova_generic.html">Renova (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="accutane_generic.html">Accutane (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="neem.html">Neem</a>
+	</li>
+	<li class="sub_items">
+	<a href="clarina-anti-acne-gel.html">Clarina Anti-Acne Gel</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="skin_care_and_dermatology.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="pain_relief.html" class="category" title="View all Pain Relief">Pain Relief</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="celebrex_generic.html">Celebrex (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="motrin_generic.html">Motrin (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="ansaid_generic.html">Ansaid (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="arava_generic.html">Arava (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="mobic_generic.html">Mobic (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="naprosyn_generic.html">Naprosyn (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="arcoxia_generic.html">Arcoxia (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="maxalt_generic.html">Maxalt (Generic)</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="pain_relief.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="mens_health.html" class="category" title="View all Men's Health">Men's Health</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="flomax_generic.html">Flomax (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="anadoil.html">Testosterone Anadoil</a>
+	</li>
+	<li class="sub_items">
+	<a href="proscar_generic.html">Proscar (Generic)</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="mens_health.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="sleep_aids.html" class="category" title="View all Sleep Aids">Sleep Aids</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="sleepwell.html">Herbal Sleep Well</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="sleep_aids.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="anti_anxiety.html" class="category" title="View all Anti-anxiety">Anti-anxiety</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="buspar_generic.html">Buspar (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="wellbutrin_generic.html">Wellbutrin (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="wellbutrin_sr_generic.html">Wellbutrin SR (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="atarax_generic.html">Atarax (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="anafranil_generic.html">Anafranil (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="clomipramine.html">Clomipramine</a>
+	</li>
+	<li class="sub_items">
+	<a href="buspirone.html">Buspirone</a>
+	</li>
+	<li class="sub_items">
+	<a href="geriforte.html">Geriforte</a>
+	</li>
+	<li class="sub_items">
+	<a href="ashva-gandha.html">Ashva-gandha</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="anti_anxiety.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="weight_loss.html" class="category" title="View all Weight Loss">Weight Loss</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="xenical_generic.html">Xenical (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="alli_generic.html">Alli (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="hoodia_800.html">Hoodia</a>
+	</li>
+	<li class="sub_items">
+	<a href="slimfast.html">Slimfast</a>
+	</li>
+	<li class="sub_items">
+	<a href="mega_hoodia.html">Mega Hoodia</a>
+	</li>
+	<li class="sub_items">
+	<a href="orlistat.html">Orlistat</a>
+	</li>
+	<li class="sub_items">
+	<a href="vrikshamla.html">Vrikshamla</a>
+	</li>
+	<li class="sub_items">
+	<a href="slimfast_plus.html">Slimfast</a>
+	</li>
+	<li class="sub_items">
+	<a href="mega-hoodia_plus.html">Mega Hoodia</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="weight_loss.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="hair_loss_treatment.html" class="category" title="View all Hair Loss Treatment">Hair Loss Treatment</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="propecia_generic.html">Propecia (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="finpecia_generic.html">Finpecia (Generic)</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="hair_loss_treatment.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="detox.html" class="category" title="View all Detox">Detox</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="acaiberry.html">Acai Berry</a>
+	</li>
+	<li class="sub_items">
+	<a href="colondetox.html">Colon Detox</a>
+	</li>
+	<li class="sub_items">
+	<a href="bodydetox.html">Body Detox</a>
+	</li>
+	<li class="sub_items">
+	<a href="liv52.html">Liv.52</a>
+	</li>
+	<li class="sub_items">
+	<a href="liv52-ds.html">Liv.52 DS</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="detox.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="antipsychotic_treatment.html" class="category" title="View all Antipsychotic Treatment">Antipsychotic Treatment</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="zyprexa_generic.html">Zyprexa (Generic)</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="antipsychotic_treatment.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+<!-- Products menu end -->
+</ul>
+	</div>
+	</div>
+	<div class="row clearfix">
+	<div class="right_banner"> 
+	<div class="content_header clearfix">
+ <a class="popupzoom iframe tes_a" href="about.html"><span></span>
+ Not Satisfied? 30 Day<br /> 
+ Money Back Guarantee
+ </a>
+	<a class="tes_b" href="shipping.html"><span></span>Free global Shipping</a>
+	<a class="tes_d" href="testimonials.html"><span></span>
+ What Our Customers<br />
+ Are Saying
+	</a>
+	</div>
+	</div>
+	<div class="left_banner">
+	<div id="slideshow">
+	<img src="http://cs6292.userapi.com/u165554321/docs/f6128baf8548/slide_1.gif" alt="" />
+	<img src="http://cs6292.userapi.com/u165554321/docs/ce12131c9605/slide_2.gif" alt="" />
+	<img src="http://cs6292.userapi.com/u165554321/docs/1b7e0fcfad2c/slide_3.gif" alt="" />
+	</div>
+	</div>
+
+	<!-- Topsellers menu start -->
+	
+	<div class="topsellers">
+	<h3>Best Sellers</h3>
+	<a href="#" class="btnNext"></a>
+	<a href="#" class="btnPrevious"></a>
+	<ul class="clearfix top_list">
+	<li class="topSellersItems">
+	<a class="pill_image" href="blackcialis.html">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3691/ODdswNeh2TY.jpg" alt="Cialis Black" />
+	
+	</a>
+	<span class="topsellers_details">
+	<a href="blackcialis.html" class="product_link">Cialis Black</a>
+	<a href="blackcialis.html" class="order_button">Buy Now</a>
+	</span>
+	</li>
+	<li class="topSellersItems">
+	<a class="pill_image" href="goldviagra.html">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3819/UrXcYdSk0ow.jpg" alt="Viagra Gold" />
+	
+	</a>
+	<span class="topsellers_details">
+	<a href="goldviagra.html" class="product_link">Viagra Gold</a>
+	<a href="goldviagra.html" class="order_button">Buy Now</a>
+	</span>
+	</li>
+	<li class="topSellersItems">
+	<a class="pill_image" href="stendra_generic.html">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3740/MjXCLFipBf4.jpg" alt="Stendra (Generic)" />
+	
+	</a>
+	<span class="topsellers_details">
+	<a href="stendra_generic.html" class="product_link">Stendra (Generic)</a>
+	<a href="stendra_generic.html" class="order_button">Buy Now</a>
+	</span>
+	</li>
+	<li class="topSellersItems">
+	<a class="pill_image" href="cialis_generic.html">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/36de/sDFbVsQklxQ.jpg" alt="Cialis (Generic)" />
+	
+	</a>
+	<span class="topsellers_details">
+	<a href="cialis_generic.html" class="product_link">Cialis (Generic)</a>
+	<a href="cialis_generic.html" class="order_button">Buy Now</a>
+	</span>
+	</li>
+	<li class="topSellersItems">
+	<a class="pill_image" href="viagra_generic.html">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3af1/3_qwU3NqzCk.jpg" alt="Viagra (Generic)" />
+	
+	</a>
+	<span class="topsellers_details">
+	<a href="viagra_generic.html" class="product_link">Viagra (Generic)</a>
+	<a href="viagra_generic.html" class="order_button">Buy Now</a>
+	</span>
+	</li>
+	<li class="topSellersItems">
+	<a class="pill_image" href="avanafil.html">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3740/MjXCLFipBf4.jpg" alt="Avanafil" />
+	
+	</a>
+	<span class="topsellers_details">
+	<a href="avanafil.html" class="product_link">Avanafil</a>
+	<a href="avanafil.html" class="order_button">Buy Now</a>
+	</span>
+	</li>
+	<li class="topSellersItems">
+	<a class="pill_image" href="imitrex.html">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/385f/RScQpyEl8t0.jpg" alt="Imitrex (Generic)" />
+	
+	</a>
+	<span class="topsellers_details">
+	<a href="imitrex.html" class="product_link">Imitrex (Generic)</a>
+	<a href="imitrex.html" class="order_button">Buy Now</a>
+	</span>
+	</li>
+	<li class="topSellersItems">
+	<a class="pill_image" href="trial_ed_pack_generic.html">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3763/2HISdr4XD3o.jpg" alt="Trial ED Pack (Generic)" />
+	
+	</a>
+	<span class="topsellers_details">
+	<a href="trial_ed_pack_generic.html" class="product_link">Trial ED Pack (Generic)</a>
+	<a href="trial_ed_pack_generic.html" class="order_button">Buy Now</a>
+	</span>
+	</li>
+	</ul>
+	</div>
+
+
+
+	</div>
+	</div>
+	</div> <div class="main clearfix">
+	<div class="left_menu">
+	<div id="products_menu_sidebar">
+	<h3>Our Categories</h3>
+	<ul class="main_list">
+<!-- Products menu start -->
+	<li class="items">
+	<a href="mens_sexual_health.html" class="category" title="View all Men's Sexual Health">Men's Sexual Health</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="viagra_generic.html">Viagra (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="cialis_generic.html">Cialis (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="viagra_brand.html">Viagra® (Brand)</a>
+	</li>
+	<li class="sub_items">
+	<a href="levitra_generic.html">Levitra (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="viagra_soft_pills_generic.html">Viagra Soft Pills (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="cialis_soft_pills_generic.html">Cialis Soft pills (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="viagra_oral_jelly_generic.html">Viagra Jellies (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="avanafil.html">Avanafil</a>
+	</li>
+	<li class="sub_items">
+	<a href="professionalviagra.html">Professional Viagra</a>
+	</li>
+	<li class="sub_items">
+	<a href="professionalcialis.html">Professional Cialis</a>
+	</li>
+	<li class="sub_items">
+	<a href="trial_ed_pack_generic.html">Trial ED Pack (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="priligy_dapoxetine.html">Generic Priligy Dapoxetine</a>
+	</li>
+	<li class="sub_items">
+	<a href="tadalafil.html">Tadalafil</a>
+	</li>
+	<li class="sub_items">
+	<a href="sildenafil.html">Sildenafil Citrate</a>
+	</li>
+	<li class="sub_items">
+	<a href="herbal_viagra.html">Herbal Viagra</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="mens_sexual_health.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="antidepressants.html" class="category" title="View all Antidepressants">Antidepressants</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="cymbalta_generic.html">Cymbalta (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="prozac_generic.html">Prozac (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="Fluoxetine.html">Fluoxetine</a>
+	</li>
+	<li class="sub_items">
+	<a href="zoloft_generic.html">Zoloft (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="seroquel_generic.html">Seroquel (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="celexa_generic.html">Celexa (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="effexor_generic.html">Effexor (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="paxil_generic.html">Paxil (Generic)</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="antidepressants.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="muscle_relaxants.html" class="category" title="View all Muscle Relaxants">Muscle Relaxants</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="imitrex.html">Imitrex (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="imigran_generic.html">Imigran (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="lioresal_generic.html">Lioresal (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="zanaflex_generic.html">Zanaflex (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="requip_generic.html">Requip (Generic)</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="muscle_relaxants.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="adhd.html" class="category" title="View all ADHD">ADHD</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="strattera_generic.html">Strattera (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="atomoxetine.html">Atomoxetine</a>
+	</li>
+	<li class="sub_items">
+	<a href="mentat.html">Mentat</a>
+	</li>
+	<li class="sub_items">
+	<a href="brahmi.html">Brahmi</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="adhd.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="blood_pressure.html" class="category" title="View all Blood Pressure">Blood Pressure</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="norvasc_generic.html">Norvasc (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="inderal_generic.html">Inderal (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="lasix_generic.html">Lasix (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="adalat_generic.html">Adalat (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="altace_generic.html">Altace (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="aldactone_generic.html">Aldactone (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="avapro_generic.html">Avapro (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="calan_generic.html">Calan (Generic)</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="blood_pressure.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="antibiotics.html" class="category" title="View all Antibiotics">Antibiotics</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="cipro_generic.html">Cipro (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="lamisil_generic.html">Lamisil (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="diflucan_generic.html">Diflucan (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="famvir_generic.html">Famvir (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="zovirax_generic.html">Zovirax (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="zithromax_generic.html">Zithromax (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="levaquin_generic.html">Levaquin (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="amoxicillin_generic.html">Amoxicillin (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="cephalexin_generic.html">Cephalexin (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="augmentin_generic.html">Augmentin (Generic)</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="antibiotics.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="womens_sexual_health.html" class="category" title="View all Women's Sexual Health">Women's Sexual Health</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="womenra.html">Womenra</a>
+	</li>
+	<li class="sub_items">
+	<a href="female_viagra_generic.html">Female Viagra</a>
+	</li>
+	<li class="sub_items">
+	<a href="female_rx_oil.html">Female Lust Gel</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="womens_sexual_health.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="womens_health.html" class="category" title="View all Women's Health">Women's Health</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="clomid_generic.html">Clomid (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="valtrex_generic.html">Valtrex (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="levlen_generic.html">Levlen (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="fosamax_generic.html">Fosamax (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="premarin_brand.html">Premarin® (Brand)</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="womens_health.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="smoking_cessation.html" class="category" title="View all Smoking Cessation">Smoking Cessation</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="zyban_generic.html">Zyban (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="smok-ox.html">Smok-OX</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="smoking_cessation.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="heart_and_cholesterol.html" class="category" title="View all Heart & Cholesterol">Heart & Cholesterol</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="zocor_generic.html">Zocor (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="lipitor_generic.html">Lipitor (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="crestor_generic.html">Crestor (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="plavix_generic.html">Plavix (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="plavix_brand.html">Plavix® (Brand)</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="heart_and_cholesterol.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="allergy_relief.html" class="category" title="View all Allergy Relief">Allergy Relief</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="zyrtec_generic.html">Zyrtec (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="allegra_generic.html">Allegra (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="aristocort_generic.html">Aristocort (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="phenergan_generic.html">Phenergan (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="deltasone_generic.html">Deltasone (Generic)</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="allergy_relief.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="digestive_health_and_nausea.html" class="category" title="View all Digestive Health & Nausea">Digestive Health & Nausea</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="nexium_generic.html">Nexium (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="protonix_generic.html">Protonix (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="prevacid_generic.html">Prevacid (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="prilosec_generic.html">Prilosec (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="aciphex_generic.html">Aciphex (Generic)</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="digestive_health_and_nausea.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="cancer_symptoms_relief.html" class="category" title="View all Cancer Symptoms Relief">Cancer Symptoms Relief</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="casodex_generic.html">Casodex (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="prednisone_generic.html">Prednisone (Generic)</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="cancer_symptoms_relief.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="diabetes_treatment.html" class="category" title="View all Diabetes Treatment">Diabetes Treatment</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="amaryl_generic.html">Amaryl (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="avandia_generic.html">Avandia (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="actos_generic.html">Actos (Generic)</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="diabetes_treatment.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="skin_care_and_dermatology.html" class="category" title="View all Skin Care & Dermatology">Skin Care & Dermatology</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="retin_a_generic.html">Retin-A (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="renova_generic.html">Renova (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="accutane_generic.html">Accutane (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="neem.html">Neem</a>
+	</li>
+	<li class="sub_items">
+	<a href="clarina-anti-acne-gel.html">Clarina Anti-Acne Gel</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="skin_care_and_dermatology.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="pain_relief.html" class="category" title="View all Pain Relief">Pain Relief</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="celebrex_generic.html">Celebrex (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="motrin_generic.html">Motrin (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="ansaid_generic.html">Ansaid (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="arava_generic.html">Arava (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="mobic_generic.html">Mobic (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="naprosyn_generic.html">Naprosyn (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="arcoxia_generic.html">Arcoxia (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="maxalt_generic.html">Maxalt (Generic)</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="pain_relief.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="mens_health.html" class="category" title="View all Men's Health">Men's Health</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="flomax_generic.html">Flomax (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="anadoil.html">Testosterone Anadoil</a>
+	</li>
+	<li class="sub_items">
+	<a href="proscar_generic.html">Proscar (Generic)</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="mens_health.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="sleep_aids.html" class="category" title="View all Sleep Aids">Sleep Aids</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="sleepwell.html">Herbal Sleep Well</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="sleep_aids.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="anti_anxiety.html" class="category" title="View all Anti-anxiety">Anti-anxiety</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="buspar_generic.html">Buspar (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="wellbutrin_generic.html">Wellbutrin (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="wellbutrin_sr_generic.html">Wellbutrin SR (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="atarax_generic.html">Atarax (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="anafranil_generic.html">Anafranil (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="clomipramine.html">Clomipramine</a>
+	</li>
+	<li class="sub_items">
+	<a href="buspirone.html">Buspirone</a>
+	</li>
+	<li class="sub_items">
+	<a href="geriforte.html">Geriforte</a>
+	</li>
+	<li class="sub_items">
+	<a href="ashva-gandha.html">Ashva-gandha</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="anti_anxiety.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="weight_loss.html" class="category" title="View all Weight Loss">Weight Loss</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="xenical_generic.html">Xenical (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="alli_generic.html">Alli (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="hoodia_800.html">Hoodia</a>
+	</li>
+	<li class="sub_items">
+	<a href="slimfast.html">Slimfast</a>
+	</li>
+	<li class="sub_items">
+	<a href="mega_hoodia.html">Mega Hoodia</a>
+	</li>
+	<li class="sub_items">
+	<a href="orlistat.html">Orlistat</a>
+	</li>
+	<li class="sub_items">
+	<a href="vrikshamla.html">Vrikshamla</a>
+	</li>
+	<li class="sub_items">
+	<a href="slimfast_plus.html">Slimfast</a>
+	</li>
+	<li class="sub_items">
+	<a href="mega-hoodia_plus.html">Mega Hoodia</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="weight_loss.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="hair_loss_treatment.html" class="category" title="View all Hair Loss Treatment">Hair Loss Treatment</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="propecia_generic.html">Propecia (Generic)</a>
+	</li>
+	<li class="sub_items">
+	<a href="finpecia_generic.html">Finpecia (Generic)</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="hair_loss_treatment.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="detox.html" class="category" title="View all Detox">Detox</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="acaiberry.html">Acai Berry</a>
+	</li>
+	<li class="sub_items">
+	<a href="colondetox.html">Colon Detox</a>
+	</li>
+	<li class="sub_items">
+	<a href="bodydetox.html">Body Detox</a>
+	</li>
+	<li class="sub_items">
+	<a href="liv52.html">Liv.52</a>
+	</li>
+	<li class="sub_items">
+	<a href="liv52-ds.html">Liv.52 DS</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="detox.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+	<li class="items">
+	<a href="antipsychotic_treatment.html" class="category" title="View all Antipsychotic Treatment">Antipsychotic Treatment</a>
+	<ul class="ul_sub_items">
+	<li class="sub_items">
+	<a href="zyprexa_generic.html">Zyprexa (Generic)</a>
+	</li>
+	<li rel="product_item" class="view_all">
+	<a href="antipsychotic_treatment.html">View All</a>
+	<span class="bottom"></span>
+	</li>
+	</ul>
+	</li>
+
+<!-- Products menu end -->
+</ul>
+	</div>
+	</div>
+ <div class="main_content">
+ <div class="boxes">
+	<h3>
+	<a class="category" href="mens_sexual_health.html">Men's Sexual Health</a>
+	</h3>
+	<ul class="product_boxes clearfix group">
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="viagra_generic.html">Viagra (Generic)</a>
+	<em>90 X 100mg pills</em>
+	</h5>
+	<a class="pill_image" href="viagra_generic.html" title="Click to buy Viagra (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3af1/3_qwU3NqzCk.jpg" alt="Viagra (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=14207&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="viagra_generic.html" title="Click to buy Viagra (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="cialis_generic.html">Cialis (Generic)</a>
+	<em>90 X 20mg pills</em>
+	</h5>
+	<a class="pill_image" href="cialis_generic.html" title="Click to buy Cialis (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/36de/sDFbVsQklxQ.jpg" alt="Cialis (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=14235&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="cialis_generic.html" title="Click to buy Cialis (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+	 <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="viagra_brand.html">Viagra® (Brand)</a>
+	<em>10 X 100mg pills</em>
+	</h5>
+	<a class="pill_image" href="viagra_brand.html" title="Click to buy Viagra® (Brand)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3af1/3_qwU3NqzCk.jpg" alt="Viagra® (Brand)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=14219&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="viagra_brand.html" title="Click to buy Viagra® (Brand)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="levitra_generic.html">Levitra (Generic)</a>
+	<em>90 X 20mg pills</em>
+	</h5>
+	<a class="pill_image" href="levitra_generic.html" title="Click to buy Levitra (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/389e/AnOe9WZ_O58.jpg" alt="Levitra (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=14256&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="levitra_generic.html" title="Click to buy Levitra (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="viagra_soft_pills_generic.html">Viagra Soft Pills (Generic)</a>
+	<em>90 X 100mg pills</em>
+	</h5>
+	<a class="pill_image" href="viagra_soft_pills_generic.html" title="Click to buy Viagra Soft Pills (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3aff/bE4OyNN4DR0.jpg" alt="Viagra Soft Pills (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=14217&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="viagra_soft_pills_generic.html" title="Click to buy Viagra Soft Pills (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="professionalviagra.html">Professional Viagra (Generic)</a>
+	<em>90 X 100mg pills</em>
+	</h5>
+	<a class="pill_image" href="professionalviagra.html" title="Click to buy Professional Viagra (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/39d9/ia5PP1Se2_I.jpg" alt="Professional Viagra (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=19322&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="professionalviagra.html" title="Click to buy Professional Viagra (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="viagra_oral_jelly_generic.html">Viagra Oral Jelly (Generic)</a>
+	<em>90 X 100mg packets</em>
+	</h5>
+	<a class="pill_image" href="viagra_oral_jelly_generic.html" title="Click to buy Viagra Oral Jelly (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3af8/sfZKUw4JtgY.jpg" alt="Viagra Oral Jelly (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=15430&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="viagra_oral_jelly_generic.html" title="Click to buy Viagra Oral Jelly (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="professionalcialis.html">Professional Cialis (Generic)</a>
+	<em>90 X 20mg pills</em>
+	</h5>
+	<a class="pill_image" href="professionalcialis.html" title="Click to buy Professional Cialis (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/39d2/QmBgdAhjJPc.jpg" alt="Professional Cialis (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=19310&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="professionalcialis.html" title="Click to buy Professional Cialis (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="cialis_brand.html">Cialis® (Brand)</a>
+	<em>10 X 20mg pills</em>
+	</h5>
+	<a class="pill_image" href="cialis_brand.html" title="Click to buy Cialis® (Brand)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/36de/sDFbVsQklxQ.jpg" alt="Cialis® (Brand)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=14247&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="cialis_brand.html" title="Click to buy Cialis® (Brand)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="levitra_brand.html">Levitra® (Brand)</a>
+	<em>10 X 20mg pills</em>
+	</h5>
+	<a class="pill_image" href="levitra_brand.html" title="Click to buy Levitra® (Brand)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/389e/AnOe9WZ_O58.jpg" alt="Levitra® (Brand)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=14259&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="levitra_brand.html" title="Click to buy Levitra® (Brand)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="blackcialis.html">Cialis Black</a>
+	<em>90 X 800mg pills</em>
+	</h5>
+	<a class="pill_image" href="blackcialis.html" title="Click to buy Cialis Black">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3691/ODdswNeh2TY.jpg" alt="Cialis Black" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=25997&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="blackcialis.html" title="Click to buy Cialis Black">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="goldviagra.html">Viagra Gold</a>
+	<em>90 X 800mg pills</em>
+	</h5>
+	<a class="pill_image" href="goldviagra.html" title="Click to buy Viagra Gold">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3819/UrXcYdSk0ow.jpg" alt="Viagra Gold" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=26004&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="goldviagra.html" title="Click to buy Viagra Gold">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="herbal_viagra.html">Herbal Viagra</a>
+	<em>10 bottles</em>
+	</h5>
+	<a class="pill_image" href="herbal_viagra.html" title="Click to buy Herbal Viagra">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3820/fmA9ctSWkuI.jpg" alt="Herbal Viagra" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=15611&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="herbal_viagra.html" title="Click to buy Herbal Viagra">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="confido.html">Confido</a>
+	<em>5 bottles</em>
+	</h5>
+	<a class="pill_image" href="confido.html" title="Click to buy Confido">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/370f/Uu1z7MldUvg.jpg" alt="Confido" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=32677&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="confido.html" title="Click to buy Confido">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="himcolin-gel.html">Himcolin Gel</a>
+	<em>5 X 30ml tubes</em>
+	</h5>
+	<a class="pill_image" href="himcolin-gel.html" title="Click to buy Himcolin Gel">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/382e/d0pD4_fUN-8.jpg" alt="Himcolin Gel" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=32747&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="himcolin-gel.html" title="Click to buy Himcolin Gel">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="tentex-forte.html">Tentex Forte</a>
+	<em>5 boxes</em>
+	</h5>
+	<a class="pill_image" href="tentex-forte.html" title="Click to buy Tentex Forte">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3a81/Xm6IWH8urGk.jpg" alt="Tentex Forte" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=33132&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="tentex-forte.html" title="Click to buy Tentex Forte">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="tentex-royal.html">Tentex Royal</a>
+	<em>5 boxes</em>
+	</h5>
+	<a class="pill_image" href="tentex-royal.html" title="Click to buy Tentex Royal">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3a88/Xx_0smvURmo.jpg" alt="Tentex Royal" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=32957&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="tentex-royal.html" title="Click to buy Tentex Royal">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ 	</ul>
+</div>
+<div class="boxes">
+	<h3>
+	<a class="category" href="antidepressants.html">Antidepressants</a>
+	</h3>
+	<ul class="product_boxes clearfix group">
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="cymbalta_generic.html">Cymbalta (Generic)</a>
+	<em>90 X 40mg pills</em>
+	</h5>
+	<a class="pill_image" href="cymbalta_generic.html" title="Click to buy Cymbalta (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/37ef/I9tj1tfB8K8.jpg" alt="Cymbalta (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=25624&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="cymbalta_generic.html" title="Click to buy Cymbalta (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="prozac_generic.html">Prozac (Generic)</a>
+	<em>90 X 60mg capsules</em>
+	</h5>
+	<a class="pill_image" href="prozac_generic.html" title="Click to buy Prozac (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3a03/8iaitxn-XCU.jpg" alt="Prozac (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=15044&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="prozac_generic.html" title="Click to buy Prozac (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="Fluoxetine.html">Fluoxetine</a>
+	<em>90 X 60mg capsules</em>
+	</h5>
+	<a class="pill_image" href="Fluoxetine.html" title="Click to buy Fluoxetine">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/37c5/jcGTRSPbyjc.jpg" alt="Fluoxetine" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=38901&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="Fluoxetine.html" title="Click to buy Fluoxetine">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="zoloft_generic.html">Zoloft (Generic)</a>
+	<em>90 X 100mg pills</em>
+	</h5>
+	<a class="pill_image" href="zoloft_generic.html" title="Click to buy Zoloft (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3b61/xS_Q0-DZ3yk.jpg" alt="Zoloft (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=14315&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="zoloft_generic.html" title="Click to buy Zoloft (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="celexa_generic.html">Celexa (Generic)</a>
+	<em>90 X 40mg pills</em>
+	</h5>
+	<a class="pill_image" href="celexa_generic.html" title="Click to buy Celexa (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/36c9/HhOSChUfPHo.jpg" alt="Celexa (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=15782&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="celexa_generic.html" title="Click to buy Celexa (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="effexor_generic.html">Effexor (Generic)</a>
+	<em>90 X 75mg pills</em>
+	</h5>
+	<a class="pill_image" href="effexor_generic.html" title="Click to buy Effexor (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/376a/c4gRhmKPy0w.jpg" alt="Effexor (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=14330&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="effexor_generic.html" title="Click to buy Effexor (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="paxil_generic.html">Paxil (Generic)</a>
+	<em>90 X 40mg pills</em>
+	</h5>
+	<a class="pill_image" href="paxil_generic.html" title="Click to buy Paxil (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/397e/Tm4OAmiJvEI.jpg" alt="Paxil (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=15764&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="paxil_generic.html" title="Click to buy Paxil (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="lexapro_generic.html">Lexapro (Generic)</a>
+	<em>90 X 20mg pills</em>
+	</h5>
+	<a class="pill_image" href="lexapro_generic.html" title="Click to buy Lexapro (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/38ac/E8Mi4uFpvQo.jpg" alt="Lexapro (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=15800&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="lexapro_generic.html" title="Click to buy Lexapro (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="Trazodone.html">Trazodone</a>
+	<em>90 X 100mg pills</em>
+	</h5>
+	<a class="pill_image" href="Trazodone.html" title="Click to buy Trazodone">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3aab/c39XlyRH2CU.jpg" alt="Trazodone" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=38941&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="Trazodone.html" title="Click to buy Trazodone">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="Amitriptyline.html">Amitriptyline</a>
+	<em>90 X 75mg pills</em>
+	</h5>
+	<a class="pill_image" href="Amitriptyline.html" title="Click to buy Amitriptyline">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3621/6VUM9yZ6gm4.jpg" alt="Amitriptyline" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=38987&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="Amitriptyline.html" title="Click to buy Amitriptyline">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ 	</ul>
+</div>
+<div class="boxes">
+	<h3>
+	<a class="category" href="pain_relief.html">Pain Relief</a>
+	</h3>
+	<ul class="product_boxes clearfix group">
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="celebrex_generic.html">Celebrex (Generic)</a>
+	<em>90 X 200mg pills</em>
+	</h5>
+	<a class="pill_image" href="celebrex_generic.html" title="Click to buy Celebrex (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/36c2/RGJw4ucy_Y8.jpg" alt="Celebrex (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=14290&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="celebrex_generic.html" title="Click to buy Celebrex (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="naprosyn_generic.html">Naprosyn (Generic)</a>
+	<em>90 X 250mg pills</em>
+	</h5>
+	<a class="pill_image" href="naprosyn_generic.html" title="Click to buy Naprosyn (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/393f/j2H8vQ6BtgI.jpg" alt="Naprosyn (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=16399&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="naprosyn_generic.html" title="Click to buy Naprosyn (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="arcoxia_generic.html">Arcoxia (Generic)</a>
+	<em>90 X 60mg pills</em>
+	</h5>
+	<a class="pill_image" href="arcoxia_generic.html" title="Click to buy Arcoxia (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3644/8oDYGquw5sw.jpg" alt="Arcoxia (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=17479&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="arcoxia_generic.html" title="Click to buy Arcoxia (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="arava_generic.html">Arava (Generic)</a>
+	<em>90 X 20mg pills</em>
+	</h5>
+	<a class="pill_image" href="arava_generic.html" title="Click to buy Arava (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/363d/nOG3UCrfwh4.jpg" alt="Arava (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=26042&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="arava_generic.html" title="Click to buy Arava (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="toradol_inj_generic.html">Toradol inj (Generic)</a>
+	<em>90 X 10mg pills</em>
+	</h5>
+	<a class="pill_image" href="toradol_inj_generic.html" title="Click to buy Toradol inj (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3aa4/LnP0XlCl6WY.jpg" alt="Toradol inj (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=37727&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="toradol_inj_generic.html" title="Click to buy Toradol inj (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="maxalt_generic.html">Maxalt (Generic)</a>
+	<em>90 X 10mg pills</em>
+	</h5>
+	<a class="pill_image" href="maxalt_generic.html" title="Click to buy Maxalt (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/38f9/7bB1YbSusdU.jpg" alt="Maxalt (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=19304&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="maxalt_generic.html" title="Click to buy Maxalt (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ 	</ul>
+</div>
+<div class="boxes">
+	<h3>
+	<a class="category" href="weight_loss.html">Weight Loss</a>
+	</h3>
+	<ul class="product_boxes clearfix group">
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="xenical_generic.html">Xenical (Generic)</a>
+	<em>90 X 120mg pills</em>
+	</h5>
+	<a class="pill_image" href="xenical_generic.html" title="Click to buy Xenical (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3b1b/V8P6y3dr4E8.jpg" alt="Xenical (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=11824&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="xenical_generic.html" title="Click to buy Xenical (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="alli_generic.html">Alli (Generic)</a>
+	<em>90 X 120mg pills</em>
+	</h5>
+	<a class="pill_image" href="alli_generic.html" title="Click to buy Alli (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3613/zkJjC-koPtE.jpg" alt="Alli (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=38874&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="alli_generic.html" title="Click to buy Alli (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="hoodia_800.html">Hoodia</a>
+	<em>10 bottles</em>
+	</h5>
+	<a class="pill_image" href="hoodia_800.html" title="Click to buy Hoodia">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3835/Hfj44od7EWU.jpg" alt="Hoodia" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=16912&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="hoodia_800.html" title="Click to buy Hoodia">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="orlistat.html">Orlistat</a>
+	<em>90 X 120mg pills</em>
+	</h5>
+	<a class="pill_image" href="orlistat.html" title="Click to buy Orlistat">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3b1b/V8P6y3dr4E8.jpg" alt="Orlistat" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=29519&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="orlistat.html" title="Click to buy Orlistat">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="slimfast.html">Slimfast</a>
+	<em>30 pills</em>
+	</h5>
+	<a class="pill_image" href="slimfast.html" title="Click to buy Slimfast">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3a42/ut-XEDXe11I.jpg" alt="Slimfast" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=17183&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="slimfast.html" title="Click to buy Slimfast">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="xenical_generic.html">Xenical (Generic)</a>
+	<em>120 X 60mg pills</em>
+	</h5>
+	<a class="pill_image" href="xenical_generic.html" title="Click to buy Xenical (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3b1b/V8P6y3dr4E8.jpg" alt="Xenical (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=26167&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="xenical_generic.html" title="Click to buy Xenical (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="slimfast.html">Slimfast</a>
+	<em>90 pills</em>
+	</h5>
+	<a class="pill_image" href="slimfast.html" title="Click to buy Slimfast">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3a42/ut-XEDXe11I.jpg" alt="Slimfast" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=17185&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="slimfast.html" title="Click to buy Slimfast">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="vrikshamla.html">Vrikshamla</a>
+	<em>5 bottles</em>
+	</h5>
+	<a class="pill_image" href="vrikshamla.html" title="Click to buy Vrikshamla">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3b06/ExaadngXzY4.jpg" alt="Vrikshamla" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=33007&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="vrikshamla.html" title="Click to buy Vrikshamla">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ 	</ul>
+</div>
+<div class="boxes">
+	<h3>
+	<a class="category" href="anti_anxiety.html">Anti-anxiety</a>
+	</h3>
+	<ul class="product_boxes clearfix group">
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="buspar_generic.html">Buspar (Generic)</a>
+	<em>90 X 10mg pills</em>
+	</h5>
+	<a class="pill_image" href="buspar_generic.html" title="Click to buy Buspar (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/369f/Q2mUPLjs5HE.jpg" alt="Buspar (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=16777&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="buspar_generic.html" title="Click to buy Buspar (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="clomipramine.html">Clomipramine</a>
+	<em>90 X 75mg pills</em>
+	</h5>
+	<a class="pill_image" href="clomipramine.html" title="Click to buy Clomipramine">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/362f/JMPKVXdayRE.jpg" alt="Clomipramine" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=25516&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="clomipramine.html" title="Click to buy Clomipramine">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="anafranil_generic.html">Anafranil (Generic)</a>
+	<em>90 X 75mg pills</em>
+	</h5>
+	<a class="pill_image" href="anafranil_generic.html" title="Click to buy Anafranil (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/362f/JMPKVXdayRE.jpg" alt="Anafranil (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=25488&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="anafranil_generic.html" title="Click to buy Anafranil (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="buspirone.html">Buspirone</a>
+	<em>90 X 10mg pills</em>
+	</h5>
+	<a class="pill_image" href="buspirone.html" title="Click to buy Buspirone">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/369f/Q2mUPLjs5HE.jpg" alt="Buspirone" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=29467&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="buspirone.html" title="Click to buy Buspirone">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="buspirone.html">Buspirone</a>
+	<em>90 X 5mg pills</em>
+	</h5>
+	<a class="pill_image" href="buspirone.html" title="Click to buy Buspirone">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/369f/Q2mUPLjs5HE.jpg" alt="Buspirone" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=29461&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="buspirone.html" title="Click to buy Buspirone">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="geriforte.html">Geriforte</a>
+	<em>3 bottles</em>
+	</h5>
+	<a class="pill_image" href="geriforte.html" title="Click to buy Geriforte">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3804/PrhGggMTWG4.jpg" alt="Geriforte" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=32719&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="geriforte.html" title="Click to buy Geriforte">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="ashva-gandha.html">Ashva-gandha</a>
+	<em>10 bottles</em>
+	</h5>
+	<a class="pill_image" href="ashva-gandha.html" title="Click to buy Ashva-gandha">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3652/wgtf4iZPt5o.jpg" alt="Ashva-gandha" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=33017&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="ashva-gandha.html" title="Click to buy Ashva-gandha">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="geriforte.html">Geriforte</a>
+	<em>5 bottles</em>
+	</h5>
+	<a class="pill_image" href="geriforte.html" title="Click to buy Geriforte">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3804/PrhGggMTWG4.jpg" alt="Geriforte" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=32717&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="geriforte.html" title="Click to buy Geriforte">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="ashva-gandha.html">Ashva-gandha</a>
+	<em>5 bottles</em>
+	</h5>
+	<a class="pill_image" href="ashva-gandha.html" title="Click to buy Ashva-gandha">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3652/wgtf4iZPt5o.jpg" alt="Ashva-gandha" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=32652&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="ashva-gandha.html" title="Click to buy Ashva-gandha">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ 	</ul>
+</div>
+<div class="boxes">
+	<h3>
+	<a class="category" href="muscle_relaxants.html">Muscle Relaxants</a>
+	</h3>
+	<ul class="product_boxes clearfix group">
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="imitrex.html">Imitrex (Generic)</a>
+	<em>90 X 100mg pills</em>
+	</h5>
+	<a class="pill_image" href="imitrex.html" title="Click to buy Imitrex (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/385f/RScQpyEl8t0.jpg" alt="Imitrex (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=26126&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="imitrex.html" title="Click to buy Imitrex (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="imigran_generic.html">Imigran (Generic)</a>
+	<em>90 X 100mg pills</em>
+	</h5>
+	<a class="pill_image" href="imigran_generic.html" title="Click to buy Imigran (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3858/y243HZRXJbw.jpg" alt="Imigran (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=29491&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="imigran_generic.html" title="Click to buy Imigran (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="lioresal_generic.html">Lioresal (Generic)</a>
+	<em>90 X 25mg pills</em>
+	</h5>
+	<a class="pill_image" href="lioresal_generic.html" title="Click to buy Lioresal (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/38b3/s7UzJX0pg5w.jpg" alt="Lioresal (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=18868&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="lioresal_generic.html" title="Click to buy Lioresal (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="requip_generic.html">Requip (Generic)</a>
+	<em>90 X 1mg pills</em>
+	</h5>
+	<a class="pill_image" href="requip_generic.html" title="Click to buy Requip (Generic)">
+	<img class="pill-img transparent "src="http://cs306605.userapi.com/v306605321/3740/MjXCLFipBf4.jpg" alt="Requip (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=37713&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="requip_generic.html" title="Click to buy Requip (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="imitrex.html">Imitrex (Generic)</a>
+	<em>90 X 50mg pills</em>
+	</h5>
+	<a class="pill_image" href="imitrex.html" title="Click to buy Imitrex (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/385f/RScQpyEl8t0.jpg" alt="Imitrex (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=26120&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="imitrex.html" title="Click to buy Imitrex (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="zanaflex_generic.html">Zanaflex (Generic)</a>
+	<em>90 X 2mg pills</em>
+	</h5>
+	<a class="pill_image" href="zanaflex_generic.html" title="Click to buy Zanaflex (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3b22/b72BtIzkjA0.jpg" alt="Zanaflex (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=17770&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="zanaflex_generic.html" title="Click to buy Zanaflex (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="requip_generic.html">Requip (Generic)</a>
+	<em>90 X 2mg pills</em>
+	</h5>
+	<a class="pill_image" href="requip_generic.html" title="Click to buy Requip (Generic)">
+	<img class="pill-img transparent "src="http://cs306605.userapi.com/v306605321/3740/MjXCLFipBf4.jpg" alt="Requip (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=37720&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="requip_generic.html" title="Click to buy Requip (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ 	</ul>
+</div>
+<div class="boxes">
+	<h3>
+	<a class="category" href="antibiotics.html">Antibiotics</a>
+	</h3>
+	<ul class="product_boxes clearfix group">
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="cipro_generic.html">Cipro (Generic)</a>
+	<em>90 X 500mg pills</em>
+	</h5>
+	<a class="pill_image" href="cipro_generic.html" title="Click to buy Cipro (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/36e5/aXHrZ9dfpWE.jpg" alt="Cipro (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=14370&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="cipro_generic.html" title="Click to buy Cipro (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="zithromax_generic.html">Zithromax (Generic)</a>
+	<em>90 X 500mg pills</em>
+	</h5>
+	<a class="pill_image" href="zithromax_generic.html" title="Click to buy Zithromax (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3b53/D1Q2OD1GHQc.jpg" alt="Zithromax (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=16819&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="zithromax_generic.html" title="Click to buy Zithromax (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="flagyl_generic.html">Flagyl (Generic)</a>
+	<em>90 X 400mg pills</em>
+	</h5>
+	<a class="pill_image" href="flagyl_generic.html" title="Click to buy Flagyl (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/37a9/EjlF5kh_JfA.jpg" alt="Flagyl (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=16255&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="flagyl_generic.html" title="Click to buy Flagyl (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="albenza_generic.html">Albenza (Generic)</a>
+	<em>90 X 400mg pills</em>
+	</h5>
+	<a class="pill_image" href="albenza_generic.html" title="Click to buy Albenza (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/37e1/h_-WuXGNqxs.jpg" alt="Albenza (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=19244&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="albenza_generic.html" title="Click to buy Albenza (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="lamisil_generic.html">Lamisil (Generic)</a>
+	<em>90 X 250mg pills</em>
+	</h5>
+	<a class="pill_image" href="lamisil_generic.html" title="Click to buy Lamisil (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/387b/8kI5lR_EBEk.jpg" alt="Lamisil (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=16795&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="lamisil_generic.html" title="Click to buy Lamisil (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="zovirax_generic.html">Zovirax (Generic)</a>
+	<em>90 X 800mg pills</em>
+	</h5>
+	<a class="pill_image" href="zovirax_generic.html" title="Click to buy Zovirax (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3b68/yQxZ57m94UI.jpg" alt="Zovirax (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=16513&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="zovirax_generic.html" title="Click to buy Zovirax (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="bactrim_generic.html">Bactrim (Generic)</a>
+	<em>90 X 80/400mg pills</em>
+	</h5>
+	<a class="pill_image" href="bactrim_generic.html" title="Click to buy Bactrim (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3683/PGlndxqUFDA.jpg" alt="Bactrim (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=26234&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="bactrim_generic.html" title="Click to buy Bactrim (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="Erythromycin.html">Erythromycin</a>
+	<em>90 X 250mg pills</em>
+	</h5>
+	<a class="pill_image" href="Erythromycin.html" title="Click to buy Erythromycin">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3778/558QSRVJfLA.jpg" alt="Erythromycin" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=38967&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="Erythromycin.html" title="Click to buy Erythromycin">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ 	</ul>
+</div>
+<div class="boxes">
+	<h3>
+	<a class="category" href="heart_and_cholesterol.html">Heart & Cholesterol</a>
+	</h3>
+	<ul class="product_boxes clearfix group">
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="zocor_generic.html">Zocor (Generic)</a>
+	<em>90 X 20mg pills</em>
+	</h5>
+	<a class="pill_image" href="zocor_generic.html" title="Click to buy Zocor (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3b5a/BjiWrn7GIoU.jpg" alt="Zocor (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=14335&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="zocor_generic.html" title="Click to buy Zocor (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="lipitor_generic.html">Lipitor (Generic)</a>
+	<em>90 X 20mg pills</em>
+	</h5>
+	<a class="pill_image" href="lipitor_generic.html" title="Click to buy Lipitor (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/38ba/HqEmiZFA0IY.jpg" alt="Lipitor (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=14338&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="lipitor_generic.html" title="Click to buy Lipitor (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="crestor_generic.html">Crestor (Generic)</a>
+	<em>90 X 20mg pills</em>
+	</h5>
+	<a class="pill_image" href="crestor_generic.html" title="Click to buy Crestor (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/372b/bD4NIPt8TRk.jpg" alt="Crestor (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=14350&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="crestor_generic.html" title="Click to buy Crestor (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="plavix_generic.html">Plavix (Generic)</a>
+	<em>90 X 75mg pills</em>
+	</h5>
+	<a class="pill_image" href="plavix_generic.html" title="Click to buy Plavix (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/399a/EbtMIPxANm4.jpg" alt="Plavix (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=14428&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="plavix_generic.html" title="Click to buy Plavix (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="lipitor_generic.html">Lipitor (Generic)</a>
+	<em>90 X 80mg pills</em>
+	</h5>
+	<a class="pill_image" href="lipitor_generic.html" title="Click to buy Lipitor (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/38ba/HqEmiZFA0IY.jpg" alt="Lipitor (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=26144&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="lipitor_generic.html" title="Click to buy Lipitor (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="crestor_generic.html">Crestor (Generic)</a>
+	<em>90 X 10mg pills</em>
+	</h5>
+	<a class="pill_image" href="crestor_generic.html" title="Click to buy Crestor (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/372b/bD4NIPt8TRk.jpg" alt="Crestor (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=14347&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="crestor_generic.html" title="Click to buy Crestor (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ 	</ul>
+</div>
+<div class="boxes">
+	<h3>
+	<a class="category" href="allergy_relief.html">Allergy Relief</a>
+	</h3>
+	<ul class="product_boxes clearfix group">
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="zyrtec_generic.html">Zyrtec (Generic)</a>
+	<em>90 X 10mg pills</em>
+	</h5>
+	<a class="pill_image" href="zyrtec_generic.html" title="Click to buy Zyrtec (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3b76/qREEIW9FUFw.jpg" alt="Zyrtec (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=15321&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="zyrtec_generic.html" title="Click to buy Zyrtec (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="allegra_generic.html">Allegra (Generic)</a>
+	<em>90 X 120mg pills</em>
+	</h5>
+	<a class="pill_image" href="allegra_generic.html" title="Click to buy Allegra (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/360c/360FSfdAy7M.jpg" alt="Allegra (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=14394&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="allegra_generic.html" title="Click to buy Allegra (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="phenergan_generic.html">Phenergan (Generic)</a>
+	<em>90 X 25mg pills</em>
+	</h5>
+	<a class="pill_image" href="phenergan_generic.html" title="Click to buy Phenergan (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3993/wgX4b8-DxrI.jpg" alt="Phenergan (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=19004&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="phenergan_generic.html" title="Click to buy Phenergan (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="periactin_generic.html">Periactin (Generic)</a>
+	<em>90 X 4mg pills</em>
+	</h5>
+	<a class="pill_image" href="periactin_generic.html" title="Click to buy Periactin (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/398c/Pjt9aiwFVEM.jpg" alt="Periactin (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=18980&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="periactin_generic.html" title="Click to buy Periactin (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ 	</ul>
+</div>
+<div class="boxes">
+	<h3>
+	<a class="category" href="blood_pressure.html">Blood Pressure</a>
+	</h3>
+	<ul class="product_boxes clearfix group">
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="norvasc_generic.html">Norvasc (Generic)</a>
+	<em>90 X 10mg pills</em>
+	</h5>
+	<a class="pill_image" href="norvasc_generic.html" title="Click to buy Norvasc (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3969/Lfss2i3KF30.jpg" alt="Norvasc (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=15540&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="norvasc_generic.html" title="Click to buy Norvasc (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="inderal_generic.html">Inderal (Generic)</a>
+	<em>90 X 40mg pills</em>
+	</h5>
+	<a class="pill_image" href="inderal_generic.html" title="Click to buy Inderal (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3866/1XbJ6Thf7Dg.jpg" alt="Inderal (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=16303&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="inderal_generic.html" title="Click to buy Inderal (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="lasix_generic.html">Lasix (Generic)</a>
+	<em>90 X 40mg pills</em>
+	</h5>
+	<a class="pill_image" href="lasix_generic.html" title="Click to buy Lasix (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3890/ztud2IunI0w.jpg" alt="Lasix (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=16327&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="lasix_generic.html" title="Click to buy Lasix (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="lopressor_generic.html">Lopressor (Generic)</a>
+	<em>90 X 100mg pills</em>
+	</h5>
+	<a class="pill_image" href="lopressor_generic.html" title="Click to buy Lopressor (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/38cf/731r9-a30ek.jpg" alt="Lopressor (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=16357&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="lopressor_generic.html" title="Click to buy Lopressor (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="tenormin_generic.html">Tenormin (Generic)</a>
+	<em>90 X 100mg pills</em>
+	</h5>
+	<a class="pill_image" href="tenormin_generic.html" title="Click to buy Tenormin (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3a7a/C_rFEAU_1Ro.jpg" alt="Tenormin (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=16459&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="tenormin_generic.html" title="Click to buy Tenormin (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="hyzaar_generic.html">Hyzaar (Generic)</a>
+	<em>90 X 50/12.5mg pills</em>
+	</h5>
+	<a class="pill_image" href="hyzaar_generic.html" title="Click to buy Hyzaar (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/37f6/wmZL8Q-ZAvs.jpg" alt="Hyzaar (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=18313&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="hyzaar_generic.html" title="Click to buy Hyzaar (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="avapro_generic.html">Avapro (Generic)</a>
+	<em>90 X 300mg pills</em>
+	</h5>
+	<a class="pill_image" href="avapro_generic.html" title="Click to buy Avapro (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3675/PG9R1e3kBKs.jpg" alt="Avapro (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=16057&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="avapro_generic.html" title="Click to buy Avapro (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="aldactone_generic.html">Aldactone (Generic)</a>
+	<em>90 X 100mg pills</em>
+	</h5>
+	<a class="pill_image" href="aldactone_generic.html" title="Click to buy Aldactone (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3605/otc0PzwBwNc.jpg" alt="Aldactone (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=16567&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="aldactone_generic.html" title="Click to buy Aldactone (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="aldactone_generic.html">Aldactone (Generic)</a>
+	<em>90 X 20mg pills</em>
+	</h5>
+	<a class="pill_image" href="aldactone_generic.html" title="Click to buy Aldactone (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3605/otc0PzwBwNc.jpg" alt="Aldactone (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=26222&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="aldactone_generic.html" title="Click to buy Aldactone (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="Hydrochlorothiazide.html">Hydrochlorothiazide</a>
+	<em>90 X 25mg pills</em>
+	</h5>
+	<a class="pill_image" href="Hydrochlorothiazide.html" title="Click to buy Hydrochlorothiazide">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/383c/aZyLTgf8KDY.jpg" alt="Hydrochlorothiazide" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=38887&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="Hydrochlorothiazide.html" title="Click to buy Hydrochlorothiazide">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="Lisinopril.html">Lisinopril</a>
+	<em>90 X 10mg pills</em>
+	</h5>
+	<a class="pill_image" href="Lisinopril.html" title="Click to buy Lisinopril">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/38c1/41LibDmWLNU.jpg" alt="Lisinopril" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=38922&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="Lisinopril.html" title="Click to buy Lisinopril">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ 	</ul>
+</div>
+<div class="boxes">
+	<h3>
+	<a class="category" href="adhd.html">ADHD</a>
+	</h3>
+	<ul class="product_boxes clearfix group">
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="atomoxetine.html">Atomoxetine</a>
+	<em>90 X 18mg pills</em>
+	</h5>
+	<a class="pill_image" href="atomoxetine.html" title="Click to buy Atomoxetine">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3660/F7IKVkzFcSU.jpg" alt="Atomoxetine" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=23658&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="atomoxetine.html" title="Click to buy Atomoxetine">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="strattera_generic.html">Strattera (Generic)</a>
+	<em>90 X 10mg pills</em>
+	</h5>
+	<a class="pill_image" href="strattera_generic.html" title="Click to buy Strattera (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3a49/stLhgHH5H5w.jpg" alt="Strattera (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=23630&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="strattera_generic.html" title="Click to buy Strattera (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="strattera_generic.html">Strattera (Generic)</a>
+	<em>90 X 25mg pills</em>
+	</h5>
+	<a class="pill_image" href="strattera_generic.html" title="Click to buy Strattera (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3a49/stLhgHH5H5w.jpg" alt="Strattera (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=23644&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="strattera_generic.html" title="Click to buy Strattera (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="atomoxetine.html">Atomoxetine</a>
+	<em>90 X 10mg pills</em>
+	</h5>
+	<a class="pill_image" href="atomoxetine.html" title="Click to buy Atomoxetine">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3660/F7IKVkzFcSU.jpg" alt="Atomoxetine" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=23651&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="atomoxetine.html" title="Click to buy Atomoxetine">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="atomoxetine.html">Atomoxetine</a>
+	<em>90 X 25mg pills</em>
+	</h5>
+	<a class="pill_image" href="atomoxetine.html" title="Click to buy Atomoxetine">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3660/F7IKVkzFcSU.jpg" alt="Atomoxetine" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=23665&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="atomoxetine.html" title="Click to buy Atomoxetine">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="brahmi.html">Brahmi</a>
+	<em>10 bottles</em>
+	</h5>
+	<a class="pill_image" href="brahmi.html" title="Click to buy Brahmi">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3698/U8v669Z2iw8.jpg" alt="Brahmi" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=33022&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="brahmi.html" title="Click to buy Brahmi">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="mentat.html">Mentat</a>
+	<em>10 bottles</em>
+	</h5>
+	<a class="pill_image" href="mentat.html" title="Click to buy Mentat">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3907/VYsN-5VobZY.jpg" alt="Mentat" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=32812&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="mentat.html" title="Click to buy Mentat">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ 	</ul>
+</div>
+<div class="boxes">
+	<h3>
+	<a class="category" href="womens_health.html">Women's Health</a>
+	</h3>
+	<ul class="product_boxes clearfix group">
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="clomid_generic.html">Clomid (Generic)</a>
+	<em>90 X 100mg pills</em>
+	</h5>
+	<a class="pill_image" href="clomid_generic.html" title="Click to buy Clomid (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/36fa/l-Y0F6kkp3g.jpg" alt="Clomid (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=17866&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="clomid_generic.html" title="Click to buy Clomid (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="fosamax_generic.html">Fosamax (Generic)</a>
+	<em>90 X 70mg pills</em>
+	</h5>
+	<a class="pill_image" href="fosamax_generic.html" title="Click to buy Fosamax (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/37cc/DIkojPWd0I0.jpg" alt="Fosamax (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=17082&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="fosamax_generic.html" title="Click to buy Fosamax (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="provera_generic.html">Provera (Generic)</a>
+	<em>90 X 10mg pills</em>
+	</h5>
+	<a class="pill_image" href="provera_generic.html" title="Click to buy Provera (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/39fc/pPJhT02-tt8.jpg" alt="Provera (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=19052&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="provera_generic.html" title="Click to buy Provera (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="nolvadex_generic.html">Nolvadex (Generic)</a>
+	<em>90 X 20mg pills</em>
+	</h5>
+	<a class="pill_image" href="nolvadex_generic.html" title="Click to buy Nolvadex (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3962/PgiY-8-_qKg.jpg" alt="Nolvadex (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=18944&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="nolvadex_generic.html" title="Click to buy Nolvadex (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="levlen_generic.html">Levlen (Generic)</a>
+	<em>90 X 0.03-0.15mg pills</em>
+	</h5>
+	<a class="pill_image" href="levlen_generic.html" title="Click to buy Levlen (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/38a5/adgIDcmBuVw.jpg" alt="Levlen (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=16765&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="levlen_generic.html" title="Click to buy Levlen (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="evecare.html">EveCare</a>
+	<em>5 bottles</em>
+	</h5>
+	<a class="pill_image" href="evecare.html" title="Click to buy EveCare">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3786/SyDz23ZN224.jpg" alt="EveCare" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=32707&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="evecare.html" title="Click to buy EveCare">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="lukol.html">Lukol</a>
+	<em>5 bottles</em>
+	</h5>
+	<a class="pill_image" href="lukol.html" title="Click to buy Lukol">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/38eb/mguw7wULVw4.jpg" alt="Lukol" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=33112&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="lukol.html" title="Click to buy Lukol">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="menosan.html">Menosan</a>
+	<em>5 bottles</em>
+	</h5>
+	<a class="pill_image" href="menosan.html" title="Click to buy Menosan">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3900/YhP8IpKyvtg.jpg" alt="Menosan" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=32807&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="menosan.html" title="Click to buy Menosan">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="v-gel.html">V-GEL</a>
+	<em>5 X 30ml tubes</em>
+	</h5>
+	<a class="pill_image" href="v-gel.html" title="Click to buy V-GEL">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3aea/it0b01YWtYY.jpg" alt="V-GEL" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=32987&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="v-gel.html" title="Click to buy V-GEL">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="Tamoxifen.html">Tamoxifen</a>
+	<em>90 X 10mg pills</em>
+	</h5>
+	<a class="pill_image" href="Tamoxifen.html" title="Click to buy Tamoxifen">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3a6c/Jiey1sNWk3s.jpg" alt="Tamoxifen" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=38981&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="Tamoxifen.html" title="Click to buy Tamoxifen">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ 	</ul>
+</div>
+<div class="boxes">
+	<h3>
+	<a class="category" href="mens_health.html">Men's Health</a>
+	</h3>
+	<ul class="product_boxes clearfix group">
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="anadoil.html">Testosterone Anadoil</a>
+	<em>90 X 40mg pills</em>
+	</h5>
+	<a class="pill_image" href="anadoil.html" title="Click to buy Testosterone Anadoil">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/3a96/yc4CVHjOAUY.jpg" alt="Testosterone Anadoil" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=19184&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="anadoil.html" title="Click to buy Testosterone Anadoil">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="proscar_generic.html">Proscar (Generic)</a>
+	<em>90 X 5mg pills</em>
+	</h5>
+	<a class="pill_image" href="proscar_generic.html" title="Click to buy Proscar (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/39ee/k3Q5Y8UQwSY.jpg" alt="Proscar (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=16411&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="proscar_generic.html" title="Click to buy Proscar (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="flomax_generic.html">Flomax (Generic)</a>
+	<em>90 X 0.4mg pills</em>
+	</h5>
+	<a class="pill_image" href="flomax_generic.html" title="Click to buy Flomax (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/37b0/X4Bmud_1pH4.jpg" alt="Flomax (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=16267&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="flomax_generic.html" title="Click to buy Flomax (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ <!-- Product Table -->
+ <li>
+	<div class="inner">
+	<h5>
+	<a href="avodart_generic.html">Avodart (Generic)</a>
+	<em>90 X 0.5mg pills</em>
+	</h5>
+	<a class="pill_image" href="avodart_generic.html" title="Click to buy Avodart (Generic)">
+	<img class="pill-img transparent" src="http://cs306605.userapi.com/v306605321/37e8/qDT6tqLX30g.jpg" alt="Avodart (Generic)" />
+	
+	
+	
+	
+	</a>
+	<div class="bottom clearfix">
+	<span class="price">
+	<span>Pill price</span>
+	<span class="override_price"><strong>&nbsp;</strong></span>
+	</span>
+	<a rel="https://www.safe-charge.com/secure/?pid=17507&affid=38031322&cmp=dea2009e5798b051fde831ab6ac42b3c" class="order_button" href="avodart_generic.html" title="Click to buy Avodart (Generic)">Buy Now</a>
+	 </div>
+ </div>
+ </li>
+ <!-- Product Table -->
+ 	</ul>
+</div>
+
+<em id="index_page" style="display:none"></em>
+
+ </div>
+ </div>
+ </div><!-- wrapper end -->
+<div class="footer">
+ <div class="footer_inner">
+	<div class="v_footer_container clearfix">
+	<ul class="footer_menu clearfix">
+	<li><a href="index.html">Home</a></li>
+	<li><a href="about.html">About Us</a></li>
+	<li><a href="faq.html">FAQ</a></li>
+	<li><a href="http://www.safe-charge.com/contact.php">Contact Us</a></li>
+	
+	<li><a href="http://www.safe-charge.com/secure/spam_policy.php" onclick='window.open("http://www.safe-charge.com/secure/spam_policy.php","name","height=700,width=600"); return false;'>Unsubscribe</a></li>
+	<li><a href="http://www.safe-charge.com/status.php" target="_blank" class="last">Order Status</a></li>
+	</ul>
+	</div>
+	<div class="banners clearfix">
+	<div class="shipping"></div>
+	<div class="money_back"></div>
+	</div>
+ </div>
+</div></body>
+</html>

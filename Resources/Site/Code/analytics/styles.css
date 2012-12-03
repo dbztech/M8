@@ -1,0 +1,86 @@
+body {
+	background: #000;
+	font-family: Lucida Grande, Lucida Sans, Arial, Helvetica, sans-serif;
+	color: #FFF;
+	text-align: center;
+}
+
+#content {
+	width: 300px;
+	margin: auto;
+	border: 3px solid #CA9811;
+	background: #333;
+}
+
+a {
+	color: #FC0;
+}
+
+table.table {
+	border-width: 4px;
+	border-spacing: 2px;
+	border-style: outset;
+	border-color: rgb(202, 152, 17);
+	border-collapse: separate;
+	background-color: white;
+	width:100%;
+	text-align: center;
+	color: #000;
+}
+table.table th, td {
+	border-width: 1px;
+	padding: 1px;
+	border-style: inset;
+	border-color: rgb(202, 152, 17);
+	-moz-border-radius: ;
+	color: #000;
+}
+/*table.table td {
+	border-width: 1px;
+	padding: 1px;
+	border-style: inset;
+	border-color: rgb(202, 152, 17);
+	-moz-border-radius: ;
+}*/
+.win {
+	background: #7F7;
+}
+.loss {
+	background: #F34;
+}
+.tie {
+	background: #66F;
+}
+.practice {
+	background: #DDD;
+}
+.elim {
+	background: #FFC;
+}
+.red {
+	background: #FCC;
+}
+.blue {
+	background: #CCF;
+}
+
+.submitButton {
+	border: 2px solid #CA9811;
+	border-radius: 5px;
+}
+
+form {
+	text-align: left;
+	padding: 5px;
+}
+
+input {
+	background: transparent;
+	border: 2px solid #CA9811;
+	border-top: -0px;
+	color: #AAA;
+}
+
+input, textarea, select {
+	width: 100%;
+}

@@ -1,0 +1,39 @@
+.imgleft {
+float:left;
+border:7px solid white;
+margin:11px;
+}
+
+.imgright {
+float:right;
+border:7px solid white;
+margin:11px;
+}
+
+.textright {
+margin:5px;
+/*background:rgba(200,200,50,.5);*/
+opacity:50%;
+border-radius: 10px;
+padding:10px;
+/*width:295px;*/
+float:right;
+border:2px solid black;
+}
+
+.textleft {
+margin:5px;
+/*background:rgba(200,50,50,.5);*/
+opacity:50%;
+border-radius:10px;
+padding:10px;
+/*width:695px;*/
+float:left;
+border:2px solid black;
+}
+
+#title {
+text-align:center;
+width:98%;
+margin:auto;
+}

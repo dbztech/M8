@@ -15,7 +15,7 @@ class m8
 	}
 	
 	public static function description() {
-		echo page::getdesc();
+        echo '<meta name="description" content="'.page::getdesc().'">';
 	}
 }
 

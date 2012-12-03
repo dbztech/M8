@@ -1,0 +1,521 @@
+/* CSS Document */
+
+@font-face {
+  font-family: VirtualDJ;
+  src: url(fonts/VirtualDJ.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(fonts/Roboto.ttf);
+}
+
+@font-face {
+  font-family: RobotoThin;
+  src: url(fonts/RobotoThin.ttf);
+}
+
+@font-face {
+  font-family: Robotica;
+  src: url(fonts/Robotica.ttf);
+}
+
+@font-face {
+  font-family: SiteFont;
+  src: url(fonts/SiteFont.ttf);
+}
+
+/* Tags */
+body {
+	/*background: #CCD;*/
+	background: url('images/background.png');
+	text-align: center;
+	font-family: "SiteFont";
+	font-size:16px;
+}
+
+a {
+	/*color: #09F;*/
+	color:#FFF;
+	text-decoration:none;
+}
+
+a, img {
+    border: none;
+}
+
+/* IDs */
+#website {
+	width: 900px;
+	margin: auto;
+	/*background: #000;*/
+	border: 8px solid #FFF;
+	box-shadow:0px 0px 10px #000000;
+	margin-top: 25px;
+	overflow: hidden;
+}
+
+#content {
+	text-align: center;
+	padding: 25px;
+	padding-top: 75px;
+	background: -webkit-gradient(linear, center top, center bottom, from(#eee), to(#333));
+	background: -o-linear-gradient(top, #eee, #333);
+	background: -moz-linear-gradient(top, #eee, #333);
+}
+
+
+#dropdown {
+	margin-left: 145px;
+	height: 25px;
+	position: relative;
+	top: -5px;
+}
+
+#slide1 {
+	display: block;
+}
+
+#slide2 {
+	display: none;
+}
+
+#leftArrow {
+	background: url(images/leftarrow.png), #F0F8FF;
+	display: none;
+	margin-left: 8px;
+}
+
+#rightArrow {
+	background: url(images/rightarrow.png), #F0F8FF;
+	margin-left: 710px;
+	display: block;
+}
+
+/*
+#nav {
+	height: 125px;
+	width: 100%;
+	background: url('http://error3130.org/zenphoto/albums/2011-Nationals/RoboticsNationals-41-.jpg');
+}
+*/
+
+#logo {
+	float: left;
+	height: 130px;
+	position: relative;
+	z-index: 1;
+}
+
+#csbcontainer {
+	margin: auto;
+	height: 125px;
+	width: 765px;
+	position: relative;
+	top: 25px;
+	margin-bottom: 50px;
+}
+
+#box {
+	background-color:#ffffff;
+	border-width:2px;
+	border-color:#999999;
+	border-radius:15px;
+	box-shadow:0px 0px 90px #000000;
+	/*--IE9 DOES NOT SUPPORT GRADIENT BACKGROUNDS--*/
+	width: 100px;
+	height: 100px;
+	padding-right: 2px; 
+	margin: auto;
+	display: none;
+}
+
+#boxclose {
+float: right; 
+margin: 0px; 
+position: relative; 
+top: -14px; 
+left: 15px;
+}
+
+#video1 {
+width: 672px;
+height: 410px;
+border:  0px;
+margin: -15px;
+
+}
+
+#video2 {
+width: 672px;
+height: 410px;
+border:  0px;
+margin: -15px;
+
+}
+
+#newsbox {
+width: 540px;
+height: 360px;
+background: white;
+margin: auto;
+padding: 15px;
+border-radius:5px;
+box-shadow:0px 0px 90px #000000;
+
+}
+
+#footer {
+width: 100%;
+height: 210px;
+margin-top: -5px;
+border-top: 3px solid white;
+background: #002D74;
+color: #FFF;
+z-index: 99;
+position: relative;
+}
+
+#contenttitle {
+	font-family: Arial Black, Gadget, sans-serif;
+	color: #000;
+	margin: 0px;
+	margin-right: 430px;
+	margin-bottom: -15px;
+	font-variant: small-caps;
+}
+
+#footerTable {
+	width: 100%;
+	height: 100%;
+}
+
+#articleSelector {
+	background: black;
+    width: 195px;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+	opacity: 0.8;
+}
+
+#articleText {
+	margin-top: -400px;
+	width: 568px;
+	margin-left: 195px;
+	color: white;
+	background: #78A600;
+	opacity: 0.9;
+	border-top-right-radius: 5px;
+	padding-right: 5px;
+}
+
+#teaminfo {
+	float: left;
+	background: #222;
+	width: 570px;
+	height: 390px;
+	/*margin-left: -25px;*/
+	color: white;
+	border-radius: 5px;
+	/*border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;*/
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 10px;
+
+}
+
+gameDescription {
+	background: #222;
+	color: white;
+	width 450px;
+	text-align: left;
+	padding: 10px;
+	margin-top: 30px;
+	border-radius: 5px;
+	
+}
+
+#swooshtitle {
+    position: relative;
+    top: 35px;
+    left: -55px;
+}
+
+#biosImage {
+	width: 200px;
+	height: 200px;
+	margin-left: 44px;
+	float: left;
+	margin-right: 47px;
+	border: 5px solid white;
+}
+	
+#biosQuestions {
+	text-align: left;
+	padding-left: 50px;
+	width: 615px;
+	list-style-type: none;
+}
+#contentStatBox {
+	float: left;
+	width: 200px;
+	height: 100%;
+	background: #002D74;
+	margin-left: 35px;
+	color: white;
+	text-align: left;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+#contentArticle {
+	float: right;
+	width: 400px;
+	height: 100%;
+	background: black;
+	padding: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	text-align: left;
+	color: white;
+	margin-right: 226px;
+}
+
+#articleImg {
+	width: 900px;
+	height: 200px;
+	margin-left: -25px;
+	margin-top: -34px;
+}
+
+#leftnav {
+	position: absolute;
+	background: black;
+	color: white;
+	margin-left: -25px;
+	margin-top: -34px;
+	width: 240px;
+	z-index: 1;
+	text-align: left;
+	padding-left: 10px;
+	border-right: 3px solid #FFF;
+	height: 9620px;
+	
+}
+
+#rightcontent {
+	overflow: hidden;
+	width: 650px;
+	margin-left: 225px;
+	margin-top: -35px;
+	margin-bottom: -20px;
+}
+
+#pagetitle{
+	font-size: 45px;
+	margin-top: 15px;
+	border-bottom: 10px solid #FC0;
+}
+
+/* Classes */
+/*
+.frontnav {
+	background: #CCC;
+	width: %15;
+	margin-left: %2.5;
+	margin-right: %2.5;
+	margin-top: 200px;
+}
+*/
+
+.headerimg {
+    position: relative;
+}
+
+.contentblock {
+	width: 768px;
+	height: 432px;
+	margin: auto;
+	background: #FFF;
+	border-radius: 5px;
+	position: relative;
+	top: 10px;
+}
+
+.floating {
+	position: relative;
+	border-radius: 3px;
+	padding: 5px;
+}
+
+.contentArrows {
+	position: relative;
+	top: 375px;
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;
+	z-index: 5;
+}
+
+.contentsubblock {
+	width: 175px;
+	height: 125px;
+	float: left;
+	background: #FFF;
+	position: relative;
+	margin: 8px;
+	border-radius: 10px;
+}
+
+.contentblock2 {
+	width: 550px;
+	height: 300px;
+	border-radius: 5px;
+	color: #000;
+	margin: auto;
+	}
+
+.quicklinks {
+    width: 175px;
+    background: black;
+    margin: auto;
+    border: 1px solid #E79200;
+    color: white;
+}
+
+.quicklinks:hover {
+    width: 175px;
+    background: white;
+    margin: auto;
+    border: 1px solid #E79200;
+    color: black;
+}
+
+.sponsor {
+	width: 200px;
+}
+
+#newnav {
+	width: 950px;
+	height: 55px;
+	margin: auto;
+	background: url('/images/navThin.png');
+	margin-bottom: -75px;
+	z-index: 4;
+	position: relative;
+	top: 142px;
+}
+
+.newnavitem {
+	color: white;
+    position: relative;
+    top: 11px;
+    padding-right: 25px;
+    padding-left: 25px;
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+}
+
+.newnavitem:hover {
+	color: orange;
+    position: relative;
+    top: 11px;
+    padding-right: 25px;
+    padding-left: 25px;
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+}
+
+.articleItem {
+	color: white;
+	text-align: center;
+	padding: 15px;
+	margin: 0px;
+	height: 20px;
+}
+
+.articleItem:hover {
+	color: white;
+	text-align: center;
+	padding: 15px;
+	margin: 0px;
+	background: red;
+	height:	20px;
+}
+
+.swoosh {
+    width: 900px;
+    height: 109px;
+    background: url('/images/Swoosh/Blue.png');
+    background-size: 100%;
+    margin-left: -25px;
+}
+
+.sponsors {
+	width: 125px;
+	float: left;
+}
+
+.titleimg {
+    float: left;
+    width: 180px;
+    height: 100px;
+    margin-left: 23px;
+    margin-top: 5px;
+}
+
+.pagearticle {
+	font-size: 125%;
+	border-bottom: 6px solid #FFF; z-index: 4;
+}
+
+.pagearticle:hover {
+	border-bottom: 6px solid #33FF00;
+	z-index: 5;
+}
+
+.biosEntry {
+	color: white;
+	background: #0B2161;
+	margin-right: -25px;
+	margin-top: 6px;
+	overflow: hidden;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 8px;
+	line-height: 130%;
+}
+
+.robotBlurbl {
+	color: white;
+	background: #222;
+	width: 30%;
+	border-radius: 5px;
+	text-align: left;
+	margin: 10px 0px;
+	padding: 5px 10px;
+	float:left;
+	
+}
+.robotBlurbc {
+	color: white;
+	background: #222;
+	width: 30%;
+	border-radius: 5px;
+	text-align: left;
+	margin: auto;
+	padding: 5px 10px;
+	
+}
+.robotBlurbr {
+	color: white;
+	background: #222;
+	width: 30%;
+	border-radius: 5px;
+	text-align: left;
+	margin: 10px 0px;
+	padding: 5px 10px;
+	float:right;
+}

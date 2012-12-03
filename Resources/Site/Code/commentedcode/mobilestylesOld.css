@@ -1,0 +1,30 @@
+/* CSS Mobile Document */
+
+@media screen and (max-width: 480px) {
+	#newnav {
+		display: none;
+	}
+	
+	#website {
+		border: 0px;
+		width: 100%;
+		margin: 0px;
+	}
+	
+	#content {
+		 display: none; 
+		/*width: 350px;*/
+	}
+	
+	#footer {
+		display: none;
+	}
+	
+	
+	
+	#mobilecontent {
+		display: block;
+	}
+	
+	
+}

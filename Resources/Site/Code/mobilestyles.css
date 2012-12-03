@@ -1,0 +1,337 @@
+/* CSS Mobile Document */
+
+@media screen and (max-width: 1000px) {
+	/*Non-Optimal*/
+}
+
+@media screen and (max-width: 650px) {
+	/*Tablet*/	
+}
+
+@media screen and (max-width: 480px) {
+
+	body {
+		min-width: 1%;
+	}
+	
+	#newnav {
+		display: none;
+	}
+	
+	#website {
+		border: 0px;
+		width: 100%;
+		margin: 0px;
+	}
+	
+	#content {
+		 display: block; 
+		 padding-top: 0px;
+		/*width: 95%;*/
+	}
+	
+	#footer {
+		display: none;
+	}
+	
+	
+	#mobilecontent {
+		display: block;
+	}
+	
+	.footeri1 {
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	width: 50px;
+	}
+	
+	.footeri2 {
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	width: 54px;
+	}
+	
+	.footeri3 {
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	width: 50px;
+	}
+	
+	#mobileNav ul{
+    list-style-type: none;
+	padding: 0px;
+	}
+	
+	#mobileNav li {
+	
+	}
+	
+	#mobilefooter {
+	width: 100%;
+	height: 210px;
+	margin-top: -5px;
+	background: #002D74;
+	color: #FFF;
+	z-index: 99;
+	position: relative;
+	box-shadow:0px 0px 10px #000000;
+	border-top: 0px;
+
+	}
+
+	#newsFeed {
+		display: none;
+	}
+	
+	#articleSelector {
+		display: none;
+	}
+	
+	#articleLink {
+		display: none;
+	}
+	
+	#articleText {
+		display: none;
+	}
+	
+	#article1 {
+		display: none;
+	}
+	
+	#article8 {
+		display: none;
+	}	
+	
+	.articleItem {
+		display: none;
+	}
+	
+	.swoosh {
+		width: 100%;
+		background: none;
+		margin-left: 0px;
+	}
+	
+	.sponsors {
+		width: 80%;
+		float: none;
+	}
+	
+	#nasa {
+		margin-left: 0px; 
+		margin-top: 0px;
+		float: none;
+	}
+
+	#jcpenny {
+		margin-left: 0px; 
+		margin-top: 0px; 
+		width: 80%;
+		float: none;
+	}
+	
+	#mpapa {
+		margin-left: 0px; 
+		margin-top: 0px;
+		float: none;
+	}
+
+	#moresponsors {
+		display: none;
+	}
+	
+	#abouttheteam {
+		margin-top: 370px;
+		height: 100%;
+	}
+	
+	#teaminfo {
+		float: none;
+		width: inherit;
+		height: 100%;
+		text-align: center;
+		padding: 20px;
+		padding-top: 10px;
+	}
+	
+	#firsttw {
+		float: none;
+		width: 100%;
+		margin-top: 25px;
+	}
+/*Bios.php*/
+	
+	
+	.navEnabled {
+		padding: 0px;
+	}
+	
+	#leftnav {
+		display: none;
+	}
+	
+	#rightcontent {
+		margin: 0px;
+		width: 100%;
+		border: 0px;
+	}
+	
+	.biosQuestions {
+		width: 80%;
+	}
+	
+	.biosImage {
+		width: 70%;
+	}
+/*Team.php*/
+
+	#contentStatBox {
+		margin-top: 300px;
+		height: 100%;
+		width: 28%;
+		margin-bottom: 30px;
+		text-align: left;
+	}
+	
+	#contentArticle {
+		float: none;
+		width: inherit;
+		height: 100%;
+		text-align: center;
+		//padding: 20px;
+		//padding-top: 10px;
+	}
+	
+/*Sponsors.php*/
+#banner {
+	background:#0065B3;
+	width: 100%;
+	color: #FFFFFF; 
+	border-top-right-radius: 3px; 
+	border-top-left-radius: 3px
+	}
+
+#simages {
+	width: 100%;
+	float: none;
+	border-bottom-right-radius: 3px; 
+	border-bottom-left-radius: 3px; 
+	table-layout: fixed;
+	/*table-layout: auto;
+	width: 100%; 
+	background-color: white; 
+	
+	margin-top: -16px; 
+	padding-bottom: 20px*/
+	}
+	
+#sponsor1 {
+	position:relative;
+	height:236px;
+	top:10px;
+}
+
+#sponsor2 {
+	position:relative;
+	height:154px;
+	top:10px;
+}
+
+#sponsor3 {
+	position:relative;
+	height:158px;
+	top:10px;
+}
+
+#sjcp {
+	width:80%;
+	padding:10px;
+	display:block;
+	position:absolute;
+	float: none;
+	top:40%;
+	margin-top:-50px;
+	left:7%;
+	height:100px;
+	margin-bottom: 15px;
+}
+
+#snasa {
+	width:125%;
+	padding:10px;
+	display:block;
+	position:absolute;
+	top:240px;
+	right:-16%;
+	height: 236px;
+	
+}
+
+#saet { /*Aetrium*/
+	width: 80%;
+	position: absolute;
+	display: block;
+	left: 8%;
+	top: 10%;
+	margin-top: 77px;
+	text-align: center;
+	height: -200px;
+}
+
+#ssmc {
+	width: 80%;
+	display: block;
+	height: 142px;
+	position: absolute;
+	float: none;
+	right: 11%;
+	top: 50%;
+	margin-top: 200px;
+}
+
+#sreell {
+	width: 80%;
+	position: absolute;
+	display: block;
+	left: 4%;
+	height: 158px;
+	top: 80%;
+	margin-top: 180px;
+}
+
+#smpapa {
+	width: 80%;
+	position: absolute;
+	display: block;
+	right: 34px;
+	height: 118px;
+	top: 50%;
+	/*margin-top: 65px;*/
+	margin-top: 380px;
+}
+
+#shome {
+	top:60%;
+	margin-top: 130%;
+
+}
+
+#simages {
+	width: 100%; 
+	height: 1030px;
+	background-color: white; 
+	margin-top: -16px; 
+	padding-bottom: 1px
+}
+
+#sspecial {
+	width: 100%;
+	height: 50px;
+	background-color: #c7cacd;
+	float: bottom;
+}
+
+#swooshtitle {
+	float: bottom;
+}
