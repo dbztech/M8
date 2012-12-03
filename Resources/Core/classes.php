@@ -19,6 +19,19 @@ class m8
 	}
 }
 
+class lowlevel
+{
+	public static function header($msg) {
+		header($msg);
+        #echo $msg;
+	}
+    
+    public static function redirect($page) {
+        #Send riderect header
+        lowlevel::header("Location: ".$page);
+    }
+}
+
 #Basic database interaction class
 class database
 {
@@ -184,6 +197,11 @@ class page
 			echo '<td><input type="button" id="'.$row['id'].'remove'.'" value="X" onclick="Page.remove('.$row['id'].');" /></td>';
 		    echo "</tr>";
 		}
+	}
+    
+    public static function devmode() {
+        #lowlevel::redirect($row['devredirect']);
+		return true;
 	}
 }
 
