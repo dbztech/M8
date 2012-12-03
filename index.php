@@ -2,7 +2,6 @@
 include('Resources/Core/core.php');
 include('Resources/Site/options.php');
 #echo "<!doctype html><!-- Powered by M8 -->";
-flush();
 if (isset($_GET['in'])) {
 	if ($_GET['in'] == "Admin") {
 		$authenticated = false;
