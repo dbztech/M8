@@ -40,6 +40,7 @@ if (isset($_GET['in'])) {
 			#if ($leftnav) {
 			#	include('Resources/Core/leftnav.php');
 			#}
+            page::devmode();
 			include('Resources/Site/Code/'.$_GET['in'].'.php');
 			#include('Resources/Core/footer.php');
 		} else {
