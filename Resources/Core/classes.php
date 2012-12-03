@@ -3,7 +3,7 @@
 
 class m8
 {
-	public static $version = "b0.0.2";
+	public static $version = "b0.0.3";
 	
 	public static function variable($id) {
 		echo variable::getvariable($id);
