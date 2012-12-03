@@ -193,7 +193,7 @@ class page
 		    echo '<td><input type="text" id="'.$row['id'].'name'.'" value="'.$row['name'].'" onblur="Page.write('.$row['id'].', 0'.');" disabled /></td>';
 		    echo '<td><input type="text" id="'.$row['id'].'title'.'" value="'.$row['title'].'" onblur="Page.write('.$row['id'].', 1'.');" /></td>';
 		    echo '<td><input type="text" id="'.$row['id'].'description'.'" value="'.$row['description'].'" onblur="Page.write('.$row['id'].', 2'.');" /></td>';
-		    echo '<td><input type="text" id="'.$row['id'].'location'.'" value="'.$row['location'].'" onblur="Page.write('.$row['id'].', 3'.');" /></td>';
+		    echo '<td><input type="text" id="'.$row['id'].'location'.'" value="'.$row['location'].'" onblur="Page.write('.$row['id'].', 3'.');" disabled /></td>';
 			echo '<td><input type="button" id="'.$row['id'].'remove'.'" value="X" onclick="Page.remove('.$row['id'].');" /></td>';
 		    echo "</tr>";
 		}
