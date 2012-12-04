@@ -202,8 +202,9 @@ class page
     public static function devmode() {
         #lowlevel::redirect($row['devredirect']);
         $result = database::returndata('SELECT * FROM `pages` WHERE `location` = "'.page::$location.'"');
-		lowlevel::redirect($result['devredirect']);
-		return true;
+        if ($result['devredirect']) {
+            lowlevel::redirect($result['devredirect']);
+        }
 	}
 }
 
