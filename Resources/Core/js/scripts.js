@@ -1,11 +1,5 @@
 //JavaScript Document
 
-var Selector = new selector;
-var Cookie = new cookie;
-var Dialog = new dialog;
-var Page = new page;
-var Variable = new variable;
-
 var lastAjax = "Not set";
 
 function load() {
@@ -13,30 +7,8 @@ function load() {
 	//dragResizeLoad();
 }
 
-function unveil() {
-	document.getElementById('splashtext').className = 'unveil';
-	delay("document.getElementById('splashcontinue').className = 'unveil'",250);
-	delay("document.getElementById('splashtext').style.right = '100%'",950);
-	delay("document.getElementById('splashcontinue').style.right = '100%'",1200);
-	delay("document.getElementById('splash').style.display = 'none'",1200);
-	delay("showContent()",1200);
-}
-
-function showContent() {
-	document.getElementById('content').style.display = 'block';
-	document.getElementById('leftnav').style.display = 'block';
-}
-
 function delay(command, time) {
 	setTimeout(command, time);
-}
-
-function logout() {
-	var username = Cookie.getCookie("username");
-	ajax("logout", username);
-	Cookie.setCookie("sessionhash","0");
-	Cookie.setCookie("username","0");
-	delay('window.location.reload()',1500);
 }
 
 function ajax(type, query) {
@@ -45,13 +17,13 @@ function ajax(type, query) {
 	var xmlhttp;
 	if (window.XMLHttpRequest) {
 		// code for IE7+, Firefox, Chrome, Opera, Safari
-	  	xmlhttp=new XMLHttpRequest();
+	  	xmlhttp = new XMLHttpRequest();
 	} else {
 		// code for IE6, IE5
-	  	xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	  	xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
 	}
 	xmlhttp.onreadystatechange=function() {
-	  if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+	  if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 	  	console.log("Query successful");
 	  	//console.log(xmlhttp.responseText);
 		lastAjax = xmlhttp.responseText;
@@ -61,8 +33,30 @@ function ajax(type, query) {
 	    return(false);
 	  }
 	}
-	xmlhttp.open("GET","Resources/Core/ajax.php?type="+type+"&query="+query+"&verify="+verify+"&username="+username,true);
+	xmlhttp.open("GET","Resources/Core/ajax.php?type=" + type + "&query=" + query + "&verify=" + verify + "&username=" + username,true);
 	xmlhttp.send();
+}
+
+function unveil() {
+	document.getElementById('splashtext').className = 'unveil';
+	delay("document.getElementById('splashcontinue').className = 'unveil'", 250);
+	delay("document.getElementById('splashtext').style.right = '100%'", 950);
+	delay("document.getElementById('splashcontinue').style.right = '100%'", 1200);
+	delay("document.getElementById('splash').style.display = 'none'", 1200);
+	delay("showContent()", 1200);
+}
+
+function showContent() {
+	document.getElementById('content').style.display = 'block';
+	document.getElementById('leftnav').style.display = 'block';
+}
+
+function logout() {
+	var username = Cookie.getCookie("username");
+	ajax("logout", username);
+	Cookie.setCookie("sessionhash","0");
+	Cookie.setCookie("username","0");
+	delay('window.location.reload()',1500);
 }
 
 function selector() {
@@ -296,3 +290,9 @@ function is_int(value){
       return false;
   } 
 }
+
+var Selector = new selector;
+var Cookie = new cookie;
+var Dialog = new dialog;
+var Page = new page;
+var Variable = new variable;
