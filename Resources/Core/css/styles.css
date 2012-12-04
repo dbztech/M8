@@ -135,6 +135,12 @@ input {
 	width: 92%;
 }
 
+textarea {
+    width: 100%;
+    margin: 0px;
+    resize: vertical;
+}
+
 #loginbox {
 	background: #363535;
 	width: 400px;
@@ -179,6 +185,7 @@ input {
 .admintable td {
 	margin:auto;
 }
+
 .admintable td input {
 	width:100%;
 	margin:auto;

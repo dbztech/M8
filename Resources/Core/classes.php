@@ -257,8 +257,8 @@ class variable
 		while ($row = $result->fetch()) {
 			$pass++;
 		    echo "<tr>";
-		    echo '<td><input type="text" id="'.$row['id'].'varname'.'" value="'.$row['name'].'" onblur="Variable.write('.$row['id'].');" /></td>';
-		    echo '<td><input type="text" id="'.$row['id'].'varvalue'.'" value="'.$this->getvariable($row['name']).'" onblur="Variable.write('.$row['id'].');" onclick="Variable.enlarge('.$row['id'].');" /></td>';
+		    echo '<td><textarea id="'.$row['id'].'varname" onblur="Variable.write('.$row['id'].');">'.$row['name'].'</textarea></td>';
+		    echo '<td><textarea id="'.$row['id'].'varvalue'.'" onblur="Variable.write('.$row['id'].');" onclick="Variable.enlarge('.$row['id'].');" />'.$this->getvariable($row['name']).'</textarea></td>';
 			echo '<td><input type="button" id="'.$row['id'].'remove'.'" value="X" onclick="Variable.remove('.$row['id'].');" /></td>';
 		    echo "</tr>";
 		}
