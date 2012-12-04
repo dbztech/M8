@@ -1,5 +1,5 @@
 <div id="users" style="display: none;">
-<h1>User Info:</h1>
+<h1>Create User:</h1>
 <form action="/Resources/Core/ajax.php" method="get">
 <input type="hidden" name="verify" value="<?php echo $login->sessionhash; ?>" />
 <input type="hidden" name="username" value="<?php echo $login->username; ?>" />
@@ -10,7 +10,7 @@
 <p>Password:</p>
 <input type="password" name="addpassword" required />
 <p>User Level:</p>
-<input type="number" name="addlevel" required />
+<input type="number" name="addlevel" value="0" required />
 <input type="submit" />
 </form>
 </div>
