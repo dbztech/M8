@@ -177,7 +177,7 @@ function page() {
 			columnname = "description";
 		} else if (column == 3) {
 			value = document.getElementById(id+'location').value;
-			columnname = "location";
+			columnname = "devredirect";
 		}
 		if (value != "ERROR") {
 			query = "UPDATE `pages` SET `"+columnname+"` = '"+value+"' WHERE `pages`.`id` = "+id+";";
