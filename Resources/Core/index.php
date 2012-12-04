@@ -19,12 +19,14 @@
 
 <div class="contentblock" id="Pages">
 <div class="selector">
-<p class="selected" id="editButton">Edit</p>
+<p class="selected" id="editButton" onClick="Selector.setCurrent('edit','pages');">Edit</p>
+<p id="devModeButton" onClick="Selector.setCurrent('devMode','pages');">Dev Mode</p>
 </div>
 <p class="rightcontext" id="title">M8 Pages</p>
 <br />
 <br />
 <?php include("edit.php"); ?>
+<?php include("devmode.php"); ?>
 </div>
 
 <div class="contentblock" id="Variables">

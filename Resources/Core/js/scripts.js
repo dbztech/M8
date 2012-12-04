@@ -73,31 +73,41 @@ function selector() {
 
 		if (group == "overview") {
 			if (id == "info") {
-				this.counter[0] = "status"
+				this.counter[0] = "status";
 			}
 
 			if (id == "status") {
-				this.counter[0] = "info"
+				this.counter[0] = "info";
 			}
 		}
 
 		if (group == "variables") {
 			if (id == "editVariables") {
-				this.counter[0] = "search"
+				this.counter[0] = "search";
 			}
 
 			if (id == "search") {
-				this.counter[0] = "editVariables"
+				this.counter[0] = "editVariables";
+			}
+		}
+        
+        if (group == "pages") {
+			if (id == "edit") {
+				this.counter[0] = "devMode";
+			}
+
+			if (id == "devMode") {
+				this.counter[0] = "edit";
 			}
 		}
 		
 		if (group == "settings") {
 			if (id == "settings") {
-				this.counter[0] = "users"
+				this.counter[0] = "users";
 			}
 
 			if (id == "users") {
-				this.counter[0] = "settings"
+				this.counter[0] = "settings";
 			}
 		}
 

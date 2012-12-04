@@ -152,6 +152,7 @@ class page
 {
 	//property declaration
 	public static $location = "index.php";
+    public static $devmodeenabled = false;
 
 	//method declaration
 	public function verifypage($pagename) {
@@ -200,10 +201,11 @@ class page
 	}
     
     public static function devmode() {
-        #lowlevel::redirect($row['devredirect']);
-        $result = database::returndata('SELECT * FROM `pages` WHERE `location` = "'.page::$location.'"');
-        if ($result['devredirect']) {
-            lowlevel::redirect($result['devredirect']);
+        if (page::$devmodeenabled == "true") {
+            $result = database::returndata('SELECT * FROM `pages` WHERE `location` = "'.page::$location.'"');
+            if ($result['devredirect']) {
+                lowlevel::redirect($result['devredirect']);
+            }
         }
 	}
 }

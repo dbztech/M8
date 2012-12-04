@@ -12,7 +12,7 @@ flush();
 <div class="slidenavinfo">
 <h1>Title</h1>
 <h2>Put a Subtitle Here</h2>
-<p>Content contentcontent content content content content. contentsjdhfjs ksjdhjfkh ueh fiuhw iueh iuhe . Here is some more content that can be wrapped</p>
+<p><?php m8::variable('nav slide content'); ?></p>
 <a href="http://google.com">Learn More</a>
 </div>
 </div>

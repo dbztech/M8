@@ -16,6 +16,7 @@ $login = new login();
 #Get cookies
 $sessionhashcookie = $_COOKIE['sessionhash'];
 $usernamecookie = $_COOKIE['username'];
+page::$devmodeenabled = $_COOKIE['dev'];
 
 if (isset($sessionhashcookie) && isset($usernamecookie)) {
 	$login->cookiesexist = true;
