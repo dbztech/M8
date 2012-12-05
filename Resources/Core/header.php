@@ -8,6 +8,7 @@
 <link rel="stylesheet" type="text/css" href="Resources/Core/css/rightcontext.css">
 <link rel="stylesheet" type="text/css" href="Resources/Core/css/dialog.css">
 <meta name="description" content="<?php echo page::getdesc(); ?>">
+<meta name="viewport" content="width=device-width, initial-scale=.75, maximum-scale=.75">
 </head>
 <?php
 if ($splash) {
