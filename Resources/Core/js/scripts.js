@@ -25,7 +25,7 @@ function ajax(type, query) {
 	xmlhttp.onreadystatechange=function() {
 	  if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 	  	console.log("Query successful");
-	  	//console.log(xmlhttp.responseText);
+	  	console.log(xmlhttp.responseText);
 		lastAjax = xmlhttp.responseText;
 	    return(true);
 	  } else {
@@ -190,23 +190,13 @@ function page() {
 
 function variable() {
 	this.write = function(id) {
-		var value = "ERROR";
-		var name = "ERROR";
-		var query;
-		var columnname;
 		value = document.getElementById(id+'varvalue').value;
 		name = document.getElementById(id+'varname').value;
-		if (value != "ERROR" && name != "ERROR") {
-			query = "UPDATE `variables` SET `name` = '"+name+"', `text` = '"+value+"' WHERE `variables`.`id` = "+id+";";
-			console.log(query);
-			ajax("query",query);
-		}
+        ajax("editvariable", id+","+name+","+value);
 	}
 
 	this.remove = function(id) {
-		var query = "DELETE FROM `variables` WHERE `id` = "+id;
-		//console.log(query);
-		ajax("query", query);
+		ajax("removevariable", id);
 		delay('ajax("variables", "")', 200);
 		delay("document.getElementById('variablestable').innerHTML = lastAjax", 1600);
 	}
@@ -220,19 +210,7 @@ function variable() {
 		var name = document.getElementById('newvariablename').value;
 		var value = document.getElementById('newvariablevalue').value;
 		var type = document.getElementById('newvariableselector').value;
-		var query = "INVALID";
-		if (type == 0) {
-			query = "INSERT INTO `variables` (`name`, `type`, `num`, `text`, `location`, `zone`, `boolean`, `id`) VALUES ('"+name+"', '0', '"+value+"', NULL, NULL, NULL, NULL, NULL);";
-		} else if (type == 1) {
-			query = "INSERT INTO `variables` (`name`, `type`, `num`, `text`, `location`, `zone`, `boolean`, `id`) VALUES ('"+name+"', '1', NULL, '"+value+"', NULL, NULL, NULL, NULL);";
-		} else if (type == 2) {
-			query = "INSERT INTO `variables` (`name`, `type`, `num`, `text`, `location`, `zone`, `boolean`, `id`) VALUES ('"+name+"', '2', NULL, NULL, '"+value+"', NULL, NULL, NULL);";
-		} else if (type == 3) {
-			query = "INSERT INTO `variables` (`name`, `type`, `num`, `text`, `location`, `zone`, `boolean`, `id`) VALUES ('"+name+"', '3', NULL, NULL, NULL, '"+value+"', NULL, NULL);";
-		} else if (type == 4) {
-			query = "INSERT INTO `variables` (`name`, `type`, `num`, `text`, `location`, `zone`, `boolean`, `id`) VALUES ('"+name+"', '4', NULL, NULL, NULL, NULL, '"+value+"', NULL);";
-		}
-		ajax("query", query);
+		ajax("addvariable", name+","+type+","+value);
 		delay('ajax("variables", "")', 200);
 		delay("document.getElementById('variablestable').innerHTML = lastAjax", 1600);
 		Dialog.close();

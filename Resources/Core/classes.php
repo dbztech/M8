@@ -263,6 +263,33 @@ class variable
 		    echo "</tr>";
 		}
 	}
+    
+    public function addvariable($name, $type, $value) {
+        $query = "INVALID";
+		if ($type == 0) {
+			$query = "INSERT INTO `variables` (`name`, `type`, `num`, `text`, `location`, `zone`, `boolean`, `id`) VALUES ('".$name."', '0', '".$value."', NULL, NULL, NULL, NULL, NULL);";
+		} else if ($type == 1) {
+			$query = "INSERT INTO `variables` (`name`, `type`, `num`, `text`, `location`, `zone`, `boolean`, `id`) VALUES ('".$name."', '1', NULL, '".$value."', NULL, NULL, NULL, NULL);";
+		} else if ($type == 2) {
+			$query = "INSERT INTO `variables` (`name`, `type`, `num`, `text`, `location`, `zone`, `boolean`, `id`) VALUES ('".$name."', '2', NULL, NULL, '".$value."', NULL, NULL, NULL);";
+		} else if ($type == 3) {
+			$query = "INSERT INTO `variables` (`name`, `type`, `num`, `text`, `location`, `zone`, `boolean`, `id`) VALUES ('".$name."', '3', NULL, NULL, NULL, '".$value."', NULL, NULL);";
+		} else if ($type == 4) {
+			$query = "INSERT INTO `variables` (`name`, `type`, `num`, `text`, `location`, `zone`, `boolean`, `id`) VALUES ('".$name."', '4', NULL, NULL, NULL, NULL, '".$value."', NULL);";
+		}
+        
+        return (database::writedata($query));
+    }
+    
+    public function removevariable($id) {
+        $query = "DELETE FROM `variables` WHERE `id` = ".$id;
+        return (database::writedata($query));
+    }
+    
+    public function editvariable($id, $name, $value) {
+        $query = "UPDATE `variables` SET `name` = '".$name."', `text` = '".$value."' WHERE `variables`.`id` = ".$id.";";
+        return (database::writedata($query));
+    }
 }
 
 class file

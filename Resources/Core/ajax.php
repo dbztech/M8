@@ -53,6 +53,20 @@ if ($user['sessionhash'] == $ajaxhash) {
 		if ($type == 'variables') {
 			$result = $variable->getallvariables();
 		}
+        
+        if ($type == 'addvariable') {
+            $input = explode(",",$query);
+			$result = variable::addvariable($input[0],$input[1],$input[2]);
+		}
+        
+        if ($type == 'removevariable') {
+			$result = variable::removevariable($query);
+		}
+        
+        if ($type == 'editvariable') {
+            $input = explode(",",$query);
+			$result = variable::editvariable($input[0],$input[1],$input[2]);
+		}
 		
 		if ($type == 'adduser') {
 			#echo "Here";
