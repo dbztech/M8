@@ -2,7 +2,7 @@
 #This is the basic M8 settings file
 #echo "Settings Initialized <br />";
 $debug = false;
-$splash = true;
+$splash = false;
 $leftnav = true;
 $cookie = false;
 
