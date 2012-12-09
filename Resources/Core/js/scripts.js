@@ -244,6 +244,20 @@ function variable() {
 	}
 }
 
+function users() {
+	this.changepassword = function(id) {
+		
+	}
+
+	this.remove = function(id) {
+		var query = "DELETE FROM `users` WHERE `id` = "+id;
+		//console.log(query);
+		ajax("query", query);
+		delay('ajax("users", "")', 200);
+		delay("document.getElementById('usertable').innerHTML = lastAjax", 1600);
+	}
+}
+
 function dialog() {
 	this.open = function(title, content) {
 		document.getElementById('dialog').style.display = "block";
@@ -259,14 +273,6 @@ function dialog() {
 	this.close = function() {
 		document.getElementById('dialog').style.display = "none";
 	}
-}
-
-function is_int(value){ 
-  if((parseFloat(value) == parseInt(value)) && !isNaN(value)){
-      return true;
-  } else { 
-      return false;
-  } 
 }
 
 var Selector = new selector;

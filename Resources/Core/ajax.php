@@ -67,6 +67,10 @@ if ($user['sessionhash'] == $ajaxhash) {
             $input = explode(",",$query);
 			$result = variable::editvariable($input[0],$input[1],$input[2]);
 		}
+        
+        if ($type == 'users') {
+			$result = $login::getallusers();
+		}
 		
 		if ($type == 'adduser') {
 			#echo "Here";

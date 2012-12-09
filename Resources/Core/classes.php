@@ -405,6 +405,20 @@ class login extends Bcrypt
 			echo $query;
 		}
 	}
+    
+    public function getallusers() {
+		echo "<th>Username:</th>";
+		$result = database::returnmultiplerows('SELECT * FROM `users` ORDER BY `users`.`id` ASC');
+		$pass = 0;
+		while ($row = $result->fetch()) {
+			$pass++;
+		    echo "<tr>";
+		    echo '<td><input type="text" id="'.$row['id'].'username'.'" value="'.$row['username'].'" disabled /></td>';
+		    echo '<td><input type="button" id="'.$row['id'].'changepassword'.'" value="Change Password" /></td>';
+		    echo '<td><input type="button" id="'.$row['id'].'deleteuser'.'" value="X" /></td>';
+		    echo "</tr>";
+		}
+	}
 }
 
 class patch
